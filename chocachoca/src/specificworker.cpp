@@ -17,7 +17,6 @@
  *    along with RoboComp.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "specificworker.h"
-
 /**
 * \brief Default constructor
 */
@@ -77,7 +76,8 @@ void SpecificWorker::initialize()
 
 void SpecificWorker::compute()
 {
-    std::cout << "Compute worker" << std::endl;
+	RoboCompLidar3D::TData ldata = lidar3d_proxy->getLidarData("helios", 0, 360, 1);
+    std::print(ldata.points.size());
 	//computeCODE
 	//QMutexLocker locker(mutex);
 	//try
@@ -92,8 +92,8 @@ void SpecificWorker::compute()
 	//{
 	//  std::cout << "Error reading from Camera" << e << std::endl;
 	//}
-	
-	
+
+
 }
 
 void SpecificWorker::emergency()

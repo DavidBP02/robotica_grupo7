@@ -93,6 +93,16 @@ void SpecificWorker::compute()
             ret_val = turn(p_filter);
             break;
         }
+        case STATE::FOLLOW_WALL:
+        {
+            ret_val = follow_wall(p_filter);
+            break;
+        }
+        case STATE::SPIRAL:
+        {
+            ret_val = spiral(p_filter);
+            break;
+        }
     }
     /// unpack  the tuple
     auto [st, adv, rot] = ret_val;
@@ -168,6 +178,29 @@ SpecificWorker::RetVal SpecificWorker::turn(auto &points)
     }
 }
 
+SpecificWorker::RetVal SpecificWorker::follow_wall(auto &points)
+{
+    // check if the central part of the filtered_points vector has a minimum lower than the size of the robot
+    int offset = params.LIDAR_OFFSET * (points.size() / 2);
+    auto min_point = std::min_element(std::begin(points) + offset, std::end(points) - offset, [](auto &a, auto &b)
+        {  return a.distance2d < b.distance2d; });
+    if (min_point != points.end() and min_point->distance2d < params.STOP_THRESHOLD)
+        return RetVal(STATE::TURN, 0.f, 0.f);  // stop and change state if obstacle detected
+    else
+        return RetVal(STATE::FORWARD, params.MAX_ADV_SPEED, 0.f);
+}
+
+SpecificWorker::RetVal SpecificWorker::spiral(auto &points)
+{
+    // check if the central part of the filtered_points vector has a minimum lower than the size of the robot
+    int offset = params.LIDAR_OFFSET * (points.size() / 2);
+    auto min_point = std::min_element(std::begin(points) + offset, std::end(points) - offset, [](auto &a, auto &b)
+        {  return a.distance2d < b.distance2d; });
+    if (min_point != points.end() and min_point->distance2d < params.STOP_THRESHOLD)
+        return RetVal(STATE::TURN, 0.f, 0.f);  // stop and change state if obstacle detected
+    else
+        return RetVal(STATE::FORWARD, params.MAX_ADV_SPEED, 0.f);
+}
 /**
  * Draws LIDAR points onto a QGraphicsScene.
  *

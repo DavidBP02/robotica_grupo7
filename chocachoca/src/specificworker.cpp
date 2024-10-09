@@ -105,7 +105,9 @@ void SpecificWorker::compute()
         }
     }
     /// unpack  the tuple
+
     auto [st, adv, rot] = ret_val;
+    printf("%d, %f, %f\n", st, adv, rot);
     state = st;
 
     /// Send movements commands to the robot
@@ -154,6 +156,7 @@ SpecificWorker::RetVal SpecificWorker::turn(auto &points)
     static std::mt19937 gen(rd());
     static std::uniform_int_distribution<int> dist(0, 1);
     static bool first_time = true;
+    static int sign = 1;
 
     // check if the central part of the filtered_points vector is free to go. If so stop turning and change state to FORWARD
     int offset = params.LIDAR_OFFSET * (points.size() / 2);
@@ -162,44 +165,78 @@ SpecificWorker::RetVal SpecificWorker::turn(auto &points)
     if(min_point != std::end(points) and min_point->distance2d > params.ADVANCE_THRESHOLD)
     {
         first_time = true;
-        return RetVal(STATE::FORWARD, 0.f, 0.f);
+        return RetVal(STATE::FOLLOW_WALL, 0.f, 0.f);
     }
     else    // Keep doing my business
     {
         // Generate a random sign (-1 or 1) if first_time = true;
-        int sign = 1;
         if(first_time)
         {
             sign = dist(gen);
             if (sign == 0) sign = -1; else sign = 1;
             first_time = false;
         }
-        return RetVal(STATE::TURN, 0.f, sign * params.MAX_ROT_SPEED);
+        //return RetVal(STATE::TURN, 0.f, sign * params.MAX_ROT_SPEED);
+        return RetVal(STATE::FORWARD, 0.f, sign * params.MAX_ROT_SPEED);
     }
 }
+#include <stdlib.h>
 
 SpecificWorker::RetVal SpecificWorker::follow_wall(auto &points)
 {
-    // check if the central part of the filtered_points vector has a minimum lower than the size of the robot
+    qDebug() << __FUNCTION__;
+
+    //if there is an imminent collision select TURN state, adv=0, turn=+-0.52 and return tuple
+    /*iflateral distance to wall <REFERENCE_DISTANCE - delta rot speed = -0.2
+    else if lateral distance to wall> REFERENCE_DISTANCE
+        +delta
+    rot speed = +0.2
+    else
+    do
+        nothing // it is parallel to the wall
+
+    return tuple*/
     int offset = params.LIDAR_OFFSET * (points.size() / 2);
     auto min_point = std::min_element(std::begin(points) + offset, std::end(points) - offset, [](auto &a, auto &b)
-        {  return a.distance2d < b.distance2d; });
+            {  return a.distance2d < b.distance2d; });
+
+    // check exit conditions
+    //auto a = min_point_der.distance2d > min_point_izq.distance2d ? min_point_izq : min_point_der;
     if (min_point != points.end() and min_point->distance2d < params.STOP_THRESHOLD)
-        return RetVal(STATE::TURN, 0.f, 0.f);  // stop and change state if obstacle detected
-    else
-        return RetVal(STATE::FORWARD, params.MAX_ADV_SPEED, 0.f);
+        return RetVal(STATE::TURN, 0.f, rand() & 1 ? 0.5f : -0.5f);  // stop and change state if obstacle detected
+
+
+    // do normal business
+    float rot_speed = 0;
+    auto expected1 = closest_lidar_index_to_given_angle(points, M_PI / 2);
+    auto expected2 = closest_lidar_index_to_given_angle(points, -M_PI / 2);
+    float min_point_lateral;
+    if(expected1.has_value() and expected2.has_value())
+    {
+        qDebug() <<  points.size() << expected1.value() << expected2.value();
+        auto min_point_izq = points[expected1.value()].distance2d;
+        auto min_point_der = points[expected2.value()].distance2d;
+        min_point_lateral = min_point_izq > min_point_der ? min_point_der : min_point_izq;
+
+    }
+
+    if(min_point_lateral < params.REFERENCE_DISTANCE - params.DELTA) {
+        printf("Giro izq %d", min_point_lateral);
+        rot_speed = 0.2f;
+    }
+    if(min_point_lateral > params.REFERENCE_DISTANCE + params.DELTA) {
+        printf("Giro der %d", min_point_lateral);
+        rot_speed = -0.2f;
+    } else {
+        printf("NOGIRO %d", min_point_lateral);
+    }
+    return RetVal(STATE::FOLLOW_WALL, 500.f, rot_speed);
 }
 
 SpecificWorker::RetVal SpecificWorker::spiral(auto &points)
 {
-    // check if the central part of the filtered_points vector has a minimum lower than the size of the robot
-    int offset = params.LIDAR_OFFSET * (points.size() / 2);
-    auto min_point = std::min_element(std::begin(points) + offset, std::end(points) - offset, [](auto &a, auto &b)
-        {  return a.distance2d < b.distance2d; });
-    if (min_point != points.end() and min_point->distance2d < params.STOP_THRESHOLD)
-        return RetVal(STATE::TURN, 0.f, 0.f);  // stop and change state if obstacle detected
-    else
-        return RetVal(STATE::FORWARD, params.MAX_ADV_SPEED, 0.f);
+    static int a = 0;
+    return RetVal(STATE::SPIRAL, a ++, 0.5f);
 }
 /**
  * Draws LIDAR points onto a QGraphicsScene.

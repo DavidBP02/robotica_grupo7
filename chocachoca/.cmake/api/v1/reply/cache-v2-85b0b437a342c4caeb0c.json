@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "22"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/296/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/usr/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/296/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/usr/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/296/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/usr/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -943,7 +943,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/296/bin/cmake/linux/x64/share/cmake-3.29"
+			"value" : "/usr/share/cmake-3.22"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1303,7 +1303,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -1319,7 +1319,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -1335,7 +1335,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -1351,7 +1351,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -1367,7 +1367,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -7259,7 +7259,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
 			"type" : "UNINITIALIZED",

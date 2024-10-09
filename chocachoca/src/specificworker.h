@@ -53,12 +53,14 @@ class SpecificWorker : public GenericWorker
     private:
         struct Params
         {
-            float ROBOT_WIDTH = 460;  // mm
+            float ROBOT_WIDTH = 460;          // mm
+            float REFERENCE_DISTANCE = 1060;   // mm
+            float DELTA = 300;                 // mm
             float ROBOT_LENGTH = 480;  // mm
             float MAX_ADV_SPEED = 1000; // mm/s
             float MAX_ROT_SPEED = 1; // rad/s
             float STOP_THRESHOLD = MAX_ADV_SPEED*0.7; // mm
-            float ADVANCE_THRESHOLD = ROBOT_WIDTH * 2; // mm
+            float ADVANCE_THRESHOLD = ROBOT_WIDTH * 1.4; // mm
             float LIDAR_OFFSET = 9.f/10.f; // eight tenths of vector's half size
             float LIDAR_FRONT_SECTION = 0.5; // rads, aprox 30 degrees
             std::string LIDAR_NAME_LOW = "bpearl";

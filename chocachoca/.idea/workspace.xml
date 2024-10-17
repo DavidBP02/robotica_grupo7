@@ -25,55 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b17336d1-2c87-46e3-be70-b2bae2b40e6a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/cache-v2-933ca142f3cbc2212dcd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/cmakeFiles-v1-7a13300767667dbbb94f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/codemodel-v2-c7d7c7e0f39e30f2d3c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/index-2024-10-09T14-39-47-0872.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/target-chocachoca-c17ba66321107ca1d866.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/target-chocachoca_autogen-b25dacfe7226cfe8a92b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/target-chocachoca_autogen_timestamp_deps-16dd0fa134e34fddc213.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cmake/api/v1/reply/toolchains-v1-5f30bc6e808bb27bc21e.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/chocachoca" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chocachoca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_chocachoca_src.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_chocachoca_src.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_chocachoca_src.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_chocachoca_src.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/genericworker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/genericworker.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/specificworker.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca.dir/specificworker.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/AutogenInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/AutogenInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/AutogenUsed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/AutogenUsed.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/ParseCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/chocachoca_autogen.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chocachoca_autogen/moc_predefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/chocachoca_autogen/moc_predefs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificworker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificworker.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificworker.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificworker.h" afterDir="false" />
     </list>
@@ -134,8 +91,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.chocachoca" />
       <item itemvalue="CMake Application.ICES__home_usuario_robocomp_components_robotica_grupo7_chocachoca_src" />
+      <item itemvalue="CMake Application.chocachoca" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -149,11 +106,20 @@
       <workItem from="1728483997199" duration="15000" />
       <workItem from="1728484787519" duration="8009000" />
       <workItem from="1728493454166" duration="1248000" />
+      <workItem from="1728574937593" duration="146000" />
+      <workItem from="1729086315348" duration="207000" />
+      <workItem from="1729086719389" duration="11624000" />
+      <workItem from="1729098392216" duration="1902000" />
+      <workItem from="1729155178080" duration="5242000" />
+      <workItem from="1729160484106" duration="1561000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ice" />
   </component>
   <component name="VCPKGProject">
     <isAutomaticCheckingOnLaunch value="false" />

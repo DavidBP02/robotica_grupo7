@@ -54,8 +54,8 @@ class SpecificWorker : public GenericWorker
         struct Params
         {
             float ROBOT_WIDTH = 460;          // mm
-            float REFERENCE_DISTANCE = 1060;   // mm
-            float DELTA = 300;                 // mm
+            float REFERENCE_DISTANCE = 500;   // mm
+            float DELTA = 100.0;                 // mm
             float ROBOT_LENGTH = 480;  // mm
             float MAX_ADV_SPEED = 1000; // mm/s
             float MAX_ROT_SPEED = 1; // rad/s
@@ -75,9 +75,13 @@ class SpecificWorker : public GenericWorker
 
         // state machine
         enum class STATE {FORWARD, TURN, FOLLOW_WALL, SPIRAL};
-        STATE state = STATE::FORWARD;
+        STATE state = STATE::SPIRAL;
 
         using RetVal = std::tuple<STATE, float, float>;
+
+
+        static void printear_estado(STATE st);
+
         RetVal forward(auto &filtered_points);
         RetVal turn(auto &filtered_points);
         RetVal follow_wall(auto &filtered_points);

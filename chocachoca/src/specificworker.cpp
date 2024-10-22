@@ -231,53 +231,59 @@ SpecificWorker::RetVal SpecificWorker::turn(auto &points)
 }
 
 SpecificWorker::RetVal SpecificWorker::follow_wall(auto &points) {
-    std::vector<RoboCompLidar3D::TPoint> lateral_points;
-    std::copy_if(points.begin(), points.end(), std::back_inserter(lateral_points), [](const auto& p) {
-        // TODO: Pensar si hacerlo solo con los puntos en 90 grados a izq y der de el frente en vez de con un ángulo
-        if(std::abs(p.phi) >= M_PI/2 * 0.7 && std::abs(p.phi) <= M_PI/2 *1.3)
-            return true;
-        return false;
-    });
+{
+    static bool first_time = true;
 
-    if (lateral_points.empty()) {
-        qWarning() << "FOLLOW_WALL: No hay puntos en los laterales";
-        exit(1);
+    // check if about to crash
+    auto offset_begin = closest_lidar_index_to_given_angle(filtered_points, -params.LIDAR_FRONT_SECTION);
+    auto offset_end = closest_lidar_index_to_given_angle(filtered_points, params.LIDAR_FRONT_SECTION);
+    auto min_point = std::min_element(std::begin(filtered_points) + offset_begin.value(), std::begin(filtered_points) + offset_end.value(), [](auto &a, auto &b)
+    { return a.distance2d < b.distance2d; });
+    if(min_point->distance2d < params.STOP_THRESHOLD)
+    {
+        first_time = true;
+        return RetVal(STATE::TURN, 0.f, 0.f);  // stop and change state if obstacle detected
     }
 
-    // Saco el punto minimo de aprox 30 grados por los dos laterales.
-    // Su tien phi positivo, esta a mi derecha, si tiene phi negativo, esta a mi izq.
-    auto min_lateral_point = std::min_element(lateral_points.begin(), lateral_points.end(), [](const auto &a, const auto &b) {
-        return a.distance2d < b.distance2d;
-    });
-
-    auto min_point_all_points = std::min_element(points.begin(), points.end(), [](const auto &a, const auto &b) {
-        return a.distance2d < b.distance2d;
-    });
-
-    if(min_point_all_points->distance2d >= 1500) {
-        return RetVal(STATE::SPIRAL, 0, 0);
+    // get lidar readings in the sides of the robot
+    RoboCompLidar3D::TPoint min_obj;
+    auto res_right = closest_lidar_index_to_given_angle(filtered_points, params.LIDAR_RIGHT_SIDE_SECTION);
+    auto res_left = closest_lidar_index_to_given_angle(filtered_points, params.LIDAR_LEFT_SIDE_SECTION);
+    if (not res_right or not res_left)   // abandon the ship
+    {
+        qWarning() << "No valid lateral readings" << QString::fromStdString(res_right.error()) << QString::fromStdString(res_left.error());
+        return RetVal(STATE::WALL, 0.f, 0.f);
     }
-
-    // Estoy muy lejos de cualquier punto, por lo que sigo para adelante hasta que no lo este.
-    if(min_point_all_points->distance2d >= params.ROBOT_WIDTH * 2) {
-        // FORWARD
-        // TODO: No ir para adelante, sino para el punto mas cercano
-        qWarning() << "No tengo una pared cerca, por lo que tiro palante(pared mas cercana: " << min_point_all_points->distance2d << ")";
-        //omnirobot_proxy->setSpeedBase(0, params.MAX_ADV_SPEED, 0);
-        return RetVal(STATE::FOLLOW_WALL, params.MAX_ADV_SPEED, 0);
+    auto right_point = filtered_points[res_right.value()];
+    auto left_point = filtered_points[res_left.value()];
+    if(first_time)    // compare both to get the one with minimum distance and keep it until next TURN
+    {
+        handness = (right_point.distance2d < left_point.distance2d) ? HANDNESS::RIGHT : HANDNESS::LEFT;
+        label_handness->setText((handness == HANDNESS::RIGHT ? "RIGHT" : "LEFT"));
+        first_time = false;
     }
+    min_obj = handness == HANDNESS::RIGHT ? right_point : left_point;
 
-#define delta 0.07
-    if(std::abs(std::abs(min_lateral_point->phi) - M_PI/2) <= delta) {
-        printf("Paralelo al muro, ángulo punto mínimo por el lado: %f\n", min_lateral_point->phi);
-        //omnirobot_proxy->setSpeedBase(0, params.MAX_ADV_SPEED, 0);
-        return RetVal(STATE::FOLLOW_WALL, params.MAX_ADV_SPEED, 0);
-    } else {
-        double rotation_acceleration = std::clamp(M_PI/2 - std::abs(min_lateral_point->phi), 0.0, 1.0);
-        printf("Rotando, ángulo punto mínimo por el lado: %f %f\n", min_lateral_point->phi, rotation_acceleration);
-        //omnirobot_proxy->setSpeedBase(0, 0, params.MAX_ROT_SPEED * rotation_acceleration);
-        return RetVal(STATE::FOLLOW_WALL, 0, params.MAX_ROT_SPEED * rotation_acceleration);
-    }
+    // compute the distance to the virtual line that has to be followed. Positive if the robot is too far from the wall, negative otherwise
+    auto error = min_obj.distance2d - params.WALL_MIN_DISTANCE;
+    lcdNumber_error->display(error);
+
+    // compute breaks
+    auto adv_brake = std::clamp(-1.f/(params.ROBOT_WIDTH/2.f) * std::fabs(error) + 1.f, 0.f, 1.f);
+    auto rot_brake = std::clamp(1.f/(params.ROBOT_WIDTH/3.f) * std::fabs(error), 0.f, 1.f);
+
+    // check the left/right hand side and the distance to the wall conditions
+    if(min_obj.phi >= 0 and error >= 0)   // right hand side and too far from the wall: turn left
+        return RetVal(STATE::WALL, params.MAX_ADV_SPEED * adv_brake, params.MAX_ROT_SPEED * rot_brake);
+    if(min_obj.phi >= 0 and error < 0)   // right hand side and too close to the wall: turn right
+        return RetVal(STATE::WALL, params.MAX_ADV_SPEED * adv_brake, -params.MAX_ROT_SPEED * rot_brake);
+    if(min_obj.phi < 0 and error >= 0)   // left hand side and too far from the wall: turn left
+        return RetVal(STATE::WALL, params.MAX_ADV_SPEED * adv_brake, -params.MAX_ROT_SPEED * rot_brake);
+    if(min_obj.phi < 0 and error < 0)   // left hand side and too close to the wall: turn right
+        return RetVal(STATE::WALL, params.MAX_ADV_SPEED * adv_brake, params.MAX_ROT_SPEED * rot_brake);
+
+    qWarning() << "We should not reach this point. Stopping";
+    return RetVal (STATE::WALL, 0.f, 0.f);
 }
 
 #define stepssize 5;

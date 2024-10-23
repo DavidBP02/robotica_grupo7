@@ -1,5 +1,5 @@
-/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
-  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/moc_predefs.h \
+/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/moc_predefs.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.h \
@@ -746,11 +746,13 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
@@ -761,6 +763,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

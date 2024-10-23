@@ -1516,7 +1516,7 @@ src/CMakeFiles/chocachoca.dir/OmniRobot.cpp.o: src/OmniRobot.cpp \
 
 src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/chocachoca_autogen/mocs_compilation.cpp \
   /usr/include/stdc-predef.h \
-  src/chocachoca_autogen/AF5EVGCUJC/moc_abstract_graphic_viewer.cpp \
+  src/chocachoca_autogen/FGDXZBSX76/moc_abstract_graphic_viewer.cpp \
   /usr/include/c++/12/memory \
   /usr/include/c++/12/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
@@ -1750,7 +1750,7 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   /usr/include/c++/12/bits/uses_allocator_args.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/execution_defs.h \
-  /robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -2005,8 +2005,8 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
   /usr/include/c++/12/iostream \
-  src/chocachoca_autogen/WJD4WNSKOL/moc_GRAFCETStep.cpp \
-  /robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
+  src/chocachoca_autogen/YNADVVBD3P/moc_GRAFCETStep.cpp \
+  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
   /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
   /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
@@ -2019,7 +2019,7 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   /usr/include/c++/12/mutex \
   /usr/include/c++/12/bits/unique_lock.h \
   src/chocachoca_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
-  src/genericmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h \
   /usr/include/Ice/Ice.h \
   /usr/include/IceUtil/PushDisableWarnings.h \
   /usr/include/Ice/Config.h \
@@ -2501,8 +2501,8 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
-  src/genericworker.h \
-  src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
   src/config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
@@ -2660,6 +2660,8 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -2677,19 +2679,19 @@ src/CMakeFiles/chocachoca.dir/chocachoca_autogen/mocs_compilation.cpp.o: src/cho
   src/OmniRobot.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QScreen \
   src/chocachoca_autogen/EWIEGA46WW/moc_genericworker.cpp \
-  src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
   src/chocachoca_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
-  src/specificmonitor.h \
-  src/genericmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h \
   src/chocachoca_autogen/EWIEGA46WW/moc_specificworker.cpp \
-  src/specificworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.h \
   src/genericworker.h \
   /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /usr/include/c++/12/expected
 
-src/CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp \
+src/CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/commonbehaviorI.cpp \
   /usr/include/stdc-predef.h \
-  src/commonbehaviorI.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/commonbehaviorI.h \
   /usr/include/Ice/Ice.h \
   /usr/include/IceUtil/PushDisableWarnings.h \
   /usr/include/Ice/Config.h \
@@ -3119,8 +3121,8 @@ src/CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp \
   /usr/include/IceUtil/UUID.h \
   src/CommonBehavior.h \
   src/config.h \
-  src/genericworker.h \
-  src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
@@ -3799,6 +3801,9 @@ src/CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -3822,11 +3827,11 @@ src/CMakeFiles/chocachoca.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp \
   src/GenericBase.h \
   src/Lidar3D.h \
   src/OmniRobot.h \
-  src/genericmonitor.h
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h
 
-src/CMakeFiles/chocachoca.dir/genericmonitor.cpp.o: src/genericmonitor.cpp \
+src/CMakeFiles/chocachoca.dir/genericmonitor.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.cpp \
   /usr/include/stdc-predef.h \
-  src/genericmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h \
   /usr/include/Ice/Ice.h \
   /usr/include/IceUtil/PushDisableWarnings.h \
   /usr/include/Ice/Config.h \
@@ -4717,8 +4722,8 @@ src/CMakeFiles/chocachoca.dir/genericmonitor.cpp.o: src/genericmonitor.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
-  src/genericworker.h \
-  src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
   src/config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
@@ -4935,6 +4940,9 @@ src/CMakeFiles/chocachoca.dir/genericmonitor.cpp.o: src/genericmonitor.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -4960,10 +4968,10 @@ src/CMakeFiles/chocachoca.dir/genericmonitor.cpp.o: src/genericmonitor.cpp \
   src/Lidar3D.h \
   src/OmniRobot.h
 
-src/CMakeFiles/chocachoca.dir/genericworker.cpp.o: src/genericworker.cpp \
+src/CMakeFiles/chocachoca.dir/genericworker.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.cpp \
   /usr/include/stdc-predef.h \
-  src/genericworker.h \
-  src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -5940,6 +5948,9 @@ src/CMakeFiles/chocachoca.dir/genericworker.cpp.o: src/genericworker.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -9038,9 +9049,9 @@ src/CMakeFiles/chocachoca.dir/home/robocomp/robocomp/classes/sigwatch/sigwatch.c
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   src/chocachoca_autogen/include/moc_sigwatch.cpp \
-  /robocomp/robocomp/classes/sigwatch/sigwatch.h
+  /home/robocomp/robocomp/classes/sigwatch/sigwatch.h
 
-src/CMakeFiles/chocachoca.dir/main.cpp.o: src/main.cpp \
+src/CMakeFiles/chocachoca.dir/main.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/main.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/signal.h \
   /usr/include/features.h \
@@ -10335,9 +10346,9 @@ src/CMakeFiles/chocachoca.dir/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
   src/config.h \
-  src/config.h \
-  src/genericmonitor.h \
-  src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
   src/ui_mainUI.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -10346,6 +10357,7 @@ src/CMakeFiles/chocachoca.dir/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
@@ -10366,7 +10378,7 @@ src/CMakeFiles/chocachoca.dir/main.cpp.o: src/main.cpp \
   src/GenericBase.h \
   src/Lidar3D.h \
   src/OmniRobot.h \
-  src/specificworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.h \
   src/genericworker.h \
   /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -10382,13 +10394,13 @@ src/CMakeFiles/chocachoca.dir/main.cpp.o: src/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
   /usr/include/c++/12/expected \
-  src/specificmonitor.h \
-  src/commonbehaviorI.h
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/commonbehaviorI.h
 
-src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: src/specificmonitor.cpp \
+src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.cpp \
   /usr/include/stdc-predef.h \
-  src/specificmonitor.h \
-  src/genericmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h \
   /usr/include/Ice/Ice.h \
   /usr/include/IceUtil/PushDisableWarnings.h \
   /usr/include/Ice/Config.h \
@@ -11279,8 +11291,8 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: src/specificmonitor.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
-  src/genericworker.h \
-  src/config.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
   src/config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
@@ -11497,6 +11509,9 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: src/specificmonitor.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -11522,7 +11537,7 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: src/specificmonitor.cpp \
   src/Lidar3D.h \
   src/OmniRobot.h
 
-src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: src/specificworker.cpp \
+src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/12/ranges \
   /usr/include/c++/12/concepts \
@@ -11708,7 +11723,7 @@ src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: src/specificworker.cpp \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
   /usr/include/c++/12/bits/ranges_util.h \
-  src/specificworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.h \
   src/genericworker.h \
   src/config.h \
   /home/robocomp/robocomp/classes/qlog/qlog.h \
@@ -12505,6 +12520,9 @@ src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: src/specificworker.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -12625,7 +12643,6 @@ src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: src/specificworker.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
@@ -12638,7 +12655,7 @@ src/CMakeFiles/chocachoca.dir/specificworker.cpp.o: src/specificworker.cpp \
 
 /usr/include/c++/12/ranges:
 
-src/specificworker.cpp:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.cpp:
 
 /usr/include/IceStorm/Config.h:
 
@@ -12724,8 +12741,6 @@ src/specificworker.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
@@ -12751,10 +12766,6 @@ src/specificworker.cpp:
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
 
@@ -12798,8 +12809,6 @@ src/specificworker.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h:
 
-src/chocachoca_autogen/WJD4WNSKOL/moc_GRAFCETStep.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/12/bits/std_abs.h:
@@ -12833,6 +12842,8 @@ src/chocachoca_autogen/WJD4WNSKOL/moc_GRAFCETStep.cpp:
 /usr/include/c++/12/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocumentwriter.h:
 
 /usr/include/c++/12/tr1/exp_integral.tcc:
 
@@ -12926,13 +12937,11 @@ src/chocachoca_autogen/WJD4WNSKOL/moc_GRAFCETStep.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
 
-/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
-src/chocachoca_autogen/AF5EVGCUJC/moc_abstract_graphic_viewer.cpp:
-
-src/specificmonitor.h:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.cpp:
 
 src/chocachoca_autogen/mocs_compilation.cpp:
 
@@ -13086,6 +13095,8 @@ src/Lidar3D.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
 
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificmonitor.h:
+
 /usr/include/Ice/FactoryTable.h:
 
 /usr/include/c++/12/bits/unordered_map.h:
@@ -13186,10 +13197,6 @@ src/chocachoca_autogen/include/moc_sigwatch.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h:
 
-/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h:
-
-/usr/include/semaphore.h:
-
 /usr/include/c++/12/iosfwd:
 
 /usr/include/IceUtil/IceUtil.h:
@@ -13218,8 +13225,6 @@ src/chocachoca_autogen/include/moc_sigwatch.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-src/specificmonitor.cpp:
-
 /usr/include/c++/12/bits/postypes.h:
 
 /usr/include/c++/12/bits/stl_tempbuf.h:
@@ -13231,6 +13236,12 @@ src/specificmonitor.cpp:
 /usr/include/c++/12/backward/auto_ptr.h:
 
 /usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
+
+/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/12/cctype:
 
@@ -13382,6 +13393,16 @@ src/specificmonitor.cpp:
 
 /usr/include/c++/12/ostream:
 
+/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h:
+
+/usr/include/semaphore.h:
+
+src/chocachoca_autogen/FGDXZBSX76/moc_abstract_graphic_viewer.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/tmmintrin.h:
+
 /usr/include/assert.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
@@ -13408,8 +13429,6 @@ src/specificmonitor.cpp:
 
 /usr/include/linux/limits.h:
 
-src/commonbehaviorI.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/stdlib.h:
@@ -13425,6 +13444,10 @@ src/commonbehaviorI.cpp:
 src/GenericBase.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/Ice/Identity.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -13450,10 +13473,6 @@ src/CommonBehavior.cpp:
 
 /usr/include/IceUtil/RecMutex.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/tmmintrin.h:
-
 /usr/include/Ice/ObjectF.h:
 
 /usr/include/c++/12/bits/concept_check.h:
@@ -13472,8 +13491,6 @@ src/CommonBehavior.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
 /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h:
 
 /usr/include/Ice/ResponseHandlerF.h:
@@ -13483,8 +13500,6 @@ src/CommonBehavior.h:
 /usr/include/c++/12/chrono:
 
 /usr/include/Ice/LoggerF.h:
-
-/usr/include/c++/12/bits/stl_iterator_base_funcs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h:
 
@@ -13501,6 +13516,8 @@ src/CommonBehavior.h:
 /usr/include/c++/12/pstl/pstl_config.h:
 
 /usr/include/c++/12/stdlib.h:
+
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/commonbehaviorI.h:
 
 /usr/include/c++/12/bits/refwrap.h:
 
@@ -14084,7 +14101,9 @@ src/ui_mainUI.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
 
-/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+src/chocachoca_autogen/YNADVVBD3P/moc_GRAFCETStep.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h:
 
@@ -14124,7 +14143,7 @@ src/Lidar3D.cpp:
 
 src/chocachoca_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
-src/genericmonitor.h:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.h:
 
 /usr/include/Ice/Ice.h:
 
@@ -14182,8 +14201,6 @@ src/genericmonitor.h:
 
 /usr/include/Ice/ImplicitContext.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qmovie.h:
-
 /usr/include/Ice/DispatchInterceptor.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vpopcntdqvlintrin.h:
@@ -14230,6 +14247,8 @@ src/genericmonitor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h:
 
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/main.cpp:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h:
@@ -14273,6 +14292,10 @@ src/genericworker.h:
 /usr/lib/gcc/x86_64-linux-gnu/12/include/lzcntintrin.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstreamreader.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qheaderview.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qstatictext.h:
 
@@ -14434,6 +14457,8 @@ src/genericworker.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedvaluerollback.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qgenericpluginfactory.h:
@@ -14508,6 +14533,10 @@ src/genericworker.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/avx512pfintrin.h:
 
+/usr/include/c++/12/bits/stl_iterator_base_funcs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpluginloader.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vlbwintrin.h:
@@ -14525,8 +14554,6 @@ src/genericworker.h:
 /usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vnniintrin.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfilesystemmodel.h:
-
-src/main.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vnnivlintrin.h:
 
@@ -14553,6 +14580,8 @@ src/main.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/12/include/shaintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/fmaintrin.h:
+
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -14593,6 +14622,14 @@ src/main.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextboundaryfinder.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
+
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qmovie.h:
+
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -14669,8 +14706,6 @@ src/main.cpp:
 /usr/lib/gcc/x86_64-linux-gnu/12/include/sgxintrin.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qimageiohandler.h:
-
-/robocomp/robocomp/classes/sigwatch/sigwatch.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qimagereader.h:
 
@@ -14774,27 +14809,11 @@ src/chocachoca_autogen/EWIEGA46WW/moc_specificmonitor.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocumentwriter.h:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/specificworker.h:
 
-src/specificworker.h:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/commonbehaviorI.cpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
-
-src/commonbehaviorI.h:
-
-src/genericmonitor.cpp:
-
-/usr/include/Ice/Identity.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
-
-src/genericworker.cpp:
+/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericmonitor.cpp:
 
 /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp:
 
@@ -14870,6 +14889,8 @@ src/genericworker.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
@@ -14943,10 +14964,6 @@ src/genericworker.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicstransform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QMatrix4x4:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qheaderview.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qitemeditorfactory.h:
 

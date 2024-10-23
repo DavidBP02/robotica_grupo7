@@ -1,7 +1,7 @@
 {
-	"BUILD_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen",
-	"CMAKE_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src",
+	"BUILD_DIR" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen",
+	"CMAKE_BINARY_DIR" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
@@ -531,31 +531,31 @@
 		[
 			"/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h",
 			"MU",
-			"AF5EVGCUJC/moc_abstract_graphic_viewer.cpp",
+			"FGDXZBSX76/moc_abstract_graphic_viewer.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h",
 			"MU",
-			"WJD4WNSKOL/moc_GRAFCETStep.cpp",
+			"YNADVVBD3P/moc_GRAFCETStep.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/qlog/qlog.h",
 			"MU",
-			"REUAXSVL7F/moc_qlog.cpp",
+			"I3TCFKXIFP/moc_qlog.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/rapplication/rapplication.h",
 			"MU",
-			"2NKKL3WBBN/moc_rapplication.cpp",
+			"FX6O2DM4MC/moc_rapplication.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/sigwatch/sigwatch.h",
 			"MU",
-			"N4WA3CPOWS/moc_sigwatch.cpp",
+			"6HSEAYRORY/moc_sigwatch.cpp",
 			null
 		],
 		[
@@ -590,8 +590,8 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"ICE_CPP11_MAPPING",
@@ -612,11 +612,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src",
 		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src",
 		"/opt/robocomp/include",
 		"/classes",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca",
 		"/home/robocomp/robocomp/classes",
 		"/home/robocomp/robocomp/libs",
 		"/home/robocomp/robocomp/interfaces",
@@ -648,24 +648,24 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/chocachoca_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h"
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/CMakeFiles/chocachoca_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CMakeFiles/chocachoca_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/CMakeFiles/chocachoca_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CMakeFiles/chocachoca_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
@@ -720,12 +720,12 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.cpp",
 		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/mainUI.ui",
-		"/home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h"
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.cpp",
+		"/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

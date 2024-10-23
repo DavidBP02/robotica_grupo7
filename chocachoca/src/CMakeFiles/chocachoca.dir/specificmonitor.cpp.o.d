@@ -761,7 +761,7 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: \
  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/genericworker.h \
  /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
  /home/robocomp/robocomp/classes/qlog/qlog.h \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGuiDepends \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
@@ -950,7 +950,7 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiversion.h \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
@@ -975,6 +975,9 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSlider \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
@@ -982,7 +985,7 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/CommonBehavior.h \
  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
@@ -996,6 +999,6 @@ src/CMakeFiles/chocachoca.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.h \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.h \
- /home/usuario/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.h
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/GenericBase.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/Lidar3D.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/chocachoca/src/OmniRobot.h

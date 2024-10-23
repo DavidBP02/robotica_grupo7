@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/robocomp/components/beta-robotica-class/person_tracker
+CMAKE_SOURCE_DIR = /home/usuario/robocomp/components/robotica_grupo7/person_tracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker
+CMAKE_BINARY_DIR = /home/usuario/robocomp/components/robotica_grupo7/person_tracker
 
 # Utility rule file for person_tracker_autogen.
 
@@ -67,8 +67,8 @@ include src/CMakeFiles/person_tracker_autogen.dir/compiler_depend.make
 include src/CMakeFiles/person_tracker_autogen.dir/progress.make
 
 src/CMakeFiles/person_tracker_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target person_tracker"
-	cd /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src && /usr/bin/cmake -E cmake_autogen /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/CMakeFiles/person_tracker_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/usuario/robocomp/components/robotica_grupo7/person_tracker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target person_tracker"
+	cd /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src && /usr/bin/cmake -E cmake_autogen /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/CMakeFiles/person_tracker_autogen.dir/AutogenInfo.json ""
 
 person_tracker_autogen: src/CMakeFiles/person_tracker_autogen
 person_tracker_autogen: src/CMakeFiles/person_tracker_autogen.dir/build.make
@@ -79,10 +79,10 @@ src/CMakeFiles/person_tracker_autogen.dir/build: person_tracker_autogen
 .PHONY : src/CMakeFiles/person_tracker_autogen.dir/build
 
 src/CMakeFiles/person_tracker_autogen.dir/clean:
-	cd /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src && $(CMAKE_COMMAND) -P CMakeFiles/person_tracker_autogen.dir/cmake_clean.cmake
+	cd /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src && $(CMAKE_COMMAND) -P CMakeFiles/person_tracker_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/person_tracker_autogen.dir/clean
 
 src/CMakeFiles/person_tracker_autogen.dir/depend:
-	cd /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/robocomp/components/beta-robotica-class/person_tracker /home/usuario/robocomp/components/beta-robotica-class/person_tracker/src /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/CMakeFiles/person_tracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/usuario/robocomp/components/robotica_grupo7/person_tracker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/robocomp/components/robotica_grupo7/person_tracker /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src /home/usuario/robocomp/components/robotica_grupo7/person_tracker /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/CMakeFiles/person_tracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/person_tracker_autogen.dir/depend
 

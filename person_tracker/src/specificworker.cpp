@@ -183,6 +183,7 @@ SpecificWorker::RobotSpeed SpecificWorker::state_machine(const RoboCompVisualEle
     }
     auto &[st, speed, rot] = res;
     state = st;
+    omnirobot_proxy->setSpeedBase(0, speed, rot);
     return {speed, rot};
 }
 /**
@@ -218,9 +219,16 @@ SpecificWorker::RetVal SpecificWorker::track(const RoboCompVisualElementsPub::TO
     if(distance < params.PERSON_MIN_DIST)
     {   qWarning() << __FUNCTION__ << "Distance to person lower than threshold"; return RetVal(STATE::WAIT, 0.f, 0.f);}
 
+   //#define delta M_PI/180 
     /// TRACK   PUT YOUR CODE HERE
+    double phi_with_guy = std::atan2(std::stof(person.attributes.at("x_pos")), std::stof(person.attributes.at("y_pos")));
+    double rotation_acceleration = std::clamp(std::abs(phi_with_guy), 0.0, 1.0);
+    if(phi_with_guy > +delta) // [-delta, delta] delta = 1 degree
+        return RetVal(STATE::TRACK, 0, -rotation_acceleration);
+    if(phi_with_guy < -delta) // [-delta, delta]
+        return RetVal(STATE::TRACK, 0, rotation_acceleration);
+    return RetVal(STATE::TRACK, params.MAX_ADV_SPEED, 0);
 
-    return RetVal(STATE::TRACK, 0, 0);
 }
 //
 SpecificWorker::RetVal SpecificWorker::wait(const RoboCompVisualElementsPub::TObject &person)

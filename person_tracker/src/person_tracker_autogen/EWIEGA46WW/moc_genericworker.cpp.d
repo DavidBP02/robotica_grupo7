@@ -1,13 +1,13 @@
-/home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp/components/beta-robotica-class/person_tracker/src/genericworker.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/person_tracker_autogen/moc_predefs.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/Camera360RGB.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/CommonBehavior.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/GenericBase.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/Lidar3D.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/OmniRobot.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/VisualElementsPub.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/config.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/ui_mainUI.h \
+/home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/moc_predefs.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/CommonBehavior.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/GenericBase.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Lidar3D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/OmniRobot.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/VisualElementsPub.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/config.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \

@@ -1,0 +1,4 @@
+Cannot generate into /home/usuario/robocomp/components/robotica_grupo7/person_tracker
+It was created with incompatible generator 'Unix Makefiles'
+
+Please either delete it manually or select another generation directory

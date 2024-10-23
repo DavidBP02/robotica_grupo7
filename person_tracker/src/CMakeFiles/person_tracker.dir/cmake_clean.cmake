@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/usuario/robocomp/components/beta-robotica-class/person_tracker/bin/person_tracker"
-  "/home/usuario/robocomp/components/beta-robotica-class/person_tracker/bin/person_tracker.pdb"
+  "../bin/person_tracker"
+  "../bin/person_tracker.pdb"
   "CMakeFiles/person_tracker_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/person_tracker_autogen.dir/ParseCache.txt"
   "person_tracker_autogen"

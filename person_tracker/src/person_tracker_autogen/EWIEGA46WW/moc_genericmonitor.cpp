@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../../../../../../robocomp/components/beta-robotica-class/person_tracker/src/genericmonitor.h"
+#include "../../genericmonitor.h"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
 #include <QtCore/qbytearray.h>

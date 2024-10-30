@@ -1,5 +1,5 @@
 src/CMakeFiles/person_tracker.dir/main.cpp.o: \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/main.cpp \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/expected \
  /usr/include/c++/12/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -1153,12 +1153,12 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /home/robocomp/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /home/robocomp/robocomp/classes/qlog/qlog.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/config.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/config.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/genericmonitor.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/genericworker.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/config.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/config.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/genericmonitor.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/genericworker.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/ui_mainUI.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
@@ -1169,7 +1169,7 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/CommonBehavior.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/CommonBehavior.h \
  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
@@ -1182,13 +1182,13 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/GenericBase.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/Lidar3D.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/OmniRobot.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/VisualElementsPub.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/specificworker.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/genericworker.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/GenericBase.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Lidar3D.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/OmniRobot.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/VisualElementsPub.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/specificworker.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/genericworker.h \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
@@ -1202,14 +1202,14 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/Lidar3D.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Lidar3D.h \
  /home/robocomp/robocomp/classes/doublebuffer_sync/doublebuffer_sync.h \
  /usr/include/c++/12/ranges /usr/include/c++/12/span \
  /usr/include/c++/12/shared_mutex \
  /home/robocomp/robocomp/classes/doublebuffer_sync/../threadpool/threadpool.h \
  /usr/include/c++/12/queue /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/c++/12/thread \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/visibility_graph.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/visibility_graph.h \
  /usr/include/CGAL/Simple_cartesian.h \
  /usr/include/CGAL/Cartesian/Cartesian_base.h /usr/include/CGAL/basic.h \
  /usr/include/CGAL/config.h /usr/include/boost/config.hpp \
@@ -1844,7 +1844,6 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
  /usr/include/boost/math/special_functions/fpclassify.hpp \
  /usr/include/boost/math/tools/real_cast.hpp \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/quadmath.h \
  /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp /usr/include/CGAL/tags.h \
  /usr/include/CGAL/IO/io_tags.h /usr/include/CGAL/number_type_basic.h \
@@ -3162,6 +3161,6 @@ src/CMakeFiles/person_tracker.dir/main.cpp.o: \
  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/specificmonitor.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/commonbehaviorI.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/visualelementspubI.h
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/specificmonitor.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/commonbehaviorI.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/visualelementspubI.h

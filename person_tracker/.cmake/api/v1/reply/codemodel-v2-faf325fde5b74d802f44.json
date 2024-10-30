@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a9e03b9f78dd44e7aad2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-84d0df114a39c471718b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "person_tracker",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_usuario_robocomp_ws_src_robocomp_components_robotica_grupo7_person_tracker_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_usuario_robocomp_ws_src_robocomp_components_robotica_grupo7_person_tracker_src-71fa82b78543e0de1945.json",
+					"name" : "ICES__home_usuario_robocomp_ws_src_robocomp_components_robotica_grupo7_person_tracker_src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "person_tracker::@145eef247bfb46b6828c",
+					"jsonFile" : "target-person_tracker-58295a5f8f13e52e7f13.json",
+					"name" : "person_tracker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "person_tracker_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-person_tracker_autogen-58061e907e33d29785e9.json",
+					"name" : "person_tracker_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "person_tracker_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-person_tracker_autogen_timestamp_deps-c64bfb37f3985b7c2aee.json",
+					"name" : "person_tracker_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker",
+		"source" : "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

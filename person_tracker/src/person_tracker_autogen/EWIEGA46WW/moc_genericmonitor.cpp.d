@@ -1,5 +1,5 @@
-/home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp: /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/genericmonitor.h \
-  /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/moc_predefs.h \
+/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp: /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/genericmonitor.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/moc_predefs.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/CommonBehavior.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/GenericBase.h \

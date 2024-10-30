@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/person_tracker_autogen"
   "person_tracker_autogen/mocs_compilation.cpp"
+  "person_tracker_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

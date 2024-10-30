@@ -54,6 +54,8 @@ file(REMOVE_RECURSE
   "OmniRobot.h"
   "VisualElementsPub.cpp"
   "VisualElementsPub.h"
+  "person_tracker_autogen/mocs_compilation.cpp"
+  "person_tracker_autogen/timestamp"
   "ui_mainUI.h"
 )
 

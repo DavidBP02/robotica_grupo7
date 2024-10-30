@@ -1,7 +1,7 @@
 src/CMakeFiles/person_tracker.dir/Camera360RGB.cpp.o: \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.cpp \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
+ /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/Camera360RGB.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/12/stdlib.h /usr/include/c++/12/cstdlib \

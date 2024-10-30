@@ -1,5 +1,5 @@
-/home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/person_tracker_autogen/YNADVVBD3P/moc_GRAFCETStep.cpp: /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/beta-robotica-class/person_tracker/src/person_tracker_autogen/moc_predefs.h \
+/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/YNADVVBD3P/moc_GRAFCETStep.cpp: /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/person_tracker/src/person_tracker_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

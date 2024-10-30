@@ -144,7 +144,10 @@ std::expected<RoboCompVisualElementsPub::TObject, std::string>
 SpecificWorker::find_person_in_data(const std::vector<RoboCompVisualElementsPub::TObject> &objects)
 {
     if(objects.empty())
+    {
         return std::unexpected("Empty objects in method <find_person_in_data>");
+        omnirobot_proxy->setSpeedBase(0, 0, 2);
+    }
     if(auto p_ = std::ranges::find_if(objects, [](auto &a)
             { return a.id == 0 and std::stof(a.attributes.at("score")) > 0.6;}); p_ == std::end(objects))
         return std::unexpected("No person found in method <find_person_in_data>");
@@ -202,16 +205,16 @@ SpecificWorker::RetVal SpecificWorker::track(const RoboCompVisualElementsPub::TO
 {
     //qDebug() << __FUNCTION__;
     // variance of the gaussian function is set by the user giving a point xset where the function must be yset, and solving for s
-//    auto gaussian_break = [](float x) -> float
-//    {
-//        // gaussian function where x is the rotation speed -1 to 1. Returns 1 for x = 0 and 0.4 for x = 0.5
-//        const double xset = 0.5;
-//        const double yset = 0.6;
-          // compute the variance s so the function is yset for x = xset
-          // float s =
-//        return (float)exp(-x*x/s);
-//    };
-
+    auto gaussian_break = [](float x) -> float
+    {
+        // gaussian function where x is the rotation speed -1 to 1. Returns 1 for x = 0 and 0.4 for x = 0.5
+        static const float xset = 0.5;
+        static const float yset = 0.75;
+        // compute the variance s so the function is yset for x = xset
+        //float s = 0.49;
+        static float s = -xset*xset / std::log(yset);
+        return (float)exp(-x*x/s);
+    };
     auto distance = std::hypot(std::stof(person.attributes.at("x_pos")), std::stof(person.attributes.at("y_pos")));
     lcdNumber_dist_to_person->display(distance);
 
@@ -219,14 +222,22 @@ SpecificWorker::RetVal SpecificWorker::track(const RoboCompVisualElementsPub::TO
     if(distance < params.PERSON_MIN_DIST)
     {   qWarning() << __FUNCTION__ << "Distance to person lower than threshold"; return RetVal(STATE::WAIT, 0.f, 0.f);}
 
-   //#define delta M_PI/180 
+   #define delta M_PI/180 * 2
     /// TRACK   PUT YOUR CODE HERE
     double phi_with_guy = std::atan2(std::stof(person.attributes.at("x_pos")), std::stof(person.attributes.at("y_pos")));
-    double rotation_acceleration = std::clamp(std::abs(phi_with_guy), 0.0, 1.0);
-    if(phi_with_guy > +delta) // [-delta, delta] delta = 1 degree
-        return RetVal(STATE::TRACK, 0, -rotation_acceleration);
-    if(phi_with_guy < -delta) // [-delta, delta]
-        return RetVal(STATE::TRACK, 0, rotation_acceleration);
+    double rotation_acceleration = std::clamp(gaussian_break(phi_with_guy), 0.0f, 2.0f);
+    //double forward_acceleration = (1 - std::clamp(std::abs(phi_with_guy), 0.0, 1.0)) * params.MAX_ADV_SPEED;
+    double forward_acceleration = rotation_acceleration * params.MAX_ADV_SPEED;
+
+    if(phi_with_guy > +delta){ // [-delta, delta] delta = 1 degree
+        printf("Giro izq, angulo: %f, rotacion: %f\n", phi_with_guy, rotation_acceleration);
+        return RetVal(STATE::TRACK, forward_acceleration, +1 - rotation_acceleration);
+    }
+    if(phi_with_guy < -delta){ // [-delta, delta]
+        printf("Giro der, angulo: %f, rotacion: %f\n", phi_with_guy, rotation_acceleration);
+        return RetVal(STATE::TRACK, forward_acceleration, -(1-rotation_acceleration));
+    }
+    printf("No giro, angulo: %f, rotacion: %f\n", phi_with_guy, rotation_acceleration);
     return RetVal(STATE::TRACK, params.MAX_ADV_SPEED, 0);
 
 }

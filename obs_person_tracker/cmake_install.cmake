@@ -1,4 +1,4 @@
-# Install script for directory: /home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker
+# Install script for directory: /home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/robocomp/robocomp/etc-default/obs_person_tracker.conf")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -51,12 +51,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/robocomp/robocomp/etc-default" TYPE FILE RENAME "obs_person_tracker.conf" FILES "/home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/etc/config")
+  file(INSTALL DESTINATION "/home/robocomp/robocomp/etc-default" TYPE FILE RENAME "obs_person_tracker.conf" FILES "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/etc/config")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/src/cmake_install.cmake")
+  include("/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/cmake_install.cmake")
 
 endif()
 
@@ -68,5 +68,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

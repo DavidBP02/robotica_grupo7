@@ -1,0 +1,43 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_CUSTOM_TARGET",
+			"ROBOCOMP_IDSL_TO_ICE"
+		],
+		"files" : 
+		[
+			"/home/robocomp/robocomp/cmake/robocomp.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "ICES__home_robocomp_robocomp_components_G10_Robotica_Practica_3_obs_person_tracker_src::@6890427a1f51a3e7e1df",
+	"name" : "ICES__home_robocomp_robocomp_components_G10_Robotica_Practica_3_obs_person_tracker_src",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

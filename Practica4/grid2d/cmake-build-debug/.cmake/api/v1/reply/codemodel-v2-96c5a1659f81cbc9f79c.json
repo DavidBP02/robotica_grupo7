@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bfabe016fff910c7031e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-de161ae0afff16d017cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "grid2d",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_usuario_robocomp_components_G10_Robotica_Robotica_Practica_4_grid2d_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_usuario_robocomp_components_G10_Robotica_Robotica_Practica_4_grid2d_src-Debug-4e16d91b0cb93cec190f.json",
+					"name" : "ICES__home_usuario_robocomp_components_G10_Robotica_Robotica_Practica_4_grid2d_src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "grid2d::@145eef247bfb46b6828c",
+					"jsonFile" : "target-grid2d-Debug-a0a35aa2dce424b1b218.json",
+					"name" : "grid2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "grid2d_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-grid2d_autogen-Debug-fca87e512c35e5c63341.json",
+					"name" : "grid2d_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "grid2d_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-grid2d_autogen_timestamp_deps-Debug-09d4d99e710c434d34c8.json",
+					"name" : "grid2d_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug",
+		"source" : "/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

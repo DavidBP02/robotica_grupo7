@@ -1,0 +1,16 @@
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/install.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/install/local.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/ICES__home_usuario_robocomp_components_G10_Robotica_Robotica_Practica_4_grid2d_src.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/list_install_components.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/install.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/install/local.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/install/strip.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen_timestamp_deps.dir
+/home/usuario/robocomp/components/G10_Robotica/Robotica/Practica_4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen.dir

@@ -131,7 +131,7 @@ void SpecificWorker::compute()
                                                                                 goal,
                                                                                 obstacles,
                                                                                 params.ROBOT_WIDTH / 2,
-                                                                                &viewer->scene);
+                                                                                nullptr);
         draw_path_to_person(path, &viewer->scene);
 
         // call state machine to track person
@@ -143,7 +143,6 @@ void SpecificWorker::compute()
         lcdNumber_dist_to_person->display(d);
         lcdNumber_angle_to_person->display(atan2(std::stof(tp_person.value().attributes.at("x_pos")),
                                                  std::stof(tp_person.value().attributes.at("y_pos"))));
-
         lcdNumber_adv->display(adv);
         lcdNumber_rot->display(rot);
 
@@ -152,7 +151,6 @@ void SpecificWorker::compute()
         catch(const Ice::Exception &e){std::cout << e << std::endl;}
     }
     else {
-        omnirobot_proxy->setSpeedBase(0.f, 0.f, 1.f);
     }
 }
 
@@ -290,8 +288,9 @@ std::vector<QPolygonF> SpecificWorker::find_person_polygon_and_remove(const Robo
     QPointF pp = QPointF(std::stof(person.attributes.at("x_pos")), std::stof(person.attributes.at("y_pos")));
     // compute 8 point around pp in circular configuration
     std::vector<QPointF> ppoly;
-    for (auto i: iter::range(0.0, 2 * M_PI, M_PI / 2))
-        ppoly.push_back(pp + QPointF(80 * cos(i), 80 * sin(i)));
+    ppoly.push_back(pp);
+    for (auto i: iter::range(0.0, 2 * M_PI, M_PI / 6))
+        ppoly.push_back(pp + QPointF(200 * cos(i), 200 * sin(i)));
     // check if any polygon contains the person and remove it
     for(const auto &poly: obstacles)
     {
@@ -370,8 +369,8 @@ SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> path)
         return (float)exp(-x*x/s);
     };
 
-    if(not path.empty())
-    { /* qWarning() << __FUNCTION__ << "No person found"; */ return RetVal(STATE::SEARCH, 0.f, 0.f); }
+    if(path.empty())
+    { qWarning() << __FUNCTION__ << "No path found"; return RetVal(STATE::SEARCH, 0.f, 0.f); }
     // auto distance = 0.0f;
     // for (const auto &p: iter::sliding_window(path, 2))
     //     distance += (p[0] - p[1]).norm();
@@ -379,7 +378,7 @@ SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> path)
     auto distance = std::accumulate(path.begin(), path.end(), 0.f, [](auto ac, auto b)
         {
             static Eigen::Vector2f last{0.f, 0.f};
-            auto r = ac + (last - b).normalized();
+            auto r = ac + (last - b).norm();
             last = b;
             return r;
         });

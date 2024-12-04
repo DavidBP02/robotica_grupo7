@@ -19,8 +19,8 @@
 #include <Eigen/Dense>
 #include <Eigen/SVD>
 #include <Eigen/Geometry>
-
-
+#include <cppitertools/range.hpp>
+#include <cppitertools/enumerate.hpp>
 #include "specificworker.h"
 
 /**
@@ -72,15 +72,18 @@ void SpecificWorker::initialize()
 		 *Create a graphic element using the scene->rect(...) method and store the resulting point
 		 *in the TCell field. Position each rectangle to its correct place in the canvas and set the color to light_grey.*/
 		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, 2500, 10000, -5000});
+		auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
+		robot_draw = r;
+		this->resize(800, 700);
 
-		for (auto &row: grid){
-			for (auto &cell: row)
+		for (const auto &[i, row]: grid | iter::enumerate)
+			for (const auto &[j, cell]: row | iter::enumerate)
 			{
 				cell.state = State::Unknown;
-				cell.item  = viewer->scene.addRect(QRectF{-5000, 2500, 10000, -5000});
+				cell.item  = viewer->scene.addRect(QRectF{-cell_size/2, cell_size/2, cell_size, cell_size}, QPen(QColor("lightGray")));
+				auto p = grid_to_float({i, j});
+				cell.item->setPos(p.x(), p.y());
 			}
-		}
-
 
 		#ifdef HIBERNATION_ENABLED
 			hibernationChecker.start(500);

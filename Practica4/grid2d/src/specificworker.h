@@ -57,7 +57,29 @@ class SpecificWorker : public GenericWorker
 		void restore();
 		int startup_check();
 	private:
-
+	struct Params
+	{
+		float ROBOT_WIDTH = 460;  // mm
+		float ROBOT_LENGTH = 480;  // mm
+		float MAX_ADV_SPEED = 1900; // mm/s
+		float MAX_ROT_SPEED = 2; // rad/s
+		float SEARCH_ROT_SPEED = 0.9; // rad/s
+		float STOP_THRESHOLD = 700; // mm
+		float ADVANCE_THRESHOLD = ROBOT_WIDTH * 3; // mm
+		float LIDAR_FRONT_SECTION = 0.2; // rads, aprox 12 degrees
+		// person
+		float PERSON_MIN_DIST = 800; // mm
+		int MAX_DIST_POINTS_TO_SHOW = 300; // points to show in plot
+		// lidar
+		std::string LIDAR_NAME_LOW = "bpearl";
+		std::string LIDAR_NAME_HIGH = "helios";
+		QRectF GRID_MAX_DIM{-5000, 2500, 10000, -5000};
+		// control track
+		float acc_distance_factor = 2;
+		float k1 = 1.1;  // proportional gain for the angle error;
+		float k2 = 0.5; // proportional gain for derivative of the angle error;
+	};
+	Params params;
 	bool startup_check_flag;
 	enum class State {Occupied, Free, Unknown};
 	struct TCell
@@ -71,7 +93,11 @@ class SpecificWorker : public GenericWorker
 	static constexpr int grid_size = world_size / cell_size;
 	std::array<std::array<TCell, grid_size>, grid_size> grid;
 	using position2d = std::pair<int, int>;
+
+	// viewer
 	AbstractGraphicViewer *viewer;
+	void draw_lidar(auto &filtered_points, QGraphicsScene *scene);
+	QGraphicsPolygonItem *robot_draw;
 
 	position2d float_to_grid(Eigen::Vector2f x);
 	Eigen::Vector2f grid_to_float(position2d x);

@@ -68,6 +68,19 @@ void SpecificWorker::initialize()
 	}
 	else
 	{
+		/*In the initialize() method, run over all the elements of the array initializing each cell.
+		 *Create a graphic element using the scene->rect(...) method and store the resulting point
+		 *in the TCell field. Position each rectangle to its correct place in the canvas and set the color to light_grey.*/
+		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, 2500, 10000, -5000});
+
+		for (auto &row: grid){
+			for (auto &cell: row)
+			{
+				cell.state = State::Unknown;
+				cell.item  = viewer->scene.addRect(QRectF{-5000, 2500, 10000, -5000});
+			}
+		}
+
 
 		#ifdef HIBERNATION_ENABLED
 			hibernationChecker.start(500);
@@ -77,28 +90,39 @@ void SpecificWorker::initialize()
 		//this->setPeriod(STATES::Emergency, 500);
 
 	}
-
 }
+
 
 void SpecificWorker::compute()
 {
-    std::cout << "Compute worker" << std::endl;
-	//computeCODE
-	//QMutexLocker locker(mutex);
-	//try
-	//{
-	//  camera_proxy->getYImage(0,img, cState, bState);
-    //    if (img.empty())
-    //        emit goToEmergency()
-	//  memcpy(image_gray.data, &img[0], m_width*m_height*sizeof(uchar));
-	//  searchTags(image_gray);
-	//}
-	//catch(const Ice::Exception &e)
-	//{
-	//  std::cout << "Error reading from Camera" << e << std::endl;
-	//}
+
 	
-	
+}
+// x in mm
+// de lo que devuelvo cada "cuadrado" son de 100mm
+//
+//
+// si el t.point esta entre 2? q hago x ejemplo 1000, 0
+// -5000+ -> 0
+// 0-     -> 49
+// 0+     -> 50 [0, 99]
+// 5000-  -> 99
+SpecificWorker::position2d SpecificWorker::float_to_grid(Eigen::Vector2f x)
+{
+	SpecificWorker::position2d tmp;
+	tmp.first = (5000 - x.x()) / 100;
+	tmp.second = (5000 - x.y()) / 100;
+
+	return tmp;
+}
+
+// 0,0 -> -4950,4950
+// 0,1 -> -4850,4950
+Eigen::Vector2f SpecificWorker::grid_to_float(SpecificWorker::position2d x){
+	Eigen::Vector2f tmp;
+	tmp.x() = -4950 + x.second * 100;
+	tmp.y() =  4950 - x.first  * 100;
+	return tmp;
 }
 
 std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_bpearl()
@@ -113,25 +137,6 @@ std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_bpearl()
 			if(a.z < 500 and a.distance2d > 200)
 				p_filter.emplace_back(a.x, a.y);
 		}
-		return p_filter;
-	}
-	catch(const Ice::Exception &e){std::cout << e << std::endl;}
-	return {};
-}
-std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_helios()
-{
-	try
-	{
-
-		auto ldata =  lidar3d_proxy->getLidarData("helios", 0, 2*M_PI, 2);
-		// filter points according to height and distance
-		std::vector<Eigen::Vector2f> p_filter;
-		for(const auto &a: ldata.points)
-		{
-			if(a.z > 1300 and a.distance2d > 200)
-				p_filter.emplace_back(a.x, a.y);
-		}
-
 		return p_filter;
 	}
 	catch(const Ice::Exception &e){std::cout << e << std::endl;}

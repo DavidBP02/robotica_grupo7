@@ -1174,6 +1174,7 @@ src/CMakeFiles/grid2d.dir/main.cpp.o: \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Grid2D.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Lidar3D.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \

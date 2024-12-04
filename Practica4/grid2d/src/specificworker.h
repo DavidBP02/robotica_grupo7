@@ -27,7 +27,9 @@
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
 
-#define HIBERNATION_ENABLED
+//#define HIBERNATION_ENABLED
+
+#include <QGraphicsRectItem>
 
 #include <Eigen/Dense>
 #include <Eigen/SVD>
@@ -36,28 +38,47 @@
 
 #include <genericworker.h>
 
+
+#include "abstract_graphic_viewer/abstract_graphic_viewer.h"
+
+
 class SpecificWorker : public GenericWorker
 {
-Q_OBJECT
-public:
-	SpecificWorker(TuplePrx tprx, bool startup_check);
-	~SpecificWorker();
-	bool setParams(RoboCompCommonBehavior::ParameterList params);
-    std::vector<Eigen::Vector2f> read_lidar_bpearl();
-    std::vector<Eigen::Vector2f> read_lidar_helios();
+	Q_OBJECT
+	public:
+		RoboCompGrid2D::Result Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target);
+		SpecificWorker(TuplePrx tprx, bool startup_check);
+		~SpecificWorker();
 
-	RoboCompGrid2D::Result Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target);
+	public slots:
+		void initialize();
+		void compute();
+		void emergency();
+		void restore();
+		int startup_check();
+	private:
 
-
-public slots:
-	void initialize();
-	void compute();
-	void emergency();
-	void restore();
-	int startup_check();
-private:
 	bool startup_check_flag;
+	enum class State {Occupied, Free, Unknown};
+	struct TCell
+	{
+		State state;
+		QGraphicsRectItem *item;
+		/* other fields */
+	};
+	static constexpr int world_size = 10000;
+	static constexpr int cell_size  = 100; // mm
+	static constexpr int grid_size = world_size / cell_size;
+	std::array<std::array<TCell, grid_size>, grid_size> grid;
+	using position2d = std::pair<int, int>;
+	AbstractGraphicViewer *viewer;
 
+	position2d float_to_grid(Eigen::Vector2f x);
+	Eigen::Vector2f grid_to_float(position2d x);
+
+
+	bool setParams(RoboCompCommonBehavior::ParameterList params);
+	std::vector<Eigen::Vector2f> read_lidar_bpearl();
 };
 
 #endif

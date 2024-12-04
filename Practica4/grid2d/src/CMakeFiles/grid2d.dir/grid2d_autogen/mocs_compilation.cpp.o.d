@@ -1196,4 +1196,5 @@ src/CMakeFiles/grid2d.dir/grid2d_autogen/mocs_compilation.cpp.o: \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2d_autogen/EWIEGA46WW/moc_specificworker.cpp \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2d_autogen/EWIEGA46WW/../../specificworker.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h

@@ -56,6 +56,8 @@ class SpecificWorker : public GenericWorker
 		void emergency();
 		void restore();
 		int startup_check();
+	// para hacer que cuando haces click en la cuadricula con el raton te ¿salgan las coordenadas?
+	// connect(server, SIGNAL(), this, SLOT(NOLEOESTO));
 	private:
 	struct Params
 	{

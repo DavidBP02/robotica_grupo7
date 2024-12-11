@@ -62,15 +62,15 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "ICES__home_robocomp_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c",
-					"jsonFile" : "target-ICES__home_robocomp_robocomp_components_robotica_grupo7_Practica4_grid2d_src-Debug-9db5e7a2c9e958ab4582.json",
-					"name" : "ICES__home_robocomp_robocomp_components_robotica_grupo7_Practica4_grid2d_src",
+					"id" : "ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_grid2d_src-Debug-5b1f79dfd55bd9eb4d98.json",
+					"name" : "ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_grid2d_src",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "grid2d::@145eef247bfb46b6828c",
-					"jsonFile" : "target-grid2d-Debug-0e00b5ef173f042612ad.json",
+					"jsonFile" : "target-grid2d-Debug-2765dbf8ed37b2f8fb9e.json",
 					"name" : "grid2d",
 					"projectIndex" : 0
 				},
@@ -94,8 +94,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
-		"source" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
+		"build" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
+		"source" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
 	},
 	"version" : 
 	{

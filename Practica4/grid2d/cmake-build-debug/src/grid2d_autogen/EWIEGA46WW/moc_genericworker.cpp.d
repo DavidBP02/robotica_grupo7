@@ -1,10 +1,10 @@
-/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CommonBehavior.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Grid2D.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Lidar3D.h \
+/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/config.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
@@ -740,9 +740,27 @@
   /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
+			"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
 		}
 	],
 	"backtrace" : 1,
@@ -25,9 +25,9 @@
 		"files" : 
 		[
 			"src/CMakeLists.txt",
-			"/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake",
+			"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake",
 			"/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake",
-			"/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 			"/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
 			"/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake",
 			"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
@@ -213,15 +213,15 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include"
+					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src"
+					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/."
+					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/."
 				},
 				{
 					"backtrace" : 21,
@@ -233,7 +233,7 @@
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 				},
 				{
 					"backtrace" : 23,
@@ -326,7 +326,7 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ICES__home_robocomp_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c"
+			"id" : "ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c"
 		},
 		{
 			"id" : "grid2d_autogen_timestamp_deps::@145eef247bfb46b6828c"

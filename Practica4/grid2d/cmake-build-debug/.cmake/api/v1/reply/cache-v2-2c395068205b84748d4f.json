@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/305/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/308/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/305/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/308/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/305/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/308/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -919,7 +919,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30"
+			"value" : "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -7039,7 +7039,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "RC_COMPONENT_INSTALL_PATH",
@@ -7063,7 +7063,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "RoboComp_VERSION",
@@ -7251,7 +7251,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 		},
 		{
 			"name" : "grid2d_IS_TOP_LEVEL",
@@ -7275,7 +7275,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		}
 	],
 	"kind" : "cache",

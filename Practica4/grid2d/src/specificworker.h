@@ -104,6 +104,15 @@ class SpecificWorker : public GenericWorker
 	position2d float_to_grid(Eigen::Vector2f x);
 	Eigen::Vector2f grid_to_float(position2d x);
 
+	// Devolver una lista de nodos hacia el objetivo
+	struct nodelist {
+		TCell cell;
+		struct Tcell *next;
+	};
+
+	nodelist dijkstra(bool graph[100][100], TCell *StartingPoint, struct TCell *EndingPoint) {
+
+	}
 
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 	std::vector<Eigen::Vector2f> read_lidar_bpearl();

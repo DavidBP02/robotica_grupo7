@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -7039,7 +7039,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "RC_COMPONENT_INSTALL_PATH",
@@ -7063,7 +7063,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		},
 		{
 			"name" : "RoboComp_VERSION",
@@ -7251,7 +7251,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 		},
 		{
 			"name" : "grid2d_IS_TOP_LEVEL",
@@ -7275,7 +7275,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d"
+			"value" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d"
 		}
 	],
 	"kind" : "cache",

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
+			"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
 		}
 	],
 	"backtrace" : 1,
@@ -213,15 +213,15 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include"
+					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src"
+					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src"
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/."
+					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/."
 				},
 				{
 					"backtrace" : 21,
@@ -233,7 +233,7 @@
 				},
 				{
 					"backtrace" : 21,
-					"path" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
+					"path" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug"
 				},
 				{
 					"backtrace" : 23,
@@ -326,7 +326,7 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c"
+			"id" : "ICES__home_robocomp_robocomp_components_robotica_grupo7_Practica4_grid2d_src::@145eef247bfb46b6828c"
 		},
 		{
 			"id" : "grid2d_autogen_timestamp_deps::@145eef247bfb46b6828c"

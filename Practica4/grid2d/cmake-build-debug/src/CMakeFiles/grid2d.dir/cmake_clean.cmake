@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
-  "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d.pdb"
+  "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d"
+  "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/bin/grid2d.pdb"
   "CMakeFiles/grid2d_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/grid2d_autogen.dir/ParseCache.txt"
   "grid2d_autogen"

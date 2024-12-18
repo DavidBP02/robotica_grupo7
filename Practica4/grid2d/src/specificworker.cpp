@@ -100,56 +100,33 @@ void SpecificWorker::initialize()
 void SpecificWorker::compute()
 {
 	auto lidar_points = read_lidar_bpearl();  // Fetch filtered LiDAR points
-
-	for (const auto& point : lidar_points)
-	{
-		float x_i = point.x();
-		float y_i = point.y();
-
-		// Calcular la distancia desde el origen (0, 0) al punto (x_i, y_i)
-		float distance = std::sqrt(x_i * x_i + y_i * y_i);
-
-		// Calcular el número de pasos S y delta
-		int S = static_cast<int>(distance / 100);  // Número de celdas de 100mm
-		float delta = 1.0f / S;  // Tamaño del paso en la parábola
-
-		// Recorrer la línea en pasos de delta
-		for (float k = 0; k <= 1.0f; k += delta)
-		{
-			// Calculamos el punto en la línea para el valor de k
-			float x_k = k * x_i;
-			float y_k = k * y_i;
-
-			// Convertir las coordenadas flotantes a la cuadrícula
-			if (x_k > 5000)
-				x_k = 5000;
-			if (x_k < -5000)
-				x_k = -4900;
-			if (y_k > 5000)
-				y_k = 5000;
-			if (y_k < -5000)
-				y_k = -4900;
-			position2d grid_pos = float_to_grid(Eigen::Vector2f(x_k, y_k));
-
-			// Cambiar el color de las celdas en la cuadrícula
-			auto& cell = grid[grid_pos.first][grid_pos.second];  // Obtener la celda en la posición de la cuadrícula
-			if (k < 1.0f) {
-				// Cambiar el color de la celda a blanco, excepto la última celda
-				cell.item->setBrush(QColor("white"));
-				cell.state = State::Free;
-			} else {
-				// La última celda (k = 1) se pinta de rojo
-				cell.item->setBrush(QColor("red"));
-				cell.state = State::Occupied;
-			}
+	for (int i =0; i< grid.size(); i++) {
+		for (int j=0; j<grid[i].size(); j++) {
+			grid[i][j].item->setBrush(QColor("grey"));
+			grid[i][j].state = State::Unknown;
 		}
-		dijkstra();
-		// Debug: Imprimir la ecuación de la línea
-		//std::cout << "Line Equation for point (" << x_i << ", " << y_i << "):" << std::endl;
-		//std::cout << "r(t) = (" << x_i << " * t, " << y_i << " * t), where t runs from 0 to 1 in steps of delta" << std::endl;
 	}
-	
+	for (const auto& point : lidar_points){
+		const float distance = std::hypot(point.x(), point.y());
+		const float delta = 1.0f / (distance / 100);  // Tamaño del paso en la parábola
+		std::optional<SpecificWorker::position2d> maybe_position2d;
+		for (float k = 0; k <= 1.0f; k += delta){
+			maybe_position2d = float_to_grid(point * k);
+			if (!maybe_position2d)
+				continue;
+			// Cambiar el color de las celdas en la cuadrícula
+			grid[maybe_position2d.value().first][maybe_position2d.value().second].item->setBrush(QColor("white"));
+			grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Free;
+		}
+		if (maybe_position2d) {
+			grid[maybe_position2d.value().first][maybe_position2d.value().second].item->setBrush(QColor("red"));
+			grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Occupied;
+		}
+		//dijkstra();
+	}
 }
+
+
 // x in mm
 // de lo que devuelvo cada "cuadrado" son de 100mm
 //
@@ -159,10 +136,13 @@ void SpecificWorker::compute()
 // 0-     -> 49
 // 0+     -> 50 [0, 99]
 // 5000-  -> 99
-SpecificWorker::position2d SpecificWorker::float_to_grid(Eigen::Vector2f x)
+
+std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::Vector2f x)
 {
 	SpecificWorker::position2d tmp;
-	tmp.first = (5000 - x.x()) / 100;
+	if (x.x() > 5000 || x.x() < -5000 || x.y() > 5000 || x.y() < -5000)
+		return std::nullopt;
+	tmp.first =  (5000 - x.x()) / 100;
 	tmp.second = (5000 - x.y()) / 100;
 
 	return tmp;

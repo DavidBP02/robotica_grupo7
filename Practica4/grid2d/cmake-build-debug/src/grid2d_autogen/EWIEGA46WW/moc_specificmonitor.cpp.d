@@ -1,5 +1,5 @@
-/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h \
-  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h \
+/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h \
+  /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.h \

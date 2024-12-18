@@ -1,7 +1,7 @@
 src/CMakeFiles/grid2d.dir/CommonBehavior.cpp.o: \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/12/stdlib.h /usr/include/c++/12/cstdlib \

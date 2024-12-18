@@ -101,7 +101,7 @@ class SpecificWorker : public GenericWorker
 	void draw_lidar(auto &filtered_points, QGraphicsScene *scene);
 	QGraphicsPolygonItem *robot_draw;
 
-	position2d float_to_grid(Eigen::Vector2f x);
+	std::optional<SpecificWorker::position2d> float_to_grid(Eigen::Vector2f x);
 	Eigen::Vector2f grid_to_float(position2d x);
 
 	// Devolver una lista de nodos hacia el objetivo
@@ -110,9 +110,9 @@ class SpecificWorker : public GenericWorker
 		struct Tcell *next;
 	};
 
-	nodelist dijkstra(bool graph[100][100], TCell *StartingPoint, struct TCell *EndingPoint) {
+	//nodelist dijkstra(bool graph[100][100], TCell *StartingPoint, struct TCell *EndingPoint) {
 
-	}
+	//}
 
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 	std::vector<Eigen::Vector2f> read_lidar_bpearl();

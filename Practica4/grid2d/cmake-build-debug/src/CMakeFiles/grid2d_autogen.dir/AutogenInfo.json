@@ -1,12 +1,12 @@
 {
-	"BUILD_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen",
-	"CMAKE_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src",
+	"BUILD_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen",
+	"CMAKE_BINARY_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src",
 	"CMAKE_EXECUTABLE" : "/snap/clion/308/bin/cmake/linux/x64/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeLists.txt",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeLists.txt",
 		"/home/robocomp/robocomp/cmake/robocomp.cmake",
 		"/home/robocomp/robocomp/cmake/modules/qt.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
@@ -380,7 +380,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineTargets-none.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineVersionlessTargets.cmake",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeListsSpecific.txt",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeListsSpecific.txt",
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindIce.cmake",
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake",
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake",
@@ -399,82 +399,82 @@
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake",
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d",
+	"CMAKE_SOURCE_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/deps",
+	"DEP_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "grid2d_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
 			"/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h",
 			"MU",
-			"AF5EVGCUJC/moc_abstract_graphic_viewer.cpp",
+			"JPJZV43UZ7/moc_abstract_graphic_viewer.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h",
 			"MU",
-			"WJD4WNSKOL/moc_GRAFCETStep.cpp",
+			"O3EPOQWXUL/moc_GRAFCETStep.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/qlog/qlog.h",
 			"MU",
-			"REUAXSVL7F/moc_qlog.cpp",
+			"PKKSTVL7YU/moc_qlog.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/rapplication/rapplication.h",
 			"MU",
-			"2NKKL3WBBN/moc_rapplication.cpp",
+			"PDGHO25G5J/moc_rapplication.cpp",
 			null
 		],
 		[
 			"/home/robocomp/robocomp/classes/sigwatch/sigwatch.h",
 			"MU",
-			"N4WA3CPOWS/moc_sigwatch.cpp",
+			"BEKN4GKBLD/moc_sigwatch.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/commonbehaviorI.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/commonbehaviorI.h",
 			"MU",
 			"EWIEGA46WW/moc_commonbehaviorI.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericmonitor.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericmonitor.h",
 			"MU",
 			"EWIEGA46WW/moc_genericmonitor.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h",
 			"MU",
 			"EWIEGA46WW/moc_genericworker.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2dI.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2dI.h",
 			"MU",
 			"EWIEGA46WW/moc_grid2dI.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h",
 			"MU",
 			"EWIEGA46WW/moc_specificmonitor.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h",
 			"MU",
 			"EWIEGA46WW/moc_specificworker.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"ICE_CPP11_MAPPING",
@@ -494,11 +494,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src",
 		"/opt/robocomp/include",
 		"/classes",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug",
 		"/home/robocomp/robocomp/classes",
 		"/home/robocomp/robocomp/libs",
 		"/home/robocomp/robocomp/interfaces",
@@ -531,23 +531,23 @@
 		"-c",
 		"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/grid2d_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h"
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 16,
-	"PARSE_CACHE_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CMakeFiles/grid2d_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
@@ -568,37 +568,37 @@
 		],
 		[ "/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/commonbehaviorI.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/commonbehaviorI.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericmonitor.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericmonitor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2dI.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2dI.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/main.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.cpp",
+			"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.cpp",
 			"MU",
 			null
 		]
@@ -607,11 +607,11 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h",
-		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/mainUI.ui"
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.cpp",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h",
+		"/home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/mainUI.ui"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,

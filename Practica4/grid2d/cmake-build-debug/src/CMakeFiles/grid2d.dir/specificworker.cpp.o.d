@@ -1,5 +1,5 @@
 src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.cpp \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.cpp \
  /usr/include/stdc-predef.h /usr/include/Eigen/Dense \
  /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -422,7 +422,7 @@ src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
  /usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/12/variant /usr/include/c++/12/bits/parse_numbers.h \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -540,10 +540,10 @@ src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./genericworker.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./config.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./genericworker.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./config.h \
  /home/robocomp/robocomp/classes/qlog/qlog.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./config.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/src/./config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -1072,7 +1072,7 @@ src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiversion.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
@@ -1102,7 +1102,7 @@ src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/CommonBehavior.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/Ice/ProxyHandle.h /usr/include/Ice/ObjectF.h \
@@ -1158,8 +1158,8 @@ src/CMakeFiles/grid2d.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Grid2D.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/grid2d/cmake-build-debug/src/Lidar3D.h \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \

@@ -1,3 +1,4 @@
+#include <queue>
 /*
  *    Copyright (C) 2024 by YOUR NAME HERE
  *
@@ -56,9 +57,12 @@ class SpecificWorker : public GenericWorker
 		void emergency();
 		void restore();
 		int startup_check();
-	// para hacer que cuando haces click en la cuadricula con el raton te ¿salgan las coordenadas?
+	void viewerSlot(QPointF);
+
+        // para hacer que cuando haces click en la cuadricula con el raton te ¿salgan las coordenadas?
 	// connect(server, SIGNAL(), this, SLOT(NOLEOESTO));
 	private:
+
 	struct Params
 	{
 		float ROBOT_WIDTH = 460;  // mm
@@ -84,17 +88,27 @@ class SpecificWorker : public GenericWorker
 	Params params;
 	bool startup_check_flag;
 	enum class State {Occupied, Free, Unknown};
+	using position2d = std::pair<int, int>;
 	struct TCell
 	{
 		State state;
 		QGraphicsRectItem *item;
 		/* other fields */
 	};
-	static constexpr int world_size = 10000;
+        TCell cell;
+	    struct Cell {
+        float cost;  // Costo de la celda (1 para libre, INF para ocupado)
+        position2d position;
+        bool operator>(const Cell& other) const {
+            return cost > other.cost;
+        }
+    };
+const float INF = std::numeric_limits<float>::infinity();
+
+        static constexpr int world_size = 10000;
 	static constexpr int cell_size  = 100; // mm
 	static constexpr int grid_size = world_size / cell_size;
 	std::array<std::array<TCell, grid_size>, grid_size> grid;
-	using position2d = std::pair<int, int>;
 
 	// viewer
 	AbstractGraphicViewer *viewer;
@@ -116,6 +130,18 @@ class SpecificWorker : public GenericWorker
 
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 	std::vector<Eigen::Vector2f> read_lidar_bpearl();
+
+
+    void draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene);
+    std::vector<SpecificWorker::position2d> dijkstra(position2d start, position2d goal);
+	bool grid_index_valid(const SpecificWorker::position2d& index);
+
+    struct position2dHash {
+        size_t operator()(const position2d& p) const {
+            return std::hash<int>()(p.first) ^ std::hash<int>()(p.second);
+        }
+    };
+
 };
 
 #endif

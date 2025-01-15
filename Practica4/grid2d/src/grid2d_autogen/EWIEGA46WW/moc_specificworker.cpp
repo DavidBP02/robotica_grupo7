@@ -24,8 +24,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SpecificWorker_t {
-    const uint offsetsAndSize[14];
-    char stringdata0[67];
+    const uint offsetsAndSize[16];
+    char stringdata0[78];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_SpecificWorker_t, stringdata0) + ofs), len 
@@ -37,11 +37,13 @@ QT_MOC_LITERAL(26, 0), // ""
 QT_MOC_LITERAL(27, 7), // "compute"
 QT_MOC_LITERAL(35, 9), // "emergency"
 QT_MOC_LITERAL(45, 7), // "restore"
-QT_MOC_LITERAL(53, 13) // "startup_check"
+QT_MOC_LITERAL(53, 13), // "startup_check"
+QT_MOC_LITERAL(67, 10) // "viewerSlot"
 
     },
     "SpecificWorker\0initialize\0\0compute\0"
-    "emergency\0restore\0startup_check"
+    "emergency\0restore\0startup_check\0"
+    "viewerSlot"
 };
 #undef QT_MOC_LITERAL
 
@@ -51,7 +53,7 @@ static const uint qt_meta_data_SpecificWorker[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -59,11 +61,12 @@ static const uint qt_meta_data_SpecificWorker[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x0a,    1 /* Public */,
-       3,    0,   45,    2, 0x0a,    2 /* Public */,
-       4,    0,   46,    2, 0x0a,    3 /* Public */,
-       5,    0,   47,    2, 0x0a,    4 /* Public */,
-       6,    0,   48,    2, 0x0a,    5 /* Public */,
+       1,    0,   50,    2, 0x0a,    1 /* Public */,
+       3,    0,   51,    2, 0x0a,    2 /* Public */,
+       4,    0,   52,    2, 0x0a,    3 /* Public */,
+       5,    0,   53,    2, 0x0a,    4 /* Public */,
+       6,    0,   54,    2, 0x0a,    5 /* Public */,
+       7,    1,   55,    2, 0x0a,    6 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -71,6 +74,7 @@ static const uint qt_meta_data_SpecificWorker[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Int,
+    QMetaType::Void, QMetaType::QPointF,    2,
 
        0        // eod
 };
@@ -87,6 +91,7 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 3: _t->restore(); break;
         case 4: { int _r = _t->startup_check();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 5: _t->viewerSlot((*reinterpret_cast< std::add_pointer_t<QPointF>>(_a[1]))); break;
         default: ;
         }
     }
@@ -100,7 +105,7 @@ const QMetaObject SpecificWorker::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_SpecificWorker_t
 , QtPrivate::TypeAndForceComplete<SpecificWorker, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QPointF, std::false_type>
 
 
 >,
@@ -127,13 +132,13 @@ int SpecificWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

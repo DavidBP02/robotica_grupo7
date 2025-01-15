@@ -996,6 +996,22 @@ src/CMakeFiles/grid2d.dir/grid2d_autogen/mocs_compilation.cpp.o: \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CommonBehavior.h \
  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QStateMachine \
@@ -1196,5 +1212,6 @@ src/CMakeFiles/grid2d.dir/grid2d_autogen/mocs_compilation.cpp.o: \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2d_autogen/EWIEGA46WW/moc_specificworker.cpp \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2d_autogen/EWIEGA46WW/../../specificworker.h \
+ /usr/include/c++/12/queue /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h

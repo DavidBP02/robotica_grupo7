@@ -71,21 +71,24 @@ void SpecificWorker::initialize()
 		/*In the initialize() method, run over all the elements of the array initializing each cell.
 		 *Create a graphic element using the scene->rect(...) method and store the resulting point
 		 *in the TCell field. Position each rectangle to its correct place in the canvas and set the color to light_grey.*/
-		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, 2500, 10000, -5000});
+//		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, 2500, 10000, -5000}0i//);
+		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, -5000, 10000, 10000});
+        viewer->setStyleSheet("background-color: lightGray;");
 		auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
-		robot_draw = r;
+        robot_draw = r;
 		this->resize(800, 700);
-
+        viewer->show();
+        QPen pen(QColor("blue"), 15);
 		for (const auto &[i, row]: grid | iter::enumerate)
 			for (const auto &[j, cell]: row | iter::enumerate)
 			{
 				cell.state = State::Unknown;
-				cell.item  = viewer->scene.addRect(QRectF{0,0, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
 				auto p = grid_to_float({i, j});
+				cell.item  = viewer->scene.addRect(QRectF{p.x() - 50, p.y() - 50, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
 				printf("%f, %f, %lu, %lu\n", p.x(), p.y(), i, j);
-				cell.item->setPos(p.x(), p.y());
 			}
 
+   		connect(viewer, SIGNAL(new_mouse_coordinates(QPointF)), this, SLOT(viewerSlot(QPointF)));
 		#ifdef HIBERNATION_ENABLED
 			hibernationChecker.start(500);
 		#endif
@@ -144,7 +147,6 @@ std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::V
 		return std::nullopt;
 	tmp.first =  (5000 - x.x()) / 100;
 	tmp.second = (5000 - x.y()) / 100;
-
 	return tmp;
 }
 
@@ -201,32 +203,120 @@ int SpecificWorker::startup_check()
 }
 
 
+void SpecificWorker::draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene)
+{
+	static std::vector<QGraphicsItem*> items;   // store items so they can be shown between iterations
+	// remove all items drawn in the previous iteration
+	for(auto i: items)
+	{ scene->removeItem(i); delete i; }
+	items.clear();
+
+	const auto color = QColor(Qt::darkBlue);
+	const auto brush = QBrush(QColor(Qt::darkBlue));
+    for(const auto &p : path)
+	{
+	    auto pfloat = grid_to_float({p.second, p.first});
+		auto item = scene->addRect(-50, -50, 100, 100, color, brush);
+		item->setPos(pfloat.x(), pfloat.y());
+		items.push_back(item);
+	}
+    printf("PINTANDO %d, %d\n", path.back().first, path.back().second);
+}
+
 RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target)
 {
 #ifdef HIBERNATION_ENABLED
 	hibernation = true;
 #endif
-//implementCODE
 
+    printf("asfjhashf\n");
 }
 
+bool SpecificWorker::grid_index_valid(const SpecificWorker::position2d& index) {
+	return index.first >= 0 && index.first < grid_size && index.second >= 0 && index.second < grid_size;
+}
+
+std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker::position2d start, SpecificWorker::position2d goal){
+    // Mapa para almacenar el costo mínimo de cada celda
+    std::unordered_map<SpecificWorker::position2d, float, position2dHash> distance_map;
+    // Mapa para almacenar la celda anterior en el camino
+    std::unordered_map<SpecificWorker::position2d, SpecificWorker::position2d, position2dHash> previous_map;
+
+    // Cola de prioridad para procesar las celdas con menor costo primero
+    std::priority_queue<Cell, std::vector<Cell>, std::greater<Cell>> pq;
+    pq.push({0.0f, start});  // Comenzamos con el punto de inicio con un costo de 0
+    distance_map[start] = 0.0f;
+
+    // Direcciones de los vecinos: arriba, abajo, izquierda, derecha
+    std::vector<SpecificWorker::position2d> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+    while (!pq.empty()) {
+        Cell current = pq.top();
+        pq.pop();
+
+        // Si llegamos al objetivo, reconstruimos el camino
+        if (current.position == goal) {
+        	std::vector<SpecificWorker::position2d> path;
+        	while (previous_map.find(current.position) != previous_map.end()) {
+        		path.push_back(current.position);
+        		current.position = previous_map[current.position];
+        	}
+        	std::reverse(path.begin(), path.end());  // Invertir el camino para que vaya de inicio a objetivo
+        	return path;
+        }
+
+        // Explorar los vecinos
+        for (const auto& dir : directions) {
+            SpecificWorker::position2d neighbor(current.position.first + dir.first, current.position.second + dir.second);
+
+            // Comprobar si el vecino está dentro de los límites del grid
+            if (grid_index_valid(neighbor)) {
+                // Obtener el costo de la celda vecina (ya sea libre o un obstáculo)
+                float neighbor_cost = grid[neighbor.first][neighbor.second].state == State::Occupied ? INF : 1.0f;
+
+                // Calcular el costo total de llegar al vecino
+                float new_cost = current.cost + neighbor_cost;
+
+                // Si encontramos un camino más corto al vecino, actualizamos la distancia
+                if (distance_map.find(neighbor) == distance_map.end() || new_cost < distance_map[neighbor]) {
+                    distance_map[neighbor] = new_cost;
+                    previous_map[neighbor] = current.position;
+                    pq.push({new_cost, neighbor});
+                }
+            }
+        }
+    }
+
+    return {};  // Si no encontramos un camino, devolvemos un vector vacío
+}
+
+void SpecificWorker::viewerSlot(QPointF p)
+{
+    qDebug() << "1 Coordenadas reales clicadas:" << p;
+
+    auto maybe_position2d = float_to_grid({-p.x(), p.y()});
+    if (!maybe_position2d)
+        abort();
+    QPoint index(maybe_position2d.value().first, maybe_position2d.value().second);
 
 
-/**************************************/
-// From the RoboCompLidar3D you can call this methods:
-// this->lidar3d_proxy->getLidarData(...)
-// this->lidar3d_proxy->getLidarDataArrayProyectedInImage(...)
-// this->lidar3d_proxy->getLidarDataProyectedInImage(...)
-// this->lidar3d_proxy->getLidarDataWithThreshold2d(...)
+    //const QPoint index = real_to_index(p.x(), p.y());
+    int goalX = index.x();
+    int goalY = index.y();
 
-/**************************************/
-// From the RoboCompLidar3D you can use this types:
-// RoboCompLidar3D::TPoint
-// RoboCompLidar3D::TDataImage
-// RoboCompLidar3D::TData
+    if (goalX < 0 || goalX >= grid_size || goalY < 0 || goalY >= grid_size)
+    {
+        qDebug() << "1El punto está fuera del grid";
+        return;
+    }
 
-/**************************************/
-// From the RoboCompGrid2D you can use this types:
-// RoboCompGrid2D::TPoint
-// RoboCompGrid2D::Result
+    qDebug() << "1Índices de cuadrícula objetivo:" << goalX << goalY;
+
+    std::cout << "before dijkstra" << std::endl;
+
+    auto path = dijkstra({50, 50}, {goalX, goalY});
+    std::cout << "after dijkstra" << std::endl;
+
+    draw_path(path, &viewer->scene);
+}
 

@@ -1157,6 +1157,14 @@ src/CMakeFiles/grid2d.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CommonBehavior.h \
  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
@@ -1174,6 +1182,7 @@ src/CMakeFiles/grid2d.dir/main.cpp.o: \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Grid2D.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/Lidar3D.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificworker.h \
+ /usr/include/c++/12/queue /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -1358,7 +1367,6 @@ src/CMakeFiles/grid2d.dir/main.cpp.o: \
  /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /usr/include/Eigen/SVD /usr/include/Eigen/Geometry \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h \
- /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
@@ -1372,5 +1380,6 @@ src/CMakeFiles/grid2d.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
+ /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/specificmonitor.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/commonbehaviorI.h \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2dI.h

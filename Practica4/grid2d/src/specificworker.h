@@ -96,8 +96,8 @@ class SpecificWorker : public GenericWorker
 		/* other fields */
 	};
         TCell cell;
-	    struct Cell {
-        float cost;  // Costo de la celda (1 para libre, INF para ocupado)
+	struct Cell {
+        int cost;  // Costo de la celda (1 para libre, INF para ocupado)
         position2d position;
         bool operator>(const Cell& other) const {
             return cost > other.cost;
@@ -110,6 +110,7 @@ const float INF = std::numeric_limits<float>::infinity();
 	static constexpr int grid_size = world_size / cell_size;
 	std::array<std::array<TCell, grid_size>, grid_size> grid;
 
+	//static std::vector<QGraphicsItem*> items;
 	// viewer
 	AbstractGraphicViewer *viewer;
 	void draw_lidar(auto &filtered_points, QGraphicsScene *scene);
@@ -131,8 +132,9 @@ const float INF = std::numeric_limits<float>::infinity();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 	std::vector<Eigen::Vector2f> read_lidar_bpearl();
 
+	//void draw_lidar(auto &filtered_points, QGraphicsScene *scene);
 
-    void draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene);
+    void draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene, bool solo_limpiar);
     std::vector<SpecificWorker::position2d> dijkstra(position2d start, position2d goal);
 	bool grid_index_valid(const SpecificWorker::position2d& index);
 
@@ -141,7 +143,9 @@ const float INF = std::numeric_limits<float>::infinity();
             return std::hash<int>()(p.first) ^ std::hash<int>()(p.second);
         }
     };
-
+	void draw_state(void);
+char * state_to_string(SpecificWorker::State a);
+	void viewerSlot_compute(QPointF p);
 };
 
 #endif

@@ -82,7 +82,7 @@ void SpecificWorker::initialize()
 		for (const auto &[i, row]: grid | iter::enumerate)
 			for (const auto &[j, cell]: row | iter::enumerate)
 			{
-				cell.state = State::Unknown;
+				//cell.state = State::Unknown;
 				auto p = grid_to_float({i, j});
 				cell.item  = viewer->scene.addRect(QRectF{p.x() - 50, p.y() - 50, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
 				printf("%f, %f, %lu, %lu\n", p.x(), p.y(), i, j);
@@ -99,13 +99,67 @@ void SpecificWorker::initialize()
 	}
 }
 
+void SpecificWorker::draw_lidar(auto &filtered_points, QGraphicsScene *scene)
+{
+	static std::vector<QGraphicsItem*> items;   // store items so they can be shown between iterations
 
+	// remove all items drawn in the previous iteration
+	for(auto i: items)
+	{
+		scene->removeItem(i);
+		delete i;
+	}
+	items.clear();
+
+	auto color = QColor(Qt::darkGreen);
+	auto brush = QBrush(QColor(Qt::darkGreen));
+	for(const auto &p : filtered_points)
+	{
+		auto item = scene->addRect(-50, -50, 100, 100, color, brush);
+		item->setPos(p.x(), p.y());
+		items.push_back(item);
+	}
+
+}
+
+char * SpecificWorker::state_to_string(SpecificWorker::State a){
+switch(a){
+		        case State::Unknown:
+	        return "Unknown";
+		        case State::Occupied:
+		        return "Occupied";
+   		            break;
+		        case State::Free:
+	        return "Free";
+	        }
+}
+void SpecificWorker::draw_state(void){
+	for (int i =0; i< grid.size(); i++) {
+		for (int j=0; j<grid[i].size(); j++) {
+		    switch(grid[i][j].state){
+		        case State::Unknown:
+		            grid[i][j].item->setBrush(QColor("grey"));
+		            break;
+		        case State::Occupied:
+		            grid[i][j].item->setBrush(QColor("red"));
+		            break;
+		        case State::Free:
+                    grid[i][j].item->setBrush(QColor("white"));
+                    break;
+		    }
+		}
+	}
+}
+
+static bool hacer_camino = false;
+static QPointF p_;
 void SpecificWorker::compute()
 {
 	auto lidar_points = read_lidar_bpearl();  // Fetch filtered LiDAR points
+	draw_lidar(lidar_points, &viewer->scene);
+
 	for (int i =0; i< grid.size(); i++) {
 		for (int j=0; j<grid[i].size(); j++) {
-			grid[i][j].item->setBrush(QColor("grey"));
 			grid[i][j].state = State::Unknown;
 		}
 	}
@@ -113,19 +167,22 @@ void SpecificWorker::compute()
 		const float distance = std::hypot(point.x(), point.y());
 		const float delta = 1.0f / (distance / 100);  // Tamaño del paso en la parábola
 		std::optional<SpecificWorker::position2d> maybe_position2d;
-		for (float k = 0; k <= 1.0f; k += delta){
+		for (float k = 0; k <= 1.1f; k += delta){
 			maybe_position2d = float_to_grid(point * k);
 			if (!maybe_position2d)
 				continue;
-			// Cambiar el color de las celdas en la cuadrícula
-			grid[maybe_position2d.value().first][maybe_position2d.value().second].item->setBrush(QColor("white"));
-			grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Free;
-		}
-		if (maybe_position2d) {
-			grid[maybe_position2d.value().first][maybe_position2d.value().second].item->setBrush(QColor("red"));
-			grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Occupied;
-		}
-		//dijkstra();
+	        if(k > 0.9f){
+	            grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Occupied;
+	        } else{
+	        	grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Free;
+            }
+	    }
+	}
+	// Cambiar el color de las celdas en la cuadrícula
+	draw_state();
+	if(hacer_camino){
+	    hacer_camino = false;
+	    viewerSlot_compute(p_);
 	}
 }
 
@@ -145,7 +202,7 @@ std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::V
 	SpecificWorker::position2d tmp;
 	if (x.x() > 5000 || x.x() < -5000 || x.y() > 5000 || x.y() < -5000)
 		return std::nullopt;
-	tmp.first =  (5000 - x.x()) / 100;
+	tmp.first =  (5000 + x.x()) / 100;
 	tmp.second = (5000 - x.y()) / 100;
 	return tmp;
 }
@@ -154,8 +211,8 @@ std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::V
 // 0,1 -> -4850,4950
 Eigen::Vector2f SpecificWorker::grid_to_float(SpecificWorker::position2d x){
 	Eigen::Vector2f tmp;
-	tmp.x() = -4950 + x.second * 100;
-	tmp.y() =  4950 - x.first  * 100;
+	tmp.x() = -4950 + x.first * 100;
+	tmp.y() =  4950 - x.second  * 100;
 	return tmp;
 }
 
@@ -203,33 +260,28 @@ int SpecificWorker::startup_check()
 }
 
 
-void SpecificWorker::draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene)
+
+void SpecificWorker::draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene, bool solo_limpiar)
 {
 	static std::vector<QGraphicsItem*> items;   // store items so they can be shown between iterations
 	// remove all items drawn in the previous iteration
-	for(auto i: items)
-	{ scene->removeItem(i); delete i; }
-	items.clear();
 
-	const auto color = QColor(Qt::darkBlue);
-	const auto brush = QBrush(QColor(Qt::darkBlue));
-    for(const auto &p : path)
-	{
-	    auto pfloat = grid_to_float({p.second, p.first});
-		auto item = scene->addRect(-50, -50, 100, 100, color, brush);
-		item->setPos(pfloat.x(), pfloat.y());
-		items.push_back(item);
+	for(auto i: items) {
+		scene->removeItem(i);
 	}
-    printf("PINTANDO %d, %d\n", path.back().first, path.back().second);
-}
+	if(!solo_limpiar) {
+		items.clear();
+		const auto color = QColor(Qt::darkBlue);
+		const auto brush = QBrush(QColor(Qt::darkBlue));
+		for(const auto &p : path){
+			auto pfloat = grid_to_float({p.first, p.second});
+			auto item = scene->addRect(-50, -50, 100, 100, color, brush);
+			item->setPos(pfloat.x(), pfloat.y());
+			items.push_back(item);
+		}
 
-RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target)
-{
-#ifdef HIBERNATION_ENABLED
-	hibernation = true;
-#endif
-
-    printf("asfjhashf\n");
+		printf("PINTANDO %d, %d\n", path.back().first, path.back().second);
+	}
 }
 
 bool SpecificWorker::grid_index_valid(const SpecificWorker::position2d& index) {
@@ -238,14 +290,14 @@ bool SpecificWorker::grid_index_valid(const SpecificWorker::position2d& index) {
 
 std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker::position2d start, SpecificWorker::position2d goal){
     // Mapa para almacenar el costo mínimo de cada celda
-    std::unordered_map<SpecificWorker::position2d, float, position2dHash> distance_map;
+    std::unordered_map<SpecificWorker::position2d, int, position2dHash> distance_map;
     // Mapa para almacenar la celda anterior en el camino
     std::unordered_map<SpecificWorker::position2d, SpecificWorker::position2d, position2dHash> previous_map;
 
     // Cola de prioridad para procesar las celdas con menor costo primero
     std::priority_queue<Cell, std::vector<Cell>, std::greater<Cell>> pq;
-    pq.push({0.0f, start});  // Comenzamos con el punto de inicio con un costo de 0
-    distance_map[start] = 0.0f;
+    pq.push({0, start});  // Comenzamos con el punto de inicio con un costo de 0
+    distance_map[start] = 0;
 
     // Direcciones de los vecinos: arriba, abajo, izquierda, derecha
     std::vector<SpecificWorker::position2d> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
@@ -272,10 +324,12 @@ std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker:
             // Comprobar si el vecino está dentro de los límites del grid
             if (grid_index_valid(neighbor)) {
                 // Obtener el costo de la celda vecina (ya sea libre o un obstáculo)
-                float neighbor_cost = grid[neighbor.first][neighbor.second].state == State::Occupied ? INF : 1.0f;
-
-                // Calcular el costo total de llegar al vecino
-                float new_cost = current.cost + neighbor_cost;
+            	int neighbor_cost = 1;
+            	if (grid[neighbor.first][neighbor.second].state == State::Occupied)
+            		continue;
+            	else
+            		neighbor_cost = 1;
+                int new_cost = current.cost + neighbor_cost;
 
                 // Si encontramos un camino más corto al vecino, actualizamos la distancia
                 if (distance_map.find(neighbor) == distance_map.end() || new_cost < distance_map[neighbor]) {
@@ -290,16 +344,29 @@ std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker:
     return {};  // Si no encontramos un camino, devolvemos un vector vacío
 }
 
+		RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target){}
+
 void SpecificWorker::viewerSlot(QPointF p)
 {
+    hacer_camino = true;
+    p_ = p;
+}
+
+void SpecificWorker::viewerSlot_compute(QPointF p)
+{
     qDebug() << "1 Coordenadas reales clicadas:" << p;
-
-    auto maybe_position2d = float_to_grid({-p.x(), p.y()});
+	std::vector<SpecificWorker::position2d> path;
+    auto maybe_position2d = float_to_grid({p.x(), p.y()});
+    //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
     if (!maybe_position2d)
-        abort();
+        return;
     QPoint index(maybe_position2d.value().first, maybe_position2d.value().second);
+    printf("ESTADO DE LA CASILLA CLICKADA(%d(%f), %d(%f)): %s\n", p.x(), p.y(), index.x(), index.y(), state_to_string(grid[index.x()][index.y()].state));
 
-
+	if (grid[index.x()][index.y()].state == State::Occupied) {
+		draw_path(path, &viewer->scene, true);
+		return;
+	}
     //const QPoint index = real_to_index(p.x(), p.y());
     int goalX = index.x();
     int goalY = index.y();
@@ -314,9 +381,13 @@ void SpecificWorker::viewerSlot(QPointF p)
 
     std::cout << "before dijkstra" << std::endl;
 
-    auto path = dijkstra({50, 50}, {goalX, goalY});
+    path = dijkstra({50, 50}, {goalX, goalY});
     std::cout << "after dijkstra" << std::endl;
 
-    draw_path(path, &viewer->scene);
+	if(path.empty()) {
+		draw_path(path, &viewer->scene, true);
+	} else {
+		draw_path(path, &viewer->scene, false);
+	}
 }
 

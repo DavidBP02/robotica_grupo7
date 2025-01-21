@@ -5,8 +5,7 @@ VisualElementsPubTopic.Endpoints=tcp -p 0
 
 
 # Proxies for required interfaces
-Lidar3DProxy = lidar3d:tcp -h localhost -p 0
-Lidar3D1Proxy = lidar3d:tcp -h localhost -p 0
+Grid2DProxy = grid2d:tcp -h localhost -p 0
 OmniRobotProxy = omnirobot:tcp -h localhost -p 0
 
 

@@ -1,13 +1,14 @@
-/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/genericworker.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/config.h \
+/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/genericworker.h \
+  /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Grid2D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/config.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \

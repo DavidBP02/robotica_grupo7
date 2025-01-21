@@ -7,6 +7,7 @@ VisualElementsPubTopic.Endpoints=tcp -p 13212
 Lidar3DProxy = lidar3d:tcp -h localhost -p 11990
 Lidar3D1Proxy = lidar3d:tcp -h localhost -p 11991
 OmniRobotProxy = omnirobot:tcp -h localhost -p 10004
+Grid2DProxy = grid2d:tcp -h localhost -p 13500
 
 # This property is used by the clients to connect to IceStorm.
 TopicManager.Proxy=IceStorm/TopicManager:default -p 9999

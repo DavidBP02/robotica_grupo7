@@ -1,7 +1,7 @@
 src/CMakeFiles/obs_person_tracker.dir/visibility_graph.cpp.o: \
- /home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visibility_graph.cpp \
+ /home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visibility_graph.h \
+ /home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.h \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -889,6 +889,7 @@ src/CMakeFiles/obs_person_tracker.dir/visibility_graph.cpp.o: \
  /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
  /usr/include/boost/math/special_functions/fpclassify.hpp \
  /usr/include/boost/math/tools/real_cast.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/quadmath.h \
  /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp /usr/include/CGAL/tags.h \
  /usr/include/CGAL/IO/io_tags.h /usr/include/CGAL/number_type_basic.h \

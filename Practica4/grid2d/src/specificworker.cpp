@@ -10,7 +10,7 @@
  *
  *    RoboComp is distributed in the hope that it will be useful,
  *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *    GNU General Public License for more details.
  *
  *    You should have received a copy of the GNU General Public License
@@ -22,6 +22,38 @@
 #include <cppitertools/range.hpp>
 #include <cppitertools/enumerate.hpp>
 #include "specificworker.h"
+
+RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target) {
+    RoboCompGrid2D::Result result;
+
+//    auto index = float_to_grid({target.x, target.y});
+
+//
+/*    static bool first_time = true;
+    if(first_time){
+        first_time = false;
+        sleep(3);
+    }*/
+    auto maybe_position2d = float_to_grid({target.x, target.y});
+    //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
+    if (!maybe_position2d)
+        return {};
+
+    path = dijkstra({50, 50}, {maybe_position2d.value().first, maybe_position2d.value().second});
+    if(path.empty()) {
+        //draw_path(path, &viewer->scene, true);
+    } else {
+//        draw_path(&viewer->scene, false);
+    }
+        
+    std::ranges::transform(path, std::back_inserter(result.path), [&](auto &p) {
+        auto f = grid_to_float({p.first, p.second});
+        return RoboCompGrid2D::TPoint{f.x(), f.y(), 0.f};
+    });
+    
+    printf("ENTRANDO LOLO %ld\n", result.path.size());
+    return result;
+}
 
 /**
 * \brief Default constructor
@@ -261,16 +293,17 @@ int SpecificWorker::startup_check()
 
 
 
-void SpecificWorker::draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene, bool solo_limpiar)
+void SpecificWorker::draw_path(QGraphicsScene *scene, bool solo_limpiar)
 {
 	static std::vector<QGraphicsItem*> items;   // store items so they can be shown between iterations
 	// remove all items drawn in the previous iteration
 
 	for(auto i: items) {
 		scene->removeItem(i);
+        delete i;
 	}
-	if(!solo_limpiar) {
-		items.clear();
+	items.clear();
+    if(!solo_limpiar){
 		const auto color = QColor(Qt::darkBlue);
 		const auto brush = QBrush(QColor(Qt::darkBlue));
 		for(const auto &p : path){
@@ -344,7 +377,7 @@ std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker:
     return {};  // Si no encontramos un camino, devolvemos un vector vacío
 }
 
-		RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target){}
+		//RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target){}
 
 void SpecificWorker::viewerSlot(QPointF p)
 {
@@ -355,7 +388,6 @@ void SpecificWorker::viewerSlot(QPointF p)
 void SpecificWorker::viewerSlot_compute(QPointF p)
 {
     qDebug() << "1 Coordenadas reales clicadas:" << p;
-	std::vector<SpecificWorker::position2d> path;
     auto maybe_position2d = float_to_grid({p.x(), p.y()});
     //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
     if (!maybe_position2d)
@@ -364,7 +396,7 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
     printf("ESTADO DE LA CASILLA CLICKADA(%d(%f), %d(%f)): %s\n", p.x(), p.y(), index.x(), index.y(), state_to_string(grid[index.x()][index.y()].state));
 
 	if (grid[index.x()][index.y()].state == State::Occupied) {
-		draw_path(path, &viewer->scene, true);
+		draw_path(&viewer->scene, true);
 		return;
 	}
     //const QPoint index = real_to_index(p.x(), p.y());
@@ -385,9 +417,9 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
     std::cout << "after dijkstra" << std::endl;
 
 	if(path.empty()) {
-		draw_path(path, &viewer->scene, true);
+		draw_path(&viewer->scene, true);
 	} else {
-		draw_path(path, &viewer->scene, false);
+		draw_path(&viewer->scene, false);
 	}
 }
 

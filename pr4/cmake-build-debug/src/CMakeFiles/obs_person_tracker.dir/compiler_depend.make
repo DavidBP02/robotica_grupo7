@@ -16,15 +16,16 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/cmake/modules/opencv4.cmake \
   /home/robocomp/robocomp/cmake/modules/qt.cmake \
   /home/robocomp/robocomp/cmake/robocomp.cmake \
+  src/Camera360RGB.h \
+  src/CommonBehavior.h \
+  src/GenericBase.h \
+  src/Lidar3D.h \
+  src/OmniRobot.h \
+  src/VisualElementsPub.h \
   src/obs_person_tracker_autogen/moc_predefs.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h \
@@ -43,7 +44,6 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp \
@@ -3355,15 +3355,16 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/cmake/modules/opencv4.cmake \
   /home/robocomp/robocomp/cmake/modules/qt.cmake \
   /home/robocomp/robocomp/cmake/robocomp.cmake \
+  src/Camera360RGB.h \
+  src/CommonBehavior.h \
+  src/GenericBase.h \
+  src/Lidar3D.h \
+  src/OmniRobot.h \
+  src/VisualElementsPub.h \
   src/obs_person_tracker_autogen/moc_predefs.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h \
@@ -3382,7 +3383,6 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp \
@@ -6694,15 +6694,16 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/cmake/modules/opencv4.cmake \
   /home/robocomp/robocomp/cmake/modules/qt.cmake \
   /home/robocomp/robocomp/cmake/robocomp.cmake \
+  src/Camera360RGB.h \
+  src/CommonBehavior.h \
+  src/GenericBase.h \
+  src/Lidar3D.h \
+  src/OmniRobot.h \
+  src/VisualElementsPub.h \
   src/obs_person_tracker_autogen/moc_predefs.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h \
@@ -6721,7 +6722,6 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp \
@@ -10033,15 +10033,16 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/cmake/modules/opencv4.cmake \
   /home/robocomp/robocomp/cmake/modules/qt.cmake \
   /home/robocomp/robocomp/cmake/robocomp.cmake \
+  src/Camera360RGB.h \
+  src/CommonBehavior.h \
+  src/GenericBase.h \
+  src/Lidar3D.h \
+  src/OmniRobot.h \
+  src/VisualElementsPub.h \
   src/obs_person_tracker_autogen/moc_predefs.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h \
@@ -10060,7 +10061,6 @@ src/obs_person_tracker_autogen/timestamp: /home/robocomp/robocomp/classes/abstra
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
-  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp \
@@ -40122,6 +40122,8 @@ src/obs_person_tracker_autogen/mocs_compilation.cpp:
 
 /usr/include/boost/random/uniform_real_distribution.hpp:
 
+/usr/include/boost/random/uniform_real.hpp:
+
 /usr/include/boost/random/taus88.hpp:
 
 /usr/include/boost/random/seed_seq.hpp:
@@ -41690,15 +41692,7 @@ src/obs_person_tracker_autogen/include/moc_sigwatch.cpp:
 
 /usr/include/c++/12/bits/random.h:
 
-/usr/include/armadillo_bits/podarray_bones.hpp:
-
-src/VisualElementsPub.h:
-
 src/OmniRobot.cpp:
-
-src/Lidar3D.h:
-
-src/GenericBase.h:
 
 /usr/include/armadillo_bits/op_reverse_meat.hpp:
 
@@ -41743,10 +41737,6 @@ src/Camera360RGB.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
-
-src/CommonBehavior.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
 /usr/include/armadillo_bits/glue_kron_meat.hpp:
 
@@ -41968,6 +41958,8 @@ src/CommonBehavior.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qundogroup.h:
+
 /usr/include/boost/predef/architecture/blackfin.h:
 
 /usr/include/boost/predef/architecture.h:
@@ -42042,6 +42034,10 @@ src/CommonBehavior.h:
 
 /usr/include/CGAL/Cartesian/point_constructions_2.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
+
+src/CommonBehavior.h:
+
 /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Reverse.h:
@@ -42113,10 +42109,6 @@ src/CommonBehavior.h:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
 
 /usr/include/boost/mpl/lambda.hpp:
-
-src/OmniRobot.h:
-
-/usr/include/boost/fusion/container/vector/detail/deref_impl.hpp:
 
 /usr/include/boost/multiprecision/detail/number_base.hpp:
 
@@ -42298,7 +42290,9 @@ src/OmniRobot.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QMatrix4x4:
 
-/usr/include/boost/mpl/aux_/has_size.hpp:
+/usr/include/c++/12/bits/hashtable.h:
+
+/usr/include/boost/mpl/aux_/has_type.hpp:
 
 /usr/include/boost/numeric/conversion/converter_policies.hpp:
 
@@ -42509,6 +42503,10 @@ src/obs_person_tracker_autogen/moc_predefs.h:
 /usr/include/mlpack/core/arma_extend/SpMat_extra_bones.hpp:
 
 /usr/include/boost/integer/static_min_max.hpp:
+
+/usr/include/boost/preprocessor/list/detail/fold_left.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/boost/integer/integer_mask.hpp:
 
@@ -43526,6 +43524,8 @@ src/VisualElementsPub.cpp:
 
 /usr/include/CGAL/Hilbert_sort_middle_3.h:
 
+/usr/include/CGAL/Voronoi_diagram_2/Accessor.h:
+
 /usr/include/c++/12/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
@@ -43649,6 +43649,10 @@ src/VisualElementsPub.cpp:
 /usr/include/boost/predef/language/stdc.h:
 
 /usr/include/CGAL/Intersections_3/Iso_cuboid_3_Iso_cuboid_3.h:
+
+/usr/include/boost/fusion/container/vector/detail/deref_impl.hpp:
+
+src/OmniRobot.h:
 
 /usr/include/CGAL/Triangulation_ds_circulators_2.h:
 
@@ -44030,6 +44034,10 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /snap/clion/314/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake:
 
+/usr/include/boost/predef/os/beos.h:
+
+/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt:
+
 /usr/include/Eigen/src/Core/Fuzzy.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h:
@@ -44052,14 +44060,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /usr/include/CGAL/Distance_3/Plane_3_Plane_3.h:
 
-/usr/include/boost/iterator/iterator_facade.hpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h:
-
-/usr/include/boost/core/nvp.hpp:
-
-/usr/include/CGAL/Distance_2/internal/squared_distance_utils_2.h:
-
 /usr/include/boost/archive/basic_xml_oarchive.hpp:
 
 /usr/include/armadillo_bits/spdiagview_meat.hpp:
@@ -44067,6 +44067,14 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 /usr/include/boost/detail/reference_content.hpp:
 
 /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room.h:
+
+/usr/include/boost/iterator/iterator_facade.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h:
+
+/usr/include/boost/core/nvp.hpp:
+
+/usr/include/CGAL/Distance_2/internal/squared_distance_utils_2.h:
 
 /usr/include/boost/fusion/adapted/mpl.hpp:
 
@@ -44111,6 +44119,10 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 /usr/include/CGAL/Cartesian/Tetrahedron_3.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/CGAL/FPU.h:
+
+/usr/include/CGAL/Voronoi_diagram_2/Iterator_adaptors.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h:
 
@@ -44172,6 +44184,10 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /usr/include/CGAL/Sqrt_extension/io.h:
 
+/usr/include/CGAL/Intersections_3/Segment_3_Triangle_3.h:
+
+/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room_detector.cpp:
+
 /usr/include/Eigen/src/QR/HouseholderQR.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake:
@@ -44187,6 +44203,8 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 /usr/include/mlpack/core/util/prefixedoutstream_impl.hpp:
 
 /usr/include/CGAL/Homogeneous/predicates_on_pointsH2.h:
+
+/usr/include/CGAL/Intersections_3/Iso_cuboid_3_Tetrahedron_3.h:
 
 /usr/include/Ice/RequestHandlerF.h:
 
@@ -44312,50 +44330,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /usr/include/c++/12/bits/stl_iterator.h:
 
-/usr/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_intersection_impl.h:
-
-/usr/include/boost/lexical_cast/detail/is_character.hpp:
-
-/usr/include/CGAL/Intersection_traits_2.h:
-
-/usr/include/armadillo_bits/fn_vectorise.hpp:
-
-/usr/include/boost/predef/os/unix.h:
-
-/usr/include/Ice/ConnectionIF.h:
-
-/usr/include/armadillo_bits/newarp_SymEigsShiftSolver_bones.hpp:
-
-/usr/include/CGAL/Intersections_3/Plane_3_Ray_3.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/CGAL/Intersections_3/Point_3_Sphere_3.h:
-
-/usr/include/c++/12/bits/uses_allocator.h:
-
-/usr/include/CGAL/Filtered_kernel/internal/Static_filters/Angle_3.h:
-
-/usr/include/Ice/Properties.h:
-
-/usr/include/Eigen/src/Core/Map.h:
-
-/usr/include/boost/mpl/empty.hpp:
-
-/usr/include/boost/mpl/bind.hpp:
-
-/usr/include/CGAL/Origin.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h:
-
-/usr/include/CGAL/Homogeneous/DirectionH2.h:
-
-/usr/include/c++/12/typeindex:
-
-/usr/include/mlpack/core/tree/hollow_ball_bound.hpp:
-
-/usr/include/CGAL/Cartesian/Circle_2.h:
-
 /usr/include/boost/predef/architecture/x86.h:
 
 /usr/include/armadillo_bits/op_logmat_meat.hpp:
@@ -44374,16 +44348,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /usr/include/CGAL/Weighted_point_3.h:
 
-/usr/include/boost/detail/basic_pointerbuf.hpp:
-
-/usr/include/boost/multiprecision/cpp_int/cpp_int_config.hpp:
-
-/usr/include/Ice/Metrics.h:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.cpp:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
-
 /usr/include/x86_64-linux-gnu/gmp.h:
 
 /usr/include/boost/mpl/transform.hpp:
@@ -44391,6 +44355,82 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room_detector.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
+
+/usr/include/boost/predef/architecture/ppc.h:
+
+/usr/include/CGAL/Intersections_3/internal/Ray_3_Ray_3_intersection.h:
+
+/usr/include/boost/fusion/algorithm/query/detail/segmented_find.hpp:
+
+/usr/include/CGAL/Algebraic_extension_traits.h:
+
+/usr/include/boost/type_traits/has_modulus_assign.hpp:
+
+/usr/include/Ice/Incoming.h:
+
+/usr/include/IceUtil/PushDisableWarnings.h:
+
+/usr/include/opencv4/opencv2/video.hpp:
+
+/usr/include/armadillo_bits/spop_min_meat.hpp:
+
+src/ui_mainUI.h:
+
+/usr/include/CGAL/Homogeneous/Homogeneous_base.h:
+
+/usr/include/CGAL/Intersections_3/Segment_3_Sphere_3.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/boost/algorithm/string/std/list_traits.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcalendarwidget.h:
+
+/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
+
+/usr/include/CGAL/Intersections_3/Iso_cuboid_3_Triangle_3.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h:
+
+/usr/include/CGAL/Cartesian_converter.h:
+
+/usr/include/armadillo_bits/field_bones.hpp:
+
+/usr/include/CGAL/Homogeneous/ConicHPA2.h:
+
+/usr/include/boost/algorithm/string/detail/classification.hpp:
+
+/usr/include/boost/type_traits/has_trivial_destructor.hpp:
+
+/usr/include/boost/move/move.hpp:
+
+/usr/include/boost/math/special_functions/gamma.hpp:
+
+/home/robocomp/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h:
+
+/usr/include/boost/fusion/iterator/equal_to.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h:
+
+/usr/include/boost/archive/codecvt_null.hpp:
+
+/usr/include/CGAL/Homogeneous/PointH3.h:
+
+/usr/include/CGAL/Cartesian/Rotation_rep_2.h:
+
+/usr/include/CGAL/predicates_on_points_2.h:
+
+/usr/include/boost/random/binomial_distribution.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+
+/home/robocomp/robocomp/cmake/modules/qt.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
+
+/usr/include/CGAL/Cartesian/Aff_transformation_2.h:
+
+/usr/include/CGAL/Intersections_3/internal/Bbox_3_Plane_3_do_intersect.h:
 
 /usr/include/boost/mpl/distance.hpp:
 
@@ -44403,36 +44443,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 /usr/include/Eigen/src/Core/CwiseBinaryOp.h:
 
 /usr/include/c++/12/unordered_map:
-
-/usr/include/CGAL/Intersections_3/Iso_cuboid_3_Tetrahedron_3.h:
-
-/usr/include/CGAL/FPU.h:
-
-/usr/include/CGAL/Voronoi_diagram_2/Iterator_adaptors.h:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room_detector.cpp:
-
-/usr/include/CGAL/Intersections_3/Segment_3_Triangle_3.h:
-
-/usr/include/c++/12/bits/hashtable.h:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt:
-
-/usr/include/boost/predef/os/beos.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/boost/preprocessor/list/detail/fold_left.hpp:
-
-/usr/include/CGAL/Voronoi_diagram_2/Accessor.h:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h:
-
-/usr/include/boost/math/special_functions/zeta.hpp:
-
-/usr/include/boost/type_traits/has_multiplies.hpp:
 
 /usr/include/mlpack/core/kernels/cosine_distance.hpp:
 
@@ -44496,12 +44506,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /home/robocomp/robocomp/classes/rapplication/rapplication.cpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qundogroup.h:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui:
-
 /usr/include/boost/mpl/is_sequence.hpp:
 
 /usr/include/CGAL/type_traits.h:
@@ -44552,71 +44556,107 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp:
 
 /usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
-/usr/include/armadillo_bits/field_bones.hpp:
+/usr/include/armadillo_bits/podarray_bones.hpp:
 
-/usr/include/CGAL/Homogeneous/ConicHPA2.h:
+src/VisualElementsPub.h:
 
-/usr/include/boost/algorithm/string/detail/classification.hpp:
+/usr/include/boost/multiprecision/detail/functions/trig.hpp:
 
-/usr/include/boost/type_traits/has_trivial_destructor.hpp:
+/usr/include/c++/12/tr1/special_function_util.h:
 
-/usr/include/boost/move/move.hpp:
+/usr/include/CGAL/Intersections_2/internal/Triangle_2_Triangle_2_intersection_impl.h:
 
-/usr/include/boost/math/special_functions/gamma.hpp:
+/usr/include/boost/lexical_cast/detail/is_character.hpp:
 
-/home/robocomp/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h:
+/usr/include/CGAL/Intersection_traits_2.h:
 
-/usr/include/boost/fusion/iterator/equal_to.hpp:
+/usr/include/armadillo_bits/fn_vectorise.hpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h:
+/usr/include/boost/predef/os/unix.h:
 
-/usr/include/Ice/Incoming.h:
+/usr/include/Ice/ConnectionIF.h:
 
-/usr/include/IceUtil/PushDisableWarnings.h:
+/usr/include/armadillo_bits/newarp_SymEigsShiftSolver_bones.hpp:
 
-/usr/include/opencv4/opencv2/video.hpp:
+/usr/include/CGAL/Intersections_3/Plane_3_Ray_3.h:
 
-/usr/include/armadillo_bits/spop_min_meat.hpp:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-src/ui_mainUI.h:
+/usr/include/CGAL/Intersections_3/Point_3_Sphere_3.h:
 
-/usr/include/CGAL/Homogeneous/Homogeneous_base.h:
+/usr/include/c++/12/bits/uses_allocator.h:
 
-/usr/include/CGAL/Intersections_3/Segment_3_Sphere_3.h:
+/usr/include/CGAL/Filtered_kernel/internal/Static_filters/Angle_3.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/Ice/Properties.h:
 
-/usr/include/boost/algorithm/string/std/list_traits.hpp:
+/usr/include/Eigen/src/Core/Map.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcalendarwidget.h:
+/usr/include/boost/mpl/empty.hpp:
 
-/usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
+/usr/include/boost/mpl/bind.hpp:
 
-/usr/include/CGAL/Intersections_3/Iso_cuboid_3_Triangle_3.h:
+/usr/include/CGAL/Origin.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h:
 
-/usr/include/CGAL/Cartesian_converter.h:
+/usr/include/CGAL/Homogeneous/DirectionH2.h:
 
-/usr/include/boost/archive/codecvt_null.hpp:
+/usr/include/c++/12/typeindex:
 
-/usr/include/CGAL/Homogeneous/PointH3.h:
+/usr/include/mlpack/core/tree/hollow_ball_bound.hpp:
 
-/usr/include/CGAL/Cartesian/Rotation_rep_2.h:
+/usr/include/CGAL/Cartesian/Circle_2.h:
 
-/usr/include/CGAL/predicates_on_points_2.h:
+/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h:
 
-/usr/include/boost/random/binomial_distribution.hpp:
+/usr/include/boost/predef/compiler/palm.h:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
 
-/home/robocomp/robocomp/cmake/modules/qt.cmake:
+/usr/include/boost/detail/basic_pointerbuf.hpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
+/usr/include/boost/multiprecision/cpp_int/cpp_int_config.hpp:
 
-/usr/include/CGAL/Cartesian/Aff_transformation_2.h:
+/usr/include/Ice/Metrics.h:
 
-/usr/include/CGAL/Intersections_3/internal/Bbox_3_Plane_3_do_intersect.h:
+/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.cpp:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
+
+/usr/include/boost/mpl/aux_/has_size.hpp:
+
+src/Lidar3D.h:
+
+/usr/include/c++/12/iomanip:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdial.h:
+
+/usr/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/include/armadillo_bits/Glue_bones.hpp:
+
+/usr/include/CGAL/double.h:
+
+/usr/include/Ice/GCObject.h:
+
+/usr/include/boost/serialization/utility.hpp:
+
+/usr/include/c++/12/ostream:
+
+/usr/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp:
+
+/usr/include/boost/fusion/iterator/detail/advance.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Select.h:
+
+/home/robocomp/robocomp/classes/qlog/qlog.cpp:
+
+/usr/include/c++/12/bits/stl_function.h:
+
+src/GenericBase.h:
+
+/usr/include/opencv4/opencv2/opencv_modules.hpp:
 
 /usr/include/armadillo_bits/auxlib_bones.hpp:
 
@@ -44660,28 +44700,6 @@ src/ui_mainUI.h:
 
 /usr/include/CGAL/Distance_2/Point_2_Segment_2.h:
 
-/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h:
-
-/usr/include/boost/predef/compiler/palm.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
-
-/usr/include/boost/serialization/utility.hpp:
-
-/usr/include/c++/12/ostream:
-
-/usr/include/boost/fusion/adapted/mpl/detail/category_of_impl.hpp:
-
-/usr/include/boost/fusion/iterator/detail/advance.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Select.h:
-
-/home/robocomp/robocomp/classes/qlog/qlog.cpp:
-
-/usr/include/c++/12/bits/stl_function.h:
-
-/usr/include/boost/type_traits/integral_constant.hpp:
-
 /usr/include/boost/math/tools/promotion.hpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QMultiMap:
@@ -44711,16 +44729,6 @@ src/ui_mainUI.h:
 /usr/include/boost/fusion/sequence/intrinsic/at_c.hpp:
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
-
-/usr/include/boost/predef/architecture/ppc.h:
-
-/usr/include/CGAL/Intersections_3/internal/Ray_3_Ray_3_intersection.h:
-
-/usr/include/boost/fusion/algorithm/query/detail/segmented_find.hpp:
-
-/usr/include/CGAL/Algebraic_extension_traits.h:
-
-/usr/include/boost/type_traits/has_modulus_assign.hpp:
 
 /usr/include/armadillo_bits/fn_polyval.hpp:
 
@@ -44841,8 +44849,6 @@ src/ui_mainUI.h:
 /usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
 
 /usr/include/boost/type_traits/has_pre_increment.hpp:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h:
 
 /usr/include/CGAL/Voronoi_diagram_2/Cached_degeneracy_testers.h:
 
@@ -44994,42 +45000,6 @@ src/ui_mainUI.h:
 
 /usr/include/CGAL/Cartesian/Iso_rectangle_2.h:
 
-/usr/include/Ice/ConnectionAsync.h:
-
-/usr/include/armadillo_bits/compiler_check.hpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem:
-
-/usr/include/boost/variant/static_visitor.hpp:
-
-/usr/include/CGAL/Iso_rectangle_2.h:
-
-/usr/include/boost/checked_delete.hpp:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vbmivlintrin.h:
-
-/usr/include/CGAL/Distance_2/Point_2_Ray_2.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
-
-/usr/include/CGAL/Kernel/Same_uncertainty.h:
-
-/usr/include/boost/multiprecision/traits/is_variable_precision.hpp:
-
-/usr/include/boost/multiprecision/cpp_int/serialize.hpp:
-
-/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h:
-
-/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
-
-/usr/include/CGAL/Distance_2/Ray_2_Ray_2.h:
-
-/usr/include/CGAL/Simple_homogeneous.h:
-
 /usr/include/CGAL/Cartesian/Line_2.h:
 
 /usr/include/CGAL/predicates/kernel_ftC3.h:
@@ -45045,6 +45015,16 @@ src/ui_mainUI.h:
 /usr/include/boost/math/special_functions/erf.hpp:
 
 /usr/include/CGAL/Cartesian/predicates_on_points_2.h:
+
+/usr/include/armadillo_bits/eOp_meat.hpp:
+
+/usr/include/boost/mpl/multiplies.hpp:
+
+/usr/include/CGAL/Voronoi_diagram_2/Halfedge.h:
+
+/usr/include/CGAL/Voronoi_diagram_2/Vertex.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
 
 /usr/include/CGAL/Cartesian/Plane_3.h:
 
@@ -45092,27 +45072,11 @@ src/ui_mainUI.h:
 
 /usr/include/CGAL/Cartesian/Scaling_rep_2.h:
 
-/usr/include/armadillo_bits/eOp_meat.hpp:
-
-/usr/include/boost/mpl/multiplies.hpp:
-
-/usr/include/CGAL/Voronoi_diagram_2/Halfedge.h:
-
-/usr/include/CGAL/Voronoi_diagram_2/Vertex.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
-
-/usr/include/boost/multiprecision/detail/functions/trig.hpp:
-
-/usr/include/c++/12/tr1/special_function_util.h:
-
 /usr/include/boost/fusion/support/tag_of.hpp:
 
 /usr/include/CGAL/Homogeneous/function_objects.h:
 
 /usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintengine.h:
 
@@ -45245,6 +45209,42 @@ src/ui_mainUI.h:
 /usr/include/IceUtil/Cond.h:
 
 /usr/include/CGAL/IO/io_tags.h:
+
+/usr/include/Ice/ConnectionAsync.h:
+
+/usr/include/armadillo_bits/compiler_check.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem:
+
+/usr/include/boost/variant/static_visitor.hpp:
+
+/usr/include/boost/multiprecision/traits/is_variable_precision.hpp:
+
+/usr/include/boost/multiprecision/cpp_int/serialize.hpp:
+
+/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h:
+
+/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/CGAL/Distance_2/Ray_2_Ray_2.h:
+
+/usr/include/CGAL/Simple_homogeneous.h:
+
+/usr/include/CGAL/Iso_rectangle_2.h:
+
+/usr/include/boost/checked_delete.hpp:
+
+/usr/include/boost/type_traits/is_floating_point.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512vbmivlintrin.h:
+
+/usr/include/CGAL/Distance_2/Point_2_Ray_2.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
+
+/usr/include/CGAL/Kernel/Same_uncertainty.h:
 
 /usr/include/boost/fusion/mpl/clear.hpp:
 
@@ -45916,10 +45916,6 @@ src/obs_person_tracker_autogen/JPJZV43UZ7/moc_abstract_graphic_viewer.cpp:
 
 /usr/include/boost/fusion/adapted/boost_tuple/detail/end_impl.hpp:
 
-/usr/include/boost/random/uniform_real.hpp:
-
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h:
-
 /usr/include/boost/fusion/adapted/mpl/detail/at_impl.hpp:
 
 /usr/include/CGAL/Sqrt_extension/Real_embeddable_traits.h:
@@ -46009,12 +46005,6 @@ src/obs_person_tracker_autogen/JPJZV43UZ7/moc_abstract_graphic_viewer.cpp:
 /usr/include/CGAL/Vector_2.h:
 
 /usr/include/boost/config/no_tr1/cmath.hpp:
-
-/usr/include/armadillo_bits/Glue_bones.hpp:
-
-/usr/include/CGAL/double.h:
-
-/usr/include/boost/config/detail/select_stdlib_config.hpp:
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
@@ -46323,8 +46313,6 @@ src/obs_person_tracker_autogen/JPJZV43UZ7/moc_abstract_graphic_viewer.cpp:
 /usr/include/Ice/Communicator.h:
 
 /usr/include/CGAL/STL_Extension/internal/info_check.h:
-
-/usr/include/Ice/GCObject.h:
 
 /usr/include/Ice/UniquePtr.h:
 
@@ -47152,6 +47140,10 @@ src/Lidar3D.cpp:
 
 /usr/include/boost/type_traits/has_modulus.hpp:
 
+/usr/include/boost/math/special_functions/zeta.hpp:
+
+/usr/include/boost/type_traits/has_multiplies.hpp:
+
 /usr/include/boost/type_traits/has_multiplies_assign.hpp:
 
 /usr/include/boost/type_traits/has_new_operator.hpp:
@@ -47191,6 +47183,8 @@ src/Lidar3D.cpp:
 /usr/include/boost/type_traits/has_virtual_destructor.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/type_traits/integral_promotion.hpp:
 
@@ -47736,10 +47730,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp:
 
 /usr/include/c++/12/functional:
 
-/usr/include/c++/12/iomanip:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdial.h:
-
 /usr/include/c++/12/ios:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qundoview.h:
@@ -47972,8 +47962,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp:
 
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
 
-/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h:
-
 /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/Core/Product.h:
@@ -48110,9 +48098,9 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp:
 
 /usr/include/armadillo_bits/operator_cube_times.hpp:
 
-/usr/include/CGAL/Kernel/mpl.h:
-
 /usr/include/CGAL/Intersections_3/internal/Point_3_Sphere_3_do_intersect.h:
+
+/usr/include/CGAL/Kernel/mpl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h:
 
@@ -48379,8 +48367,6 @@ src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp:
 /usr/include/boost/mpl/clear.hpp:
 
 /usr/include/opencv4/opencv2/opencv.hpp:
-
-/usr/include/opencv4/opencv2/opencv_modules.hpp:
 
 /usr/include/opencv4/opencv2/photo.hpp:
 
@@ -49055,6 +49041,8 @@ src/Camera360RGB.h:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QShortcut:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGuiDepends:
 

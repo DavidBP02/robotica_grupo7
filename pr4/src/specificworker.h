@@ -54,8 +54,6 @@ class SpecificWorker : public GenericWorker
         void emergency();
         void restore();
         int startup_check();
-        void viewerSlot(QPointF);
-
 
     private:
         bool startup_check_flag;
@@ -70,7 +68,7 @@ class SpecificWorker : public GenericWorker
             float ADVANCE_THRESHOLD = ROBOT_WIDTH * 3; // mm
             float LIDAR_FRONT_SECTION = 0.2; // rads, aprox 12 degrees
             // person
-            float PERSON_MIN_DIST = 800; // mm
+            float PERSON_MIN_DIST = 2000; // mm
             int MAX_DIST_POINTS_TO_SHOW = 300; // points to show in plot
             // lidar
             std::string LIDAR_NAME_LOW = "bpearl";
@@ -135,7 +133,7 @@ class SpecificWorker : public GenericWorker
         void plot_distance(double distance);
 
         //Grid
-        	enum class State {Occupied, Free, Unknown};
+        	enum class State {Occupied, Free, Unknown, Person};
         	using position2d = std::pair<int, int>;
             position2d position;
             struct TCell
@@ -153,23 +151,23 @@ class SpecificWorker : public GenericWorker
             Eigen::Vector2f grid_to_float(position2d x);
             std::optional<SpecificWorker::position2d> float_to_grid(Eigen::Vector2f x);
             void draw_state(void);
-            void viewerSlot_compute(QPointF p);
+            void viewerSlot_compute(std::expected<RoboCompVisualElementsPub::TObject, std::string> tp_person, QPointF p);
             void draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene, bool solo_limpiar);
-                char * state_to_string(SpecificWorker::State a);
-                    std::vector<SpecificWorker::position2d> dijkstra(position2d start, position2d goal);
-                struct position2dHash {
-                    size_t operator()(const position2d& p) const {
-                    return std::hash<int>()(p.first) ^ std::hash<int>()(p.second);
-                    }
-                };
-                struct Cell {
-                    int cost;  // Costo de la celda (1 para libre, INF para ocupado)
-                    position2d position;
-                    bool operator>(const Cell& other) const {
-                        return cost > other.cost;
-                    }
-                };
-               bool grid_index_valid(const SpecificWorker::position2d& index);
+            const char * state_to_string(SpecificWorker::State a);
+                std::vector<SpecificWorker::position2d> dijkstra(position2d start, position2d goal);
+            struct position2dHash {
+                size_t operator()(const position2d& p) const {
+                return std::hash<int>()(p.first) ^ std::hash<int>()(p.second);
+                }
+            };
+            struct Cell {
+                int cost;  // Costo de la celda (1 para libre, INF para ocupado)
+                position2d position;
+                bool operator>(const Cell& other) const {
+                    return cost > other.cost;
+                }
+            };
+           bool grid_index_valid(const SpecificWorker::position2d& index);
 
 
 

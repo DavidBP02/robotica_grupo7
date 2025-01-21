@@ -1,17 +1,18 @@
 /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
   /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/config.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/dbscan.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericworker.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room_detector.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h \

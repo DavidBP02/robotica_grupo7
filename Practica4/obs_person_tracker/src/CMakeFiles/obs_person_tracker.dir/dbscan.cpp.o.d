@@ -1,7 +1,7 @@
 src/CMakeFiles/obs_person_tracker.dir/dbscan.cpp.o: \
- /home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/dbscan.cpp \
+ /home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/dbscan.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/dbscan.h \
+ /home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/dbscan.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -2075,6 +2075,7 @@ src/CMakeFiles/obs_person_tracker.dir/dbscan.cpp.o: \
  /usr/include/boost/predef/platform/android.h \
  /usr/include/boost/math/special_functions/fpclassify.hpp \
  /usr/include/boost/math/tools/real_cast.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/quadmath.h \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
  /usr/include/boost/utility/declval.hpp \
  /usr/include/boost/math/constants/calculate_constants.hpp \

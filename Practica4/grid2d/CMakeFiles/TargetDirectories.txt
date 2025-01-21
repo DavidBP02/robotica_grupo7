@@ -12,5 +12,4 @@
 /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeFiles/install.dir
 /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeFiles/install/local.dir
 /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeFiles/install/strip.dir
-/home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeFiles/grid2d_autogen_timestamp_deps.dir
 /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/CMakeFiles/grid2d_autogen.dir

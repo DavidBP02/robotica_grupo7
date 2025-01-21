@@ -4,16 +4,17 @@
 /home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
  mmc:Q_OBJECT
  mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/config.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/config.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/Ice/AsyncResult.h
  mdp:/usr/include/Ice/BatchRequestQueueF.h
@@ -416,6 +417,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h
@@ -745,6 +747,31 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachine.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h
  mdp:/usr/include/x86_64-linux-gnu/sys/cdefs.h
  mdp:/usr/include/x86_64-linux-gnu/sys/select.h
  mdp:/usr/include/x86_64-linux-gnu/sys/syscall.h
@@ -844,7 +871,7 @@
 /home/robocomp/robocomp/classes/qcustomplot/qcustomplot.h
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/classes/qcustomplot/qcustomplot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
@@ -1746,7 +1773,7 @@
 /home/robocomp/robocomp/classes/sigwatch/sigwatch.h
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/classes/sigwatch/sigwatch.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -2114,17 +2141,18 @@
 /home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
  mmc:Q_OBJECT
  mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/config.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/config.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/Ice/Application.h
  mdp:/usr/include/Ice/AsyncResult.h
@@ -2577,6 +2605,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h
@@ -2906,6 +2935,31 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachine.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h
  mdp:/usr/include/x86_64-linux-gnu/sys/cdefs.h
  mdp:/usr/include/x86_64-linux-gnu/sys/select.h
  mdp:/usr/include/x86_64-linux-gnu/sys/syscall.h
@@ -3004,25 +3058,26 @@
 /home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
  mmc:Q_OBJECT
  mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/config.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/dbscan.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room_detector.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/threadpool/threadpool.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/config.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/dbscan.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/room.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/room_detector.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/qlog/qlog.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/threadpool/threadpool.h
  mdp:/usr/include/CGAL/Aff_transformation_2.h
  mdp:/usr/include/CGAL/Aff_transformation_3.h
  mdp:/usr/include/CGAL/Algebraic_extension_traits.h
@@ -5859,15 +5914,22 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCommonStyle
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsLineItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollerProperties
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QtWidgets
@@ -6095,7 +6157,7 @@
 /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -6475,7 +6537,7 @@
 /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -6928,18 +6990,19 @@
 /home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
  mmc:Q_OBJECT
  mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/config.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
- mdp:/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/config.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
+ mdp:/home/usuario/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
+ mdp:/home/usuario/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/Ice/Application.h
  mdp:/usr/include/Ice/AsyncResult.h
@@ -7392,6 +7455,7 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h
@@ -7721,6 +7785,31 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachine.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlcdnumber.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h
  mdp:/usr/include/x86_64-linux-gnu/sys/cdefs.h
  mdp:/usr/include/x86_64-linux-gnu/sys/select.h
  mdp:/usr/include/x86_64-linux-gnu/sys/syscall.h

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.cpp" "src/CMakeFiles/obs_person_tracker.dir/Camera360RGB.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/Camera360RGB.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.cpp" "src/CMakeFiles/obs_person_tracker.dir/CommonBehavior.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/CommonBehavior.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.cpp" "src/CMakeFiles/obs_person_tracker.dir/GenericBase.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/GenericBase.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.cpp" "src/CMakeFiles/obs_person_tracker.dir/Lidar3D.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/Lidar3D.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.cpp" "src/CMakeFiles/obs_person_tracker.dir/OmniRobot.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/OmniRobot.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.cpp" "src/CMakeFiles/obs_person_tracker.dir/VisualElementsPub.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/VisualElementsPub.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.cpp" "src/CMakeFiles/obs_person_tracker.dir/Camera360RGB.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/Camera360RGB.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.cpp" "src/CMakeFiles/obs_person_tracker.dir/CommonBehavior.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/CommonBehavior.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.cpp" "src/CMakeFiles/obs_person_tracker.dir/GenericBase.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/GenericBase.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.cpp" "src/CMakeFiles/obs_person_tracker.dir/Lidar3D.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/Lidar3D.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.cpp" "src/CMakeFiles/obs_person_tracker.dir/OmniRobot.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/OmniRobot.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.cpp" "src/CMakeFiles/obs_person_tracker.dir/VisualElementsPub.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/VisualElementsPub.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp" "src/CMakeFiles/obs_person_tracker.dir/commonbehaviorI.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/commonbehaviorI.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/dbscan.cpp" "src/CMakeFiles/obs_person_tracker.dir/dbscan.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/dbscan.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.cpp" "src/CMakeFiles/obs_person_tracker.dir/genericmonitor.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/genericmonitor.cpp.o.d"
@@ -25,7 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/robocomp/robocomp/classes/rapplication/rapplication.cpp" "src/CMakeFiles/obs_person_tracker.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.d"
   "/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp" "src/CMakeFiles/obs_person_tracker.dir/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/main.cpp" "src/CMakeFiles/obs_person_tracker.dir/main.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/main.cpp.o.d"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/mocs_compilation.cpp" "src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilation.cpp.o.d"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/mocs_compilation.cpp" "src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilation.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/room_detector.cpp" "src/CMakeFiles/obs_person_tracker.dir/room_detector.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/room_detector.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.cpp" "src/CMakeFiles/obs_person_tracker.dir/specificmonitor.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/specificmonitor.cpp.o.d"
   "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp" "src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o" "gcc" "src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o.d"
@@ -35,12 +35,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.cpp"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.cpp"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.cpp"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.cpp"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.cpp"
-  "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h" "/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/GenericBase.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.cpp"
+  "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h" "/home/usuario/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.cpp"
   )
 
 

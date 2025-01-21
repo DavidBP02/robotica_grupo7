@@ -42,8 +42,6 @@ file(REMOVE_RECURSE
   "Grid2D.h"
   "Lidar3D.cpp"
   "Lidar3D.h"
-  "grid2d_autogen/mocs_compilation.cpp"
-  "grid2d_autogen/timestamp"
   "ui_mainUI.h"
 )
 

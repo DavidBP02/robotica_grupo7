@@ -14,64 +14,64 @@ obs_person_tracker_autogen/timestamp: \
 	/home/robocomp/robocomp/cmake/modules/opencv4.cmake \
 	/home/robocomp/robocomp/cmake/modules/qt.cmake \
 	/home/robocomp/robocomp/cmake/robocomp.cmake \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/CMakeLists.txt \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/CMakeListsSpecific.txt \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/Lidar3D.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/commonbehaviorI.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/commonbehaviorI.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/config.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/dbscan.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/dbscan.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/genericmonitor.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/genericmonitor.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/genericworker.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/genericworker.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/main.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/specificmonitor.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/specificmonitor.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/specificworker.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/specificworker.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/visibility_graph.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/visibility_graph.h \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/visualelementspubI.cpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/visualelementspubI.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h \
-	/home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/threadpool/threadpool.h \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeParseArguments.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FeatureSummary.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindIce.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPkgConfig.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindVulkan.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/MacroAddFileDependencies.cmake \
-	/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Grid2D.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/CMakeLists.txt \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/CMakeListsSpecific.txt \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/commonbehaviorI.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/commonbehaviorI.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/config.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/dbscan.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/dbscan.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/genericmonitor.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/genericmonitor.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/genericworker.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/genericworker.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/main.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/room.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/room_detector.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/room_detector.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificmonitor.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificmonitor.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificworker.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificworker.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visibility_graph.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visibility_graph.h \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visualelementspubI.cpp \
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visualelementspubI.h \
+	/home/robocomp/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+	/home/robocomp/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h \
+	/home/robocomp/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
+	/home/robocomp/robocomp/robocomp_core/classes/qcustomplot/qcustomplot.h \
+	/home/robocomp/robocomp/robocomp_core/classes/qlog/qlog.h \
+	/home/robocomp/robocomp/robocomp_core/classes/threadpool/threadpool.h \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeParseArguments.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXCompilerFlag.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckLibraryExists.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FeatureSummary.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindIce.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenGL.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPkgConfig.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindVulkan.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckFlagCommonConfig.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/MacroAddFileDependencies.cmake \
+	/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake \
 	/usr/include/CGAL/Aff_transformation_2.h \
 	/usr/include/CGAL/Aff_transformation_3.h \
 	/usr/include/CGAL/Algebraic_extension_traits.h \
@@ -3336,5 +3336,5 @@ obs_person_tracker_autogen/timestamp: \
 	/usr/local/include/cppitertools/enumerate.hpp \
 	/usr/local/include/cppitertools/internal/iterator_wrapper.hpp \
 	/usr/local/include/cppitertools/internal/iterbase.hpp \
-	/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/mainUI.ui \
-	/snap/clion/305/bin/cmake/linux/x64/bin/cmake
+	/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/mainUI.ui \
+	/snap/clion/308/bin/cmake/linux/x64/bin/cmake

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/305/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/308/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/305/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker
+CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug
 
 # Utility rule file for obs_person_tracker_autogen.
 
@@ -71,9 +71,9 @@ src/CMakeFiles/obs_person_tracker_autogen: src/obs_person_tracker_autogen/timest
 src/obs_person_tracker_autogen/timestamp: /usr/lib/qt6/libexec/moc
 src/obs_person_tracker_autogen/timestamp: /usr/lib/qt6/libexec/uic
 src/obs_person_tracker_autogen/timestamp: src/CMakeFiles/obs_person_tracker_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target obs_person_tracker"
-	cd /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src && /snap/clion/305/bin/cmake/linux/x64/bin/cmake -E cmake_autogen /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/CMakeFiles/obs_person_tracker_autogen.dir/AutogenInfo.json Debug
-	cd /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src && /snap/clion/305/bin/cmake/linux/x64/bin/cmake -E touch /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target obs_person_tracker"
+	cd /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src && /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_autogen /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CMakeFiles/obs_person_tracker_autogen.dir/AutogenInfo.json Debug
+	cd /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src && /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E touch /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/timestamp
 
 obs_person_tracker_autogen: src/CMakeFiles/obs_person_tracker_autogen
 obs_person_tracker_autogen: src/obs_person_tracker_autogen/timestamp
@@ -85,10 +85,10 @@ src/CMakeFiles/obs_person_tracker_autogen.dir/build: obs_person_tracker_autogen
 .PHONY : src/CMakeFiles/obs_person_tracker_autogen.dir/build
 
 src/CMakeFiles/obs_person_tracker_autogen.dir/clean:
-	cd /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/obs_person_tracker_autogen.dir/cmake_clean.cmake
+	cd /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/obs_person_tracker_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/obs_person_tracker_autogen.dir/clean
 
 src/CMakeFiles/obs_person_tracker_autogen.dir/depend:
-	cd /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/CMakeFiles/obs_person_tracker_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CMakeFiles/obs_person_tracker_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/obs_person_tracker_autogen.dir/depend
 

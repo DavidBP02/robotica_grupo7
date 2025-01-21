@@ -54,6 +54,7 @@ class SpecificWorker : public GenericWorker
         void emergency();
         void restore();
         int startup_check();
+        void draw_path(const std::vector<RoboCompGrid2D::TPoint> &path);
 
     private:
         bool startup_check_flag;
@@ -61,9 +62,9 @@ class SpecificWorker : public GenericWorker
         {
             float ROBOT_WIDTH = 460;  // mm
             float ROBOT_LENGTH = 480;  // mm
-            float MAX_ADV_SPEED = 1900; // mm/s
-            float MAX_ROT_SPEED = 2; // rad/s
-            float SEARCH_ROT_SPEED = 0.9; // rad/s
+            float MAX_ADV_SPEED = 750; // mm/s
+            float MAX_ROT_SPEED = 0.5; // rad/s
+            float SEARCH_ROT_SPEED = 0.5; // rad/s
             float STOP_THRESHOLD = 700; // mm
             float ADVANCE_THRESHOLD = ROBOT_WIDTH * 3; // mm
             float LIDAR_FRONT_SECTION = 0.2; // rads, aprox 12 degrees
@@ -90,15 +91,14 @@ class SpecificWorker : public GenericWorker
         using RetVal = std::tuple<STATE, float, float>;
         using RobotSpeed = std::tuple<float, float>;
         using TPerson = std::expected<RoboCompVisualElementsPub::TObject, std::string>;
-        RetVal track(vector<Eigen::Vector2f> path);
-        RetVal wait(const TPerson &person);
-        RetVal search(const TPerson &person);
+        using Tpath = std::vector<Eigen::Vector2f> ;
+        RetVal track(const Tpath &path);
+        RetVal wait(const Tpath &path);
+        RetVal search(const Tpath &path);
         RetVal stop();
-        RobotSpeed state_machine(const TPerson &person, vector<Eigen::Vector2f> path);
+        RobotSpeed state_machine(const Tpath &path);
 
-        // lidar
-        std::vector<Eigen::Vector2f> read_lidar_bpearl();
-        std::vector<Eigen::Vector2f> read_lidar_helios();
+        std::vector<QGraphicsItem*> path_items; // Ítems gráficos para la ruta
 
         // draw
         AbstractGraphicViewer *viewer;
@@ -131,6 +131,7 @@ class SpecificWorker : public GenericWorker
         // QCustomPlot object
         QCustomPlot *plot;
         void plot_distance(double distance);
+
 
     float running_average(float dist);
 };

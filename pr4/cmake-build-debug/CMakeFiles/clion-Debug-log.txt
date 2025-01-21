@@ -70,6 +70,6 @@ CMake Warning at src/CMakeLists.txt:19 (MESSAGE):
 -- BU ice=>h/cpp: Adding rule to generate OmniRobot.h and OmniRobot.cpp from /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.ice
 -- BU ice=>h/cpp: Adding rule to generate VisualElementsPub.h and VisualElementsPub.cpp from /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.ice
 -- Generating header file from mainUI.ui
--- Configuring done (0.5s)
+-- Configuring done (0.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug

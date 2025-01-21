@@ -1,12 +1,12 @@
 {
-	"BUILD_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/obs_person_tracker_autogen",
-	"CMAKE_BINARY_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src",
+	"BUILD_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/obs_person_tracker_autogen",
+	"CMAKE_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CMakeLists.txt",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CMakeLists.txt",
 		"/home/robocomp/robocomp/cmake/robocomp.cmake",
 		"/home/robocomp/robocomp/cmake/modules/qt.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
@@ -504,7 +504,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineTargets-none.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineVersionlessTargets.cmake",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CMakeListsSpecific.txt",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CMakeListsSpecific.txt",
 		"/home/robocomp/robocomp/cmake/modules/opencv4.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake",
@@ -530,7 +530,7 @@
 		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker",
+	"CMAKE_SOURCE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
@@ -572,69 +572,68 @@
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/commonbehaviorI.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/commonbehaviorI.h",
 			"MU",
 			"EWIEGA46WW/moc_commonbehaviorI.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/dbscan.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/dbscan.h",
 			"MU",
 			"EWIEGA46WW/moc_dbscan.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/genericmonitor.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/genericmonitor.h",
 			"MU",
 			"EWIEGA46WW/moc_genericmonitor.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/genericworker.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/genericworker.h",
 			"MU",
 			"EWIEGA46WW/moc_genericworker.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/room_detector.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/room_detector.h",
 			"MU",
 			"EWIEGA46WW/moc_room_detector.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/specificmonitor.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificmonitor.h",
 			"MU",
 			"EWIEGA46WW/moc_specificmonitor.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/specificworker.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificworker.h",
 			"MU",
 			"EWIEGA46WW/moc_specificworker.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visibility_graph.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.h",
 			"MU",
 			"EWIEGA46WW/moc_visibility_graph.cpp",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visualelementspubI.h",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visualelementspubI.h",
 			"MU",
 			"EWIEGA46WW/moc_visualelementspubI.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/obs_person_tracker_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/obs_person_tracker_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/obs_person_tracker_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/obs_person_tracker_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"ICE_CPP11_MAPPING",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NO_DEBUG",
 		"QT_OPENGL_LIB",
 		"QT_STATEMACHINE_LIB",
 		"QT_WIDGETS_LIB",
@@ -649,11 +648,11 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src",
 		"/opt/robocomp/include",
 		"/classes",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker",
 		"/home/robocomp/robocomp/classes",
 		"/home/robocomp/robocomp/libs",
 		"/home/robocomp/robocomp/interfaces",
@@ -686,26 +685,27 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/obs_person_tracker_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/obs_person_tracker_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/Camera360RGB.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/GenericBase.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/OmniRobot.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/VisualElementsPub.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/ui_mainUI.h"
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Camera360RGB.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CommonBehavior.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/GenericBase.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Grid2D.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Lidar3D.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/OmniRobot.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/VisualElementsPub.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/ui_mainUI.h"
 	],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 16,
-	"PARSE_CACHE_FILE" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CMakeFiles/obs_person_tracker_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CMakeFiles/obs_person_tracker_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CMakeFiles/obs_person_tracker_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CMakeFiles/obs_person_tracker_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
@@ -731,52 +731,52 @@
 		],
 		[ "/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/commonbehaviorI.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/commonbehaviorI.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/dbscan.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/dbscan.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/genericmonitor.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/genericmonitor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/genericworker.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/genericworker.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/main.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/room_detector.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/room_detector.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/specificmonitor.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificmonitor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/specificworker.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificworker.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visibility_graph.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/visualelementspubI.cpp",
+			"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visualelementspubI.cpp",
 			"MU",
 			null
 		]
@@ -785,14 +785,15 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/Camera360RGB.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/CommonBehavior.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/GenericBase.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/Lidar3D.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/OmniRobot.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/VisualElementsPub.cpp",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/mainUI.ui",
-		"/home/usuario/robocomp/components/G10_Robotica/Practica_3/obs_person_tracker/src/ui_mainUI.h"
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Camera360RGB.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/CommonBehavior.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/GenericBase.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Grid2D.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Lidar3D.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/OmniRobot.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/VisualElementsPub.cpp",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/mainUI.ui",
+		"/home/usuario/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/ui_mainUI.h"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

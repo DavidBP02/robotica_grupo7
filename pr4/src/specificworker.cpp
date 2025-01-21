@@ -41,54 +41,88 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
 	return true;
 }
-void SpecificWorker::initialize()
+
+std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_bpearl()
 {
-	std::cout << "Initialize worker" << std::endl;
-	if(this->startup_check_flag)
-	{
-		this->startup_check();
-	}
-	else
-	{
-		this->setPeriod(STATES::Compute, 100);
-		//this->setPeriod(STATES::Emergency, 500);
-		/*In the initialize() method, run over all the elements of the array initializing each cell.
-		 *Create a graphic element using the scene->rect(...) method and store the resulting point
-		 *in the TCell field. Position each rectangle to its correct place in the canvas and set the color to light_grey.*/
-//		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, 2500, 10000, -5000}0i//);
-		viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, -5000, 10000, 10000});
-        viewer->setStyleSheet("background-color: lightGray;");
-	    auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
-        robot_draw = r;
-		this->resize(800, 700);
-        viewer->show();
-        QPen pen(QColor("blue"), 15);
-		for (const auto &[i, row]: grid | iter::enumerate)
-			for (const auto &[j, cell]: row | iter::enumerate)
-			{
-				//cell.state = State::Unknown;
-				auto p = grid_to_float({i, j});
-				cell.item  = viewer->scene.addRect(QRectF{p.x() - 50, p.y() - 50, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
-				//printf("%f, %f, %lu, %lu\n", p.x(), p.y(), i, j);
-			}
-
-   		connect(viewer, SIGNAL(new_mouse_coordinates(QPointF)), this, SLOT(viewerSlot(QPointF)));
-		#ifdef HIBERNATION_ENABLED
-			hibernationChecker.start(500);
-		#endif
-
-		this->setPeriod(STATES::Compute, 100);
-		//this->setPeriod(STATES::Emergency, 500);
-	}
+    try
+    {
+        auto ldata =  lidar3d1_proxy->getLidarData("bpearl", 0, 2*M_PI, 1);
+        // filter points according to height and distance
+        std::vector<Eigen::Vector2f>  p_filter;
+        for(const auto &a: ldata.points)
+        {
+            if(a.z < 500 and a.distance2d > 200)
+                p_filter.emplace_back(a.x, a.y);
+        }
+        return p_filter;
+    }
+    catch(const Ice::Exception &e){std::cout << e << std::endl;}
+    return {};
 }
+std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_helios()
+{
+    try
+    {
+
+        auto ldata =  lidar3d_proxy->getLidarData("helios", 0, 2*M_PI, 2);
+        // filter points according to height and distance
+        std::vector<Eigen::Vector2f> p_filter;
+        for(const auto &a: ldata.points)
+        {
+            if(a.z > 1300 and a.distance2d > 200)
+                p_filter.emplace_back(a.x, a.y);
+        }
+
+        return p_filter;
+    }
+    catch(const Ice::Exception &e){std::cout << e << std::endl;}
+    return {};
+}
+
+
+
+
+
+
+
+
+
+
+
+void SpecificWorker::initialize(){
+	if(this->startup_check_flag){
+		this->startup_check();
+	    return;
+	}
+    omnirobot_proxy->setSpeedBase(0.f, 0, 0);
+	viewer = new AbstractGraphicViewer(this->frame, QRectF{-5000, -5000, 10000, 10000});
+    viewer->setStyleSheet("background-color: lightGray;");
+	auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
+    //robot_draw = r;
+	this->resize(800, 700);
+    viewer->show();
+    QPen pen(QColor("blue"), 15);
+	for (const auto &[i, row]: grid | iter::enumerate)
+		for (const auto &[j, cell]: row | iter::enumerate){
+			auto p = grid_to_float({i, j});
+			cell.item  = viewer->scene.addRect(QRectF{p.x() - 50, p.y() - 50, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
+		}
+
+	#ifdef HIBERNATION_ENABLED
+		hibernationChecker.start(500);
+	#endif
+
+	this->setPeriod(STATES::Compute, 100);
+}
+
 Eigen::Vector2f SpecificWorker::grid_to_float(SpecificWorker::position2d x){
 	Eigen::Vector2f tmp;
-	tmp.x() = -4950 + x.first * 100;
-	tmp.y() =  4950 - x.second  * 100;
+	tmp.x() = -4950 + x.first  * 100;
+	tmp.y() =  4950 - x.second * 100;
 	return tmp;
 }
-std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::Vector2f x)
-{
+
+std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::Vector2f x){
 	SpecificWorker::position2d tmp;
 	if (x.x() > 5000 || x.x() < -5000 || x.y() > 5000 || x.y() < -5000)
 		return std::nullopt;
@@ -96,20 +130,21 @@ std::optional<SpecificWorker::position2d> SpecificWorker::float_to_grid(Eigen::V
 	tmp.second = (5000 - x.y()) / 100;
 	return tmp;
 }
-char * SpecificWorker::state_to_string(SpecificWorker::State a){
-        switch(a){
-		        case State::Unknown:
+const char * SpecificWorker::state_to_string(SpecificWorker::State a){
+    switch(a){
+        case State::Unknown:
 	        return "Unknown";
-		        case State::Occupied:
-		        return "Occupied";
-   		            break;
-		        case State::Free:
+        case State::Occupied:
+		    return "Occupied";
+        case State::Free:
 	        return "Free";
-	        }
+        case State::Person:
+            return "Free";
+    }
 }
 void SpecificWorker::draw_state(void){
-	for (int i =0; i< grid.size(); i++) {
-		for (int j=0; j<grid[i].size(); j++) {
+	for (int i = 0; i< grid.size(); i++) {
+		for (int j = 0; j<grid[i].size(); j++) {
 		    switch(grid[i][j].state){
 		        case State::Unknown:
 		            grid[i][j].item->setBrush(QColor("grey"));
@@ -120,22 +155,19 @@ void SpecificWorker::draw_state(void){
 		        case State::Free:
                     grid[i][j].item->setBrush(QColor("white"));
                     break;
-		    }
+                case State::Person:
+                    grid[i][j].item->setBrush(QColor("yellow"));
+                    break;
+            }
 		}
 	}
 }
+
 static bool hacer_camino = false;
 static QPointF p_;
-void SpecificWorker::viewerSlot(QPointF p)
-{
-    hacer_camino = true;
-    p_ = p;
-}
 
-void SpecificWorker::viewerSlot_compute(QPointF p)
-{
-    qDebug() << "1 Coordenadas reales clicadas:" << p;
-	std::vector<SpecificWorker::position2d> path;
+void SpecificWorker::viewerSlot_compute(std::expected<RoboCompVisualElementsPub::TObject, std::string> tp_person, QPointF p){
+    std::vector<SpecificWorker::position2d> path;
     auto maybe_position2d = float_to_grid({p.x(), p.y()});
     //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
     if (!maybe_position2d)
@@ -144,7 +176,7 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
     printf("ESTADO DE LA CASILLA CLICKADA(%d(%f), %d(%f)): %s\n", p.x(), p.y(), index.x(), index.y(), state_to_string(grid[index.x()][index.y()].state));
 
 	if (grid[index.x()][index.y()].state == State::Occupied) {
-		draw_path(path, &viewer->scene, true);
+		//draw_path(path, &viewer->scene, true);
 		return;
 	}
     //const QPoint index = real_to_index(p.x(), p.y());
@@ -166,9 +198,26 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
 
 	if(path.empty()) {
 		draw_path(path, &viewer->scene, true);
+	    search(tp_person);
 	} else {
 		draw_path(path, &viewer->scene, false);
-	}
+        std::vector<Eigen::Matrix<float, 2, 1>> path_en_coords_float;
+        printf("PATH (%d pasos)\n", path.size());
+        for (std::size_t i = 0; i < path.size(); ++i) {
+            // Print the index and the pair before conversion
+            auto f = grid_to_float({path[i].first, path[i].second});
+            printf("\t%d %d %d %f %f\n", i, path[i].first, path[i].second, f.x(), f.y());
+
+            // Convert the pair and add to the output
+            path_en_coords_float.push_back(f);
+        }
+        for (const auto& p : path) {
+        }
+	    state = STATE::TRACK;
+        const auto &[adv, rot] = state_machine(tp_person, path_en_coords_float);
+       try{ omnirobot_proxy->setSpeedBase(0.f, adv, rot); }
+        catch(const Ice::Exception &e){std::cout << e << std::endl;}
+    }
 }
 std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker::position2d start, SpecificWorker::position2d goal){
     // Mapa para almacenar el costo mínimo de cada celda
@@ -238,8 +287,8 @@ void SpecificWorker::draw_path(const std::vector<SpecificWorker::position2d> &pa
 		items.clear();
 		const auto color = QColor(Qt::darkBlue);
 		const auto brush = QBrush(QColor(Qt::darkBlue));
-		for(const auto &p : path){
-			auto pfloat = grid_to_float({p.first, p.second});
+		for (size_t i = 0; i < path.size(); i++) {
+			auto pfloat = grid_to_float({path[i].first, path[i].second});
 			auto item = scene->addRect(-50, -50, 100, 100, color, brush);
 			item->setPos(pfloat.x(), pfloat.y());
 			items.push_back(item);
@@ -256,17 +305,6 @@ void SpecificWorker::compute(){
 
     auto ldata_helios = read_lidar_helios();
     if(ldata_helios.empty()) { qWarning() << __FUNCTION__ << "Empty helios lidar data"; return; };
-    //draw_lidar(ldata.points, &viewer->scene);
-
-    /// wall lines
-    auto lines = detect_wall_lines(ldata_helios, &viewer->scene);
-
-    /// remove wall points
-    auto bpearl = remove_wall_points(lines, ldata_bpearl);
-    draw_lidar(bpearl, &viewer->scene);
-
-    /// find obstacles
-    auto obstacles = rc::dbscan(bpearl, params.ROBOT_WIDTH, 2);
 
     /// check if there is new YOLO data in buffer
     std::expected<RoboCompVisualElementsPub::TObject, std::string> tp_person = std::unexpected("No person found");
@@ -274,114 +312,48 @@ void SpecificWorker::compute(){
     if(data_.has_value())
         tp_person = find_person_in_data(data_.value().objects);
 
-    /// remove person from obstacles
-    if(tp_person)
-        obstacles = find_person_polygon_and_remove(tp_person.value(), obstacles);
-
-    /// enlarge obstacles
-    obstacles = enlarge_polygons(obstacles, params.ROBOT_WIDTH/2);
-    draw_obstacles(obstacles, &viewer->scene, Qt::darkMagenta);
-
-    /// get walls as polygons
-    std::vector<QPolygonF> wall_obs = get_walls_as_polygons(lines, params.ROBOT_WIDTH/4);
-    obstacles.insert(obstacles.end(), wall_obs.begin(), wall_obs.end());
-
-    /// compute an obstacle free path
-    if(tp_person) {
-        Eigen::Vector2f goal{std::stof(tp_person.value().attributes.at("x_pos")), std::stof(tp_person.value().attributes.at("y_pos"))};
-        std::vector<Eigen::Vector2f> path = rc::VisibilityGraph().generate_path(Eigen::Vector2f::Zero(),
-                                                                                goal,
-                                                                                obstacles,
-                                                                                params.ROBOT_WIDTH / 2,
-                                                                                nullptr);
-        draw_path_to_person(path, &viewer->scene);
-
-        // call state machine to track person
-        const auto &[adv, rot] = state_machine(tp_person, path);
-        // plot on UI
-        float d = std::hypot(std::stof(tp_person.value().attributes.at("x_pos")),
-                                 std::stof(tp_person.value().attributes.at("y_pos")));
-        plot_distance(running_average(d) - params.PERSON_MIN_DIST);
-        lcdNumber_dist_to_person->display(d);
-        lcdNumber_angle_to_person->display(atan2(std::stof(tp_person.value().attributes.at("x_pos")),
-                                                 std::stof(tp_person.value().attributes.at("y_pos"))));
-        lcdNumber_adv->display(adv);
-        lcdNumber_rot->display(rot);
-
-        // move the robot
-        try{ omnirobot_proxy->setSpeedBase(0.f, adv, rot); }
-        catch(const Ice::Exception &e){std::cout << e << std::endl;}
-    }
-    	auto lidar_points = read_lidar_bpearl();  // Fetch filtered LiDAR points
-	draw_lidar(lidar_points, &viewer->scene);
+	draw_lidar(ldata_bpearl, &viewer->scene);
 
 	for (int i =0; i< grid.size(); i++) {
 		for (int j=0; j<grid[i].size(); j++) {
 			grid[i][j].state = State::Unknown;
 		}
 	}
-	for (const auto& point : lidar_points){
+
+    std::optional<SpecificWorker::position2d> maybe_position2d, maybe_posicion_persona_en_el_grid;
+	for (const auto& point : ldata_helios){
 		const float distance = std::hypot(point.x(), point.y());
 		const float delta = 1.0f / (distance / 100);  // Tamaño del paso en la parábola
-		std::optional<SpecificWorker::position2d> maybe_position2d;
-		for (float k = 0; k <= 1.1f; k += delta){
+		//for (float k = 0; k <= 1.1f; k += delta){
+	    for (float k = 0; k <= 1.0f; k += delta){
 			maybe_position2d = float_to_grid(point * k);
 			if (!maybe_position2d)
 				continue;
-	        if(k > 0.9f){
-	            grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Occupied;
-	        } else{
-	        	grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Free;
-            }
+	        if (k >= 1.0f - delta) // Estoy en la última iteración
+                grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Occupied;
+	        else {
+	            grid[maybe_position2d.value().first][maybe_position2d.value().second].state = State::Free;
+	        }
 	    }
 	}
-	// Cambiar el color de las celdas en la cuadrícula
+    
+    if(tp_person){
+        maybe_position2d = float_to_grid({std::stof(tp_person.value().attributes.at("x_pos")), std::stof(tp_person.value().attributes.at("y_pos"))});
+        int reborde = 3; // LO QUE HAY DE LADO(tiene que ser impar)
+        int original_x = maybe_position2d.value().first;
+        int original_y = maybe_position2d.value().second;
+        for (int i = 0; i < reborde; i++) {
+            for (int j = 0; j < reborde; j++) {
+                grid[original_x - 1 + i][original_y - 1 + j].state = State::Person;
+            }
+        }
+    }
+    // Cambiar el color de las celdas en la cuadrícula
 	draw_state();
 	if(hacer_camino){
 	    hacer_camino = false;
-	    viewerSlot_compute(p_);
+	    viewerSlot_compute(tp_person, {std::stof(tp_person.value().attributes.at("x_pos")), std::stof(tp_person.value().attributes.at("y_pos"))});
 	}
-}
-
-//////////////////////////////////////////////////////////////////
-/// YOUR CODE HERE
-//////////////////////////////////////////////////////////////////
-// Read the BPEARL lidar data and filter the points
-std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_bpearl()
-{
-    try
-    {
-        auto ldata =  lidar3d1_proxy->getLidarData("bpearl", 0, 2*M_PI, 1);
-        // filter points according to height and distance
-        std::vector<Eigen::Vector2f>  p_filter;
-        for(const auto &a: ldata.points)
-        {
-            if(a.z < 500 and a.distance2d > 200)
-                p_filter.emplace_back(a.x, a.y);
-        }
-        return p_filter;
-    }
-    catch(const Ice::Exception &e){std::cout << e << std::endl;}
-    return {};
-}
-std::vector<Eigen::Vector2f> SpecificWorker::read_lidar_helios()
-{
-    try
-    {
-
-        auto ldata =  lidar3d_proxy->getLidarData("helios", 0, 2*M_PI, 2);
-        // filter points according to height and distance
-        std::vector<Eigen::Vector2f> p_filter;
-        for(const auto &a: ldata.points)
-        {
-            if(a.z > 1300 and a.distance2d > 200)
-                p_filter.emplace_back(a.x, a.y);
-        }
-
-        return p_filter;
-    }
-    catch(const Ice::Exception &e){std::cout << e << std::endl;}
-    return {};
 }
 
 std::vector<QLineF> SpecificWorker::detect_wall_lines(const vector<Eigen::Vector2f> &points, QGraphicsScene *scene)
@@ -466,6 +438,7 @@ std::expected<RoboCompVisualElementsPub::TObject, std::string> SpecificWorker::f
         return std::unexpected("No person found in method <find_person_in_data>");
     else
     {
+        hacer_camino = true;
         draw_person(const_cast<RoboCompVisualElementsPub::TObject &>(*p_), &viewer->scene);
         return *p_;
     }
@@ -512,10 +485,13 @@ SpecificWorker::RobotSpeed SpecificWorker::state_machine(const TPerson &person, 
         case STATE::TRACK:
             res = track(path);
             label_state->setText("TRACK");
+            printf("TRACK\n");
             break;
         case STATE::WAIT:
             res = wait(person);
             label_state->setText("WAIT");
+            printf("WAIT\n");
+
             break;
         case STATE::SEARCH:
             res = search(person);
@@ -543,13 +519,26 @@ SpecificWorker::RobotSpeed SpecificWorker::state_machine(const TPerson &person, 
  * @return A `RetVal` tuple consisting of the state (`FORWARD` or `TURN`), speed, and rotation.
  */
  // State function to track a person
-SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> path)
+SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> pathy)
 {
+    try{
+        vector<Eigen::Vector2f> path;
+        if (pathy.size() > 4) {
+            // Create the subvector starting from index 4
+            path = vector<Eigen::Vector2f>(pathy.begin() + 4, pathy.end());
+        } else {
+            // If pathy has 4 or fewer elements, copy the whole vector
+            path = pathy;
+        }
+        std::cout << "Path size: " << path.size() << std::endl;
+        for (const auto& point : path) {
+            std::cout << "Point: " << point.x() << ", " << point.y() << std::endl;
+        }
     static float ant_angle_error = 0.0;
     //qDebug() << __FUNCTION__;
-    // variance of the gaussian function is set by the user giving a point xset where the function must be yset, and solving for s
-    auto gaussian_break = [](float x) -> float
-    {
+
+    // ariance of the gaussian function is set by the user giving a point xset where the function must be yset, and solving for s
+    auto gaussian_break = [](float x) -> float{
         // gaussian function where x is the rotation speed -1 to 1. Returns 1 for x = 0 and 0.4 for x = 0.5
         const double xset = 0.5;
         const double yset = 0.73;
@@ -558,29 +547,35 @@ SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> path)
         return (float)exp(-x*x/s);
     };
 
-    if(path.empty())
-    { qWarning() << __FUNCTION__ << "No path found"; return RetVal(STATE::SEARCH, 0.f, 0.f); }
+    if(path.empty()) {
+        qWarning() << __FUNCTION__ << "No path found";
+        return RetVal(STATE::SEARCH, 0.f, 0.f);
+    }
     // auto distance = 0.0f;
     // for (const auto &p: iter::sliding_window(path, 2))
     //     distance += (p[0] - p[1]).norm();
 
-    auto distance = std::accumulate(path.begin(), path.end(), 0.f, [](auto ac, auto b)
-        {
-            static Eigen::Vector2f last{0.f, 0.f};
-            auto r = ac + (last - b).norm();
-            last = b;
-            return r;
-        });
+    auto distance = std::accumulate(path.begin(), path.end(), 0.f, [](auto ac, auto b){
+        static Eigen::Vector2f last{0.f, 0.f};
+        auto r = ac + (last - b).norm();
+        last = b;
+        return r;
+    });
 
     // auto distance = std::hypot(std::stof(path.value().attributes.at("x_pos")), std::stof(path.value().attributes.at("y_pos")));
     // lcdNumber_dist_to_person->display(distance);
 
     // check if the distance to the person is lower than a threshold
-    if(distance < params.PERSON_MIN_DIST)
-    { qWarning() << __FUNCTION__ << "Distance to person lower than threshold"; return RetVal(STATE::WAIT, 0.f, 0.f);}
+    printf("DISTANCIA: %f\n", distance);
+    if(distance < params.PERSON_MIN_DIST) {
+        qWarning() << __FUNCTION__ << "Distance to person lower than threshold";
+        return RetVal(STATE::WAIT, 0.f, 0.f);
+    }
 
     // angle error is the angle between the robot and the person. It has to be brought to zero
     float angle_error = atan2(path[1].x() ,path[1].y());
+   // float angle_error = atan2(path[1].x() ,path[1].y());
+
     float rot_speed = params.k1 * angle_error + params.k2 * (angle_error-ant_angle_error);
     ant_angle_error = angle_error;
     // rot_brake is a value between 0 and 1 that decreases the speed when the robot is not facing the person
@@ -589,8 +584,14 @@ SpecificWorker::RetVal SpecificWorker::track(vector<Eigen::Vector2f> path)
     float acc_distance = params.acc_distance_factor * params.ROBOT_WIDTH;
     // advance brake is a value between 0 and 1 that decreases the speed when the robot is too close to the person
     float adv_brake = std::clamp(distance * 1.f/acc_distance - (params.PERSON_MIN_DIST / acc_distance), 0.f, 1.f);
-    return RetVal(STATE::TRACK, params.MAX_ADV_SPEED * rot_brake * adv_brake, rot_speed);
+    return RetVal(STATE::TRACK, params.MAX_ADV_SPEED * rot_brake * adv_brake, clamp(rot_speed, -params.MAX_ROT_SPEED, params.MAX_ROT_SPEED));
+    } catch (...) {
+        std::exception_ptr p = std::current_exception();
+        printf("%s\n", p ? p.__cxa_exception_type()->name() : "null");
+        abort();
+    }
 }
+
 
 SpecificWorker::RetVal SpecificWorker::wait(const TPerson &person)
 {

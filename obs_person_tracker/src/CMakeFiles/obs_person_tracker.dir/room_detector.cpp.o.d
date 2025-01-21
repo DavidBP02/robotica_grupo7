@@ -1,7 +1,7 @@
 src/CMakeFiles/obs_person_tracker.dir/room_detector.cpp.o: \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.cpp \
+ /home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.h \
+ /home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/src/room_detector.h \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -985,7 +985,7 @@ src/CMakeFiles/obs_person_tracker.dir/room_detector.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreversion.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/room.h \
+ /home/usuario/robocomp/components/robotica_grupo7/obs_person_tracker/src/room.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPolygonF \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \

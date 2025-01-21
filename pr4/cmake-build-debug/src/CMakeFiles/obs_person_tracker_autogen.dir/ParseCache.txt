@@ -1654,15 +1654,15 @@
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
@@ -2572,14 +2572,14 @@
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
@@ -3443,16 +3443,16 @@
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericmonitor.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/qlog/qlog.h
  mdp:/usr/include/GL/gl.h
@@ -4813,18 +4813,19 @@
  mmc:Q_OBJECT
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
+ mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/dbscan.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/genericworker.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/room_detector.h
- mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  mdp:/home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
  mdp:/home/robocomp/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h

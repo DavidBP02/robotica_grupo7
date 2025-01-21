@@ -576,7 +576,7 @@
 		"/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/ui_mainUI.h"
 	],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 16,
+	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CMakeFiles/obs_person_tracker_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",

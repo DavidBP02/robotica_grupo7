@@ -17,15 +17,16 @@
  /home/robocomp/robocomp/cmake/modules/opencv4.cmake
  /home/robocomp/robocomp/cmake/modules/qt.cmake
  /home/robocomp/robocomp/cmake/robocomp.cmake
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
@@ -44,7 +45,6 @@
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp
@@ -3356,15 +3356,16 @@
  /home/robocomp/robocomp/cmake/modules/opencv4.cmake
  /home/robocomp/robocomp/cmake/modules/qt.cmake
  /home/robocomp/robocomp/cmake/robocomp.cmake
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
@@ -3383,7 +3384,6 @@
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp
@@ -6695,15 +6695,16 @@
  /home/robocomp/robocomp/cmake/modules/opencv4.cmake
  /home/robocomp/robocomp/cmake/modules/qt.cmake
  /home/robocomp/robocomp/cmake/robocomp.cmake
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
@@ -6722,7 +6723,6 @@
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp
@@ -10034,15 +10034,16 @@
  /home/robocomp/robocomp/cmake/modules/opencv4.cmake
  /home/robocomp/robocomp/cmake/modules/qt.cmake
  /home/robocomp/robocomp/cmake/robocomp.cmake
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Camera360RGB.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/CommonBehavior.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/GenericBase.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/Lidar3D.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/OmniRobot.h
+ /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/cmake-build-debug/src/obs_person_tracker_autogen/moc_predefs.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeLists.txt
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CMakeListsSpecific.txt
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/Lidar3D.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/OmniRobot.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/VisualElementsPub.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/commonbehaviorI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/config.h
@@ -10061,7 +10062,6 @@
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificmonitor.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/specificworker.h
- /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.cpp
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h
  /home/robocomp/robocomp/components/robotica_grupo7/pr4/src/visualelementspubI.cpp

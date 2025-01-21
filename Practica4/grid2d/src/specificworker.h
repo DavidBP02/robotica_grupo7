@@ -59,7 +59,6 @@ class SpecificWorker : public GenericWorker
         // para hacer que cuando haces click en la cuadricula con el raton te ¿salgan las coordenadas?
 	// connect(server, SIGNAL(), this, SLOT(NOLEOESTO));
 	private:
-
 	struct Params
 	{
 		float ROBOT_WIDTH = 460;  // mm
@@ -86,7 +85,8 @@ class SpecificWorker : public GenericWorker
 	bool startup_check_flag;
 	enum class State {Occupied, Free, Unknown};
 	using position2d = std::pair<int, int>;
-	struct TCell
+	std::vector<SpecificWorker::position2d> path;
+    struct TCell
 	{
 		State state;
 		QGraphicsRectItem *item;
@@ -131,7 +131,7 @@ const float INF = std::numeric_limits<float>::infinity();
 
 	//void draw_lidar(auto &filtered_points, QGraphicsScene *scene);
 
-    void draw_path(const std::vector<SpecificWorker::position2d> &path, QGraphicsScene *scene, bool solo_limpiar);
+    void draw_path(QGraphicsScene *scene, bool solo_limpiar);
     std::vector<SpecificWorker::position2d> dijkstra(position2d start, position2d goal);
 	bool grid_index_valid(const SpecificWorker::position2d& index);
 

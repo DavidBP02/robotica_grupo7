@@ -132,6 +132,10 @@ void SpecificWorker::compute()
                                                                                 obstacles,
                                                                                 params.ROBOT_WIDTH / 2,
                                                                                 nullptr);
+        
+        for(int i = 0; i < path.size(); i++){
+            printf("\t%i %f %f\n", i, path[i].x(), path[i].y());
+        }
         draw_path_to_person(path, &viewer->scene);
 
         // call state machine to track person

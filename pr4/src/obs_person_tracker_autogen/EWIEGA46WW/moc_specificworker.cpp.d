@@ -1,5 +1,5 @@
-/home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
-  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h \
+/home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/usuario/robocomp/components/robotica_grupo7/pr4/src/specificworker.h \
+  /home/usuario/robocomp/components/robotica_grupo7/pr4/src/obs_person_tracker_autogen/moc_predefs.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/Camera360RGB.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/CommonBehavior.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/GenericBase.h \
@@ -11,6 +11,7 @@
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/genericworker.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/room_detector.h \
+  /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/pr4/src/visibility_graph.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h \
@@ -2854,15 +2855,22 @@
   /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachine-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCommonStyle \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsLineItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLCDNumber \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollerProperties \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QtWidgets \

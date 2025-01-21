@@ -1,7 +1,7 @@
 CommonBehavior.Endpoints=tcp -p 10000
 
 # Endpoints for implements interfaces
-Grid2D.Endpoints=tcp -p 13027
+Grid2D.Endpoints=tcp -p 13500
 
 
 # Proxies for required interfaces

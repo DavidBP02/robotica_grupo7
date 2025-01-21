@@ -187,7 +187,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/ICES__home_usuario_robocomp_components_G10_Robotica_Practica_3_obs_person_tracker_src.dir/DependInfo.cmake"
+  "src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_Practica4_obs_person_tracker_src.dir/DependInfo.cmake"
   "src/CMakeFiles/obs_person_tracker.dir/DependInfo.cmake"
   "src/CMakeFiles/obs_person_tracker_autogen.dir/DependInfo.cmake"
   )

@@ -1,7 +1,7 @@
 src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilation.cpp.o: \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/mocs_compilation.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/FGDXZBSX76/moc_abstract_graphic_viewer.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/JPJZV43UZ7/moc_abstract_graphic_viewer.cpp \
  /usr/include/c++/12/memory /usr/include/c++/12/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
  /usr/include/c++/12/bits/new_allocator.h \
@@ -193,7 +193,7 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/FGDXZBSX76/../../../../../../../../../../../robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/JPJZV43UZ7/../../../../../../../../classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -428,8 +428,8 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
  /usr/include/c++/12/iostream \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/YNADVVBD3P/moc_GRAFCETStep.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/YNADVVBD3P/../../../../../../../../../../../robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/O3EPOQWXUL/moc_GRAFCETStep.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/O3EPOQWXUL/../../../../../../../../classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
@@ -440,8 +440,8 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
  /usr/include/c++/12/mutex /usr/include/c++/12/bits/unique_lock.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/ROJA6K4NDP/moc_qcustomplot.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/ROJA6K4NDP/../../../../../../../../../../../robocomp/robocomp/classes/qcustomplot/qcustomplot.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/E2AFXFXIXU/moc_qcustomplot.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/E2AFXFXIXU/../../../../../../../../classes/qcustomplot/qcustomplot.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedPointer \
@@ -1119,8 +1119,8 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimeZone \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QScreen \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericmonitor.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericmonitor.h \
  /usr/include/Ice/Ice.h /usr/include/IceUtil/PushDisableWarnings.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/12/cassert /usr/include/Ice/Comparable.h \
@@ -1190,12 +1190,12 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/Ice/UUID.h \
  /usr/include/IceUtil/UUID.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericworker.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/config.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericworker.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/config.h \
  /home/robocomp/robocomp/classes/qlog/qlog.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/./config.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/./config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
@@ -1205,28 +1205,28 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplitter \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
  /home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QStateMachine \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachine.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericworker.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/specificmonitor.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericmonitor.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/specificworker.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/src/./genericworker.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Grid2D.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_genericworker.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericworker.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/specificmonitor.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/genericmonitor.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/moc_specificworker.cpp \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/specificworker.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/./genericworker.h \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/Lidar3D.h \
  /usr/include/c++/12/expected \
  /home/robocomp/robocomp/classes/doublebuffer_sync/doublebuffer_sync.h \
  /usr/include/c++/12/ranges /usr/include/c++/12/span \
@@ -1235,7 +1235,7 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/c++/12/queue /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/c++/12/thread \
  /home/robocomp/robocomp/classes/qcustomplot/qcustomplot.h \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/room_detector.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/room_detector.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
@@ -1449,10 +1449,10 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/imgproc.hpp \
  /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/room.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/room.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPolygonF \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/dbscan.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/dbscan.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/calib3d.hpp \
  /usr/include/opencv4/opencv2/features2d.hpp \
@@ -1530,7 +1530,7 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/visibility_graph.h \
+ /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/obs_person_tracker_autogen/EWIEGA46WW/../../../../src/visibility_graph.h \
  /usr/include/CGAL/Simple_cartesian.h \
  /usr/include/CGAL/Cartesian/Cartesian_base.h /usr/include/CGAL/basic.h \
  /usr/include/CGAL/config.h /usr/include/boost/config.hpp \
@@ -2163,6 +2163,7 @@ src/CMakeFiles/obs_person_tracker.dir/obs_person_tracker_autogen/mocs_compilatio
  /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
  /usr/include/boost/math/special_functions/fpclassify.hpp \
  /usr/include/boost/math/tools/real_cast.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/quadmath.h \
  /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp /usr/include/CGAL/tags.h \
  /usr/include/CGAL/IO/io_tags.h /usr/include/CGAL/number_type_basic.h \

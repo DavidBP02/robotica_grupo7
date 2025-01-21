@@ -1214,4 +1214,9 @@ src/CMakeFiles/grid2d.dir/grid2d_autogen/mocs_compilation.cpp.o: \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/grid2d_autogen/EWIEGA46WW/../../specificworker.h \
  /usr/include/c++/12/queue /usr/include/c++/12/bits/stl_queue.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
+ /home/robocomp/robocomp/classes/doublebuffer_sync/doublebuffer_sync.h \
+ /usr/include/c++/12/ranges /usr/include/c++/12/span \
+ /usr/include/c++/12/shared_mutex \
+ /home/robocomp/robocomp/classes/threadpool/threadpool.h \
+ /usr/include/c++/12/thread \
  /home/usuario/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h

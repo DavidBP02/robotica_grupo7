@@ -85,7 +85,7 @@ void SpecificWorker::initialize()
 				//cell.state = State::Unknown;
 				auto p = grid_to_float({i, j});
 				cell.item  = viewer->scene.addRect(QRectF{p.x() - 50, p.y() - 50, cell_size, cell_size}, QPen(QColor("lightgray"), 15));
-				printf("%f, %f, %lu, %lu\n", p.x(), p.y(), i, j);
+				//printf("%f, %f, %lu, %lu\n", p.x(), p.y(), i, j);
 			}
 
    		connect(viewer, SIGNAL(new_mouse_coordinates(QPointF)), this, SLOT(viewerSlot(QPointF)));

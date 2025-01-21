@@ -1,0 +1,14 @@
+import "Grid2D.idsl";
+import "Lidar3D.idsl";
+
+Component grid2d
+{
+    Communications
+    {
+        implements Grid2D;
+        requires Lidar3D;
+    };
+    language Cpp11;
+    gui Qt(QWidget);
+};
+

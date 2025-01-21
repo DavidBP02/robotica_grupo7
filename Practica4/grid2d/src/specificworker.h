@@ -35,11 +35,8 @@
 #include <Eigen/Dense>
 #include <Eigen/SVD>
 #include <Eigen/Geometry>
-
-
+#include <doublebuffer_sync/doublebuffer_sync.h>
 #include <genericworker.h>
-
-
 #include "abstract_graphic_viewer/abstract_graphic_viewer.h"
 
 
@@ -146,6 +143,8 @@ const float INF = std::numeric_limits<float>::infinity();
 	void draw_state(void);
 char * state_to_string(SpecificWorker::State a);
 	void viewerSlot_compute(QPointF p);
+	//BufferSync<InOut<RoboCompVisualElementsPub::TData, RoboCompVisualElementsPub::TData>> buffer;
+
 };
 
 #endif

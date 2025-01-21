@@ -7,8 +7,10 @@
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/genericworker.h \
   /home/usuario/robocomp_ws/src/robocomp/components/robotica_grupo7/Practica4/grid2d/src/ui_mainUI.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/doublebuffer_sync/doublebuffer_sync.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/grafcetStep/GRAFCETStep.h \
   /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/qlog/qlog.h \
+  /home/usuario/robocomp_ws/src/robocomp/robocomp_core/classes/threadpool/threadpool.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
   /usr/include/Ice/BatchRequestQueueF.h \
@@ -216,6 +218,7 @@
   /usr/include/c++/12/compare \
   /usr/include/c++/12/complex \
   /usr/include/c++/12/concepts \
+  /usr/include/c++/12/condition_variable \
   /usr/include/c++/12/cstddef \
   /usr/include/c++/12/cstdint \
   /usr/include/c++/12/cstdio \
@@ -262,14 +265,18 @@
   /usr/include/c++/12/pstl/glue_numeric_defs.h \
   /usr/include/c++/12/queue \
   /usr/include/c++/12/random \
+  /usr/include/c++/12/ranges \
   /usr/include/c++/12/ratio \
   /usr/include/c++/12/set \
+  /usr/include/c++/12/shared_mutex \
+  /usr/include/c++/12/span \
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/stdexcept \
   /usr/include/c++/12/streambuf \
   /usr/include/c++/12/string \
   /usr/include/c++/12/string_view \
   /usr/include/c++/12/system_error \
+  /usr/include/c++/12/thread \
   /usr/include/c++/12/tr1/bessel_function.tcc \
   /usr/include/c++/12/tr1/beta_function.tcc \
   /usr/include/c++/12/tr1/ell_integral.tcc \

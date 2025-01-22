@@ -1,173 +1,128 @@
-/*
- *    Copyright (C) 2024 by YOUR NAME HERE
- *
- *    This file is part of RoboComp
- *
- *    RoboComp is free software: you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation, either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    RoboComp is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with RoboComp.  If not, see <http://www.gnu.org/licenses/>.
- */
+
 #include "specificworker.h"
 #include <cppitertools/enumerate.hpp>
 #include <cppitertools/range.hpp>
 #include <cppitertools/sliding_window.hpp>
 
-/**
-* \brief Default constructor
-*/
-SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
-{
+SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx){
     std::locale::global(std::locale("C"));
 	this->startup_check_flag = startup_check;
 }
 
-/**
-* \brief Default destructor
-*/
-SpecificWorker::~SpecificWorker()
-{
+SpecificWorker::~SpecificWorker(){
 	std::cout << "Destroying SpecificWorker" << std::endl;
 }
-bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
-{
+
+bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params){
 	return true;
 }
-void SpecificWorker::initialize()
-{
+
+void SpecificWorker::initialize(){
 	std::cout << "Initialize worker" << std::endl;
-	if(this->startup_check_flag)
-	{
+	if(this->startup_check_flag){
 		this->startup_check();
+	    return;
 	}
-	else
-	{
-        // Viewer
-        viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM);
-        auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
-        robot_draw = r;
-        viewer->setStyleSheet("background-color: lightGray;");
-        this->resize(800, 700);
 
-        // Initialize the plot
-        plot = new QCustomPlot(frame_dist);
-        plot->resize(frame_dist->size());
-        plot->addGraph();
-        plot->graph(0)->setPen(QPen(QColor(0, 0, 255)));
-        plot->xAxis->setLabel("Time");
-        plot->yAxis->setLabel("Dist. to person");
-        plot->xAxis->setRange(0, 50);
-        plot->yAxis->setRange(-1000, 1000);
-        plot->replot();
-        plot->show();
+    viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM);
+    auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
+    viewer->setStyleSheet("background-color: lightGray;");
+    this->resize(800, 700);
 
-        // connect stop button un UI with a lambda function
-        connect(pushButton_stop, &QPushButton::clicked, [this]()
-        {
-            try
-            { omnirobot_proxy->setSpeedBase(0, 0, 0); }
-            catch (const Ice::Exception &e)
-            { std::cout << e << std::endl; }
-            pushButton_stop->setText(pushButton_stop->isChecked() ? "Track" : "Stop");
-        });
-        viewer->show();
+    plot = new QCustomPlot(frame_dist);
+    plot->resize(frame_dist->size());
+    plot->addGraph();
+    plot->graph(0)->setPen(QPen(QColor(0, 0, 255)));
+    plot->xAxis->setLabel("Time");
+    plot->yAxis->setLabel("Dist. to person");
+    plot->xAxis->setRange(0, 50);
+    plot->yAxis->setRange(-1000, 1000);
+    plot->replot();
+    plot->show();
 
-		this->setPeriod(STATES::Compute, 100);
-		//this->setPeriod(STATES::Emergency, 500);
-
-	}
+    // connect stop button un UI with a lambda function
+    connect(pushButton_stop, &QPushButton::clicked, [this](){
+        try {
+            omnirobot_proxy->setSpeedBase(0, 0, 0);
+        } catch (const Ice::Exception &e) {
+            std::cout << e << std::endl;
+        }
+        pushButton_stop->setText(pushButton_stop->isChecked() ? "Track" : "Stop");
+    });
+    viewer->show();
+	this->setPeriod(STATES::Compute, 100);
 }
-void SpecificWorker::compute()
-{
-    /// check if there is new YOLO data in buffer
+void SpecificWorker::compute(){
+    // check if there is new YOLO data in buffer
     std::expected<RoboCompVisualElementsPub::TObject, std::string> tp_person = std::unexpected("No person found");
     auto [data_] = buffer.read_first();
-    if(data_.has_value())
+    if(data_.has_value()) {
         tp_person = find_person_in_data(data_.value().objects);
-    else return;
-
-	std::vector<Eigen::Vector2f> path;
-    if(tp_person.has_value())
-    {
-
-    	float x = std::stof(tp_person.value().attributes.at("x_pos"));
-    	float y = std::stof(tp_person.value().attributes.at("y_pos"));
-
-    	try
-    	{
-            auto res = grid2d_proxy->getPaths(RoboCompGrid2D::TPoint{0.f, 0.f, 250}, RoboCompGrid2D::TPoint{x, y, 250});
-            printf("getPaths ha devuelto un vector de %ld elementos\n", res.path.size());
-            path.clear(); // Asegurarse de que el vector esté vacío antes de llenarlo
-    		for (const auto &p : res.path)
-        		path.emplace_back(p.x, p.y); // Convertir RoboCompGrid2D::TPoint a Eigen::Vector2f
-            draw_path(res.path);
-
-
-    	}
-    	catch (const Ice::Exception &e) { qDebug() << "Error al llamar a Grid2D_getPaths:" << e.what();}
-	}
-
-    if (path.empty())
-	{
-    	qWarning() << "Camino vacío. Cambiando a estado SEARCH.";
-    	state_machine(path); // Llamar a la máquina de estados con un camino vacío
-    	return;
-	}else{
-
-
-		const auto &[adv, rot] = state_machine(path);
-    	// plot on UI
-    	if(tp_person)
-    	{
-        	float d = std::hypot(std::stof(tp_person.value().attributes.at("x_pos")),
-                                 std::stof(tp_person.value().attributes.at("y_pos")));
-        	plot_distance(running_average(d) - params.PERSON_MIN_DIST);
-        	lcdNumber_dist_to_person->display(d);
-        	lcdNumber_angle_to_person->display(atan2(std::stof(tp_person.value().attributes.at("x_pos")),
-                                                 std::stof(tp_person.value().attributes.at("y_pos"))));
-    	}
-    	lcdNumber_adv->display(adv);
-    	lcdNumber_rot ->display(rot);
-
-    	// move the robot
-    	try{ omnirobot_proxy->setSpeedBase(0.f, adv, rot); }
-    	catch(const Ice::Exception &e){std::cout << e << std::endl;}
+    } else {
+        return;
     }
 
+	std::vector<Eigen::Vector2f> path;
+    if(!tp_person.has_value()) {
+        return;
+    }
+
+    float x = std::stof(tp_person.value().attributes.at("x_pos"));
+    float y = std::stof(tp_person.value().attributes.at("y_pos"));
+    try{
+        auto res = grid2d_proxy->getPaths(RoboCompGrid2D::TPoint{0.f, 0.f, 250}, RoboCompGrid2D::TPoint{x, y, 250});
+        path.clear();
+    	for (const auto &p : res.path) {
+    	    path.emplace_back(p.x, p.y);
+    	}
+        draw_path(res.path);
+    }
+    catch (const Ice::Exception &e) {
+        qDebug() << "Fallo en el getPaths" << e.what();
+    }
+
+    if (path.empty()) {
+        qWarning() << "Camino vacío. Cambiando a estado SEARCH.";
+        state_machine(path);
+        return;
+    }
+
+	const auto &[adv, rot] = state_machine(path);
+    if(tp_person){
+        float d = std::hypot(std::stof(tp_person.value().attributes.at("x_pos")),
+                             std::stof(tp_person.value().attributes.at("y_pos")));
+        plot_distance(running_average(d) - params.PERSON_MIN_DIST);
+        lcdNumber_dist_to_person->display(d);
+        lcdNumber_angle_to_person->display(atan2(std::stof(tp_person.value().attributes.at("x_pos")),
+                                             std::stof(tp_person.value().attributes.at("y_pos"))));
+    }
+    lcdNumber_adv->display(adv);
+    lcdNumber_rot->display(rot);
+
+    try {
+        omnirobot_proxy->setSpeedBase(0.f, adv, rot);
+    } catch(const Ice::Exception &e) {
+        std::cout << e << std::endl;
+    }
 }
 
-void SpecificWorker::draw_path(const std::vector<RoboCompGrid2D::TPoint> &path)
-{
-    // Limpiar elementos gráficos de la ruta anterior
-    for (auto item : path_items)
-    {
+void SpecificWorker::draw_path(const std::vector<RoboCompGrid2D::TPoint> &path){
+    for (auto item : path_items){
         viewer->scene.removeItem(item);
         delete item;
     }
     path_items.clear();
 
-    if (path.empty())
-    {
-        qDebug() << "La ruta está vacía. No hay nada que dibujar.";
+    if (path.empty()){
         return;
     }
 
-    auto color = QColor(128, 0, 128); // Color púrpura
+    auto color = QColor("green");
     auto brush = QBrush(color);
 
-    for (const auto &point : path)
-    {
-        // Dibujar un rectángulo para cada punto en la ruta
+    for (const auto &point : path){
         auto item = viewer->scene.addRect(-50, -50, 100, 100, QPen(color), brush);
-        item->setPos(point.x, point.y); // Usar directamente las coordenadas de TPoint
+        item->setPos(point.x, point.y);
         path_items.push_back(item);
     }
 }
@@ -257,7 +212,6 @@ SpecificWorker::RetVal SpecificWorker::track(const Tpath &path)
 
     // check if the distance to the person is lower than a threshold
     if(distance < params.PERSON_MIN_DIST) {
-
         qWarning() << __FUNCTION__ << "Distance to person lower than threshold"; return RetVal(STATE::WAIT, 0.f, 0.f);
     }
 
@@ -304,38 +258,7 @@ SpecificWorker::RetVal SpecificWorker::stop()
 
     return RetVal (STATE::STOP, 0.f, 0.f);
 }
-/**
- * Draws LIDAR points onto a QGraphicsScene.
- *
- * This method clears any existing graphical items from the scene, then iterates over the filtered
- * LIDAR points to add new items. Each LIDAR point is represented as a colored rectangle. The point
- * with the minimum distance is highlighted in red, while the other points are drawn in green.
- *
- * @param filtered_points A collection of filtered points to be drawn, each containing the coordinates
- *                        and distance.
- * @param scene A pointer to the QGraphicsScene where the points will be drawn.
- */
-void SpecificWorker::draw_lidar(auto &filtered_points, QGraphicsScene *scene)
-{
-    static std::vector<QGraphicsItem*> items;   // store items so they can be shown between iterations
 
-    // remove all items drawn in the previous iteration
-    for(auto i: items)
-    {
-        scene->removeItem(i);
-        delete i;
-    }
-    items.clear();
-
-    auto color = QColor(Qt::darkGreen);
-    auto brush = QBrush(QColor(Qt::darkGreen));
-    for(const auto &p : filtered_points)
-    {
-        auto item = scene->addRect(-50, -50, 100, 100, color, brush);
-        item->setPos(p.x(), p.y());
-        items.push_back(item);
-    }
-}
 /**
  * @brief Calculates the index of the closest lidar point to the given angle.
  *
@@ -389,36 +312,10 @@ std::expected<int, string> SpecificWorker::closest_lidar_index_to_given_angle(co
     auto res = std::ranges::find_if(points, [angle](auto &a){ return a.phi > angle;});
     if(res != std::end(points))
         return std::distance(std::begin(points), res);
-    else
-        return std::unexpected("No closest value found in method <closest_lidar_index_to_given_angle>");
+    return std::unexpected("No closest value found in method <closest_lidar_index_to_given_angle>");
 }
-void SpecificWorker::draw_path_to_person(const auto &points, QGraphicsScene *scene)
-{
-    if(points.empty())
-        return;
 
-    // remove all items drawn in the previous iteration
-    static std::vector<QGraphicsItem*> items;
-    for(auto i: items)
-    {
-        scene->removeItem(i);
-        delete i;
-    }
-    items.clear();
-
-    // draw the path as a series of lines with dots in between
-    for (auto i : iter::range(0UL, points.size() - 1))
-    {
-        auto line = scene->addLine(QLineF(QPointF(points[i].x(), points[i].y()), QPointF(points[i+1].x(), points[i+1].y())),
-                                   QPen(Qt::blue, 40));
-        items.push_back(line);
-        auto dot = scene->addEllipse(-30, -30, 60, 60, QPen(Qt::darkBlue, 40));
-        dot->setPos(points[i].x(), points[i].y());
-       items.push_back(dot);
-    }
-}
-void SpecificWorker::plot_distance(double distance)
-{
+void SpecificWorker::plot_distance(double distance){
     // add value to plot
     static int key = 0;
     plot->graph(0)->addData(key++, distance);
@@ -428,37 +325,19 @@ void SpecificWorker::plot_distance(double distance)
     // plot
     plot->rescaleAxes();  plot->replot();
 }
-float SpecificWorker::running_average(float dist)
-{
+float SpecificWorker::running_average(float dist){
     static float avg = 0;
     static int count = 0;
     avg = (avg * count + dist) / (count + 1);
     count++;
     return avg;
 }
-void SpecificWorker::draw_obstacles(const vector<QPolygonF> &list_poly, QGraphicsScene *scene, const QColor &color) const
-{
-    static std::vector<QGraphicsItem*> items;
-    // remove all items drawn in the previous iteration
-    for(auto i: items)
-    {
-        scene->removeItem(i);
-        delete i;
-    }
-    items.clear();
 
-    for(const auto &poly : list_poly)
-    {
-        auto item = scene->addPolygon(poly, QPen(color, 50));
-        items.push_back(item);
-    }
-}
 //////////////////////////////////////////////////////////////////
 /// SUBSCRIPTIONS (runs in a different thread)
 //////////////////////////////////////////////////////////////////
 //SUBSCRIPTION to setVisualObjects method from VisualElementsPub interface. This is called in a different thread.
-void SpecificWorker::VisualElementsPub_setVisualObjects(RoboCompVisualElementsPub::TData data)
-{
+void SpecificWorker::VisualElementsPub_setVisualObjects(RoboCompVisualElementsPub::TData data){
     // std::cout << "VisualElements_setVisualObjects" << std::endl;
     //    for(auto object : data.objects)
     //        std::cout << "Object type: " << object.id << std::endl;

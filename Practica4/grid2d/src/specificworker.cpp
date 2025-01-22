@@ -26,45 +26,22 @@
 RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target) {
     RoboCompGrid2D::Result result;
 
-//    auto index = float_to_grid({target.x, target.y});
-
-//
-/*    static bool first_time = true;
-    if(first_time){
-        first_time = false;
-        sleep(3);
-    }*/
     auto maybe_position2d = float_to_grid({target.x, target.y});
-    //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
     if (!maybe_position2d)
         return {};
 
     path = dijkstra({50, 50}, {maybe_position2d.value().first, maybe_position2d.value().second});
-    if(path.empty()) {
-        //draw_path(path, &viewer->scene, true);
-    } else {
-//        draw_path(&viewer->scene, false);
-    }
         
     std::ranges::transform(path, std::back_inserter(result.path), [&](auto &p) {
         auto f = grid_to_float({p.first, p.second});
         return RoboCompGrid2D::TPoint{f.x(), f.y(), 0.f};
     });
     
-    printf("ENTRANDO LOLO %ld\n", result.path.size());
     return result;
 }
 
-/**
-* \brief Default constructor
-*/
-SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
-{
+SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx){
 	this->startup_check_flag = startup_check;
-	// Uncomment if there's too many debug messages
-	// but it removes the possibility to see the messages
-	// shown in the console with qDebug()
-//	QLoggingCategory::setFilterRules("*.debug=false\n");
 }
 
 /**
@@ -126,7 +103,6 @@ void SpecificWorker::initialize()
 		#endif
 
 		this->setPeriod(STATES::Compute, 100);
-		//this->setPeriod(STATES::Emergency, 500);
 
 	}
 }
@@ -322,41 +298,32 @@ bool SpecificWorker::grid_index_valid(const SpecificWorker::position2d& index) {
 }
 
 std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker::position2d start, SpecificWorker::position2d goal){
-    // Mapa para almacenar el costo mínimo de cada celda
     std::unordered_map<SpecificWorker::position2d, int, position2dHash> distance_map;
-    // Mapa para almacenar la celda anterior en el camino
     std::unordered_map<SpecificWorker::position2d, SpecificWorker::position2d, position2dHash> previous_map;
 
-    // Cola de prioridad para procesar las celdas con menor costo primero
     std::priority_queue<Cell, std::vector<Cell>, std::greater<Cell>> pq;
-    pq.push({0, start});  // Comenzamos con el punto de inicio con un costo de 0
+    pq.push({0, start});
     distance_map[start] = 0;
 
-    // Direcciones de los vecinos: arriba, abajo, izquierda, derecha
     std::vector<SpecificWorker::position2d> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
     while (!pq.empty()) {
         Cell current = pq.top();
         pq.pop();
 
-        // Si llegamos al objetivo, reconstruimos el camino
         if (current.position == goal) {
         	std::vector<SpecificWorker::position2d> path;
         	while (previous_map.find(current.position) != previous_map.end()) {
         		path.push_back(current.position);
         		current.position = previous_map[current.position];
         	}
-        	std::reverse(path.begin(), path.end());  // Invertir el camino para que vaya de inicio a objetivo
+        	std::reverse(path.begin(), path.end());
         	return path;
         }
 
-        // Explorar los vecinos
         for (const auto& dir : directions) {
             SpecificWorker::position2d neighbor(current.position.first + dir.first, current.position.second + dir.second);
-
-            // Comprobar si el vecino está dentro de los límites del grid
             if (grid_index_valid(neighbor)) {
-                // Obtener el costo de la celda vecina (ya sea libre o un obstáculo)
             	int neighbor_cost = 1;
             	if (grid[neighbor.first][neighbor.second].state == State::Occupied)
             		continue;
@@ -364,7 +331,6 @@ std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker:
             		neighbor_cost = 1;
                 int new_cost = current.cost + neighbor_cost;
 
-                // Si encontramos un camino más corto al vecino, actualizamos la distancia
                 if (distance_map.find(neighbor) == distance_map.end() || new_cost < distance_map[neighbor]) {
                     distance_map[neighbor] = new_cost;
                     previous_map[neighbor] = current.position;
@@ -374,10 +340,8 @@ std::vector<SpecificWorker::position2d> SpecificWorker::dijkstra(SpecificWorker:
         }
     }
 
-    return {};  // Si no encontramos un camino, devolvemos un vector vacío
+    return {};
 }
-
-		//RoboCompGrid2D::Result SpecificWorker::Grid2D_getPaths(RoboCompGrid2D::TPoint source, RoboCompGrid2D::TPoint target){}
 
 void SpecificWorker::viewerSlot(QPointF p)
 {
@@ -387,13 +351,11 @@ void SpecificWorker::viewerSlot(QPointF p)
 
 void SpecificWorker::viewerSlot_compute(QPointF p)
 {
-    qDebug() << "1 Coordenadas reales clicadas:" << p;
     auto maybe_position2d = float_to_grid({p.x(), p.y()});
-    //auto maybe_position2d = float_to_grid({-p.x(), p.y()});
-    if (!maybe_position2d)
+    if (!maybe_position2d){
         return;
+    }
     QPoint index(maybe_position2d.value().first, maybe_position2d.value().second);
-    printf("ESTADO DE LA CASILLA CLICKADA(%d(%f), %d(%f)): %s\n", p.x(), p.y(), index.x(), index.y(), state_to_string(grid[index.x()][index.y()].state));
 
 	if (grid[index.x()][index.y()].state == State::Occupied) {
 		draw_path(&viewer->scene, true);
@@ -403,18 +365,11 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
     int goalX = index.x();
     int goalY = index.y();
 
-    if (goalX < 0 || goalX >= grid_size || goalY < 0 || goalY >= grid_size)
-    {
-        qDebug() << "1El punto está fuera del grid";
+    if (goalX < 0 || goalX >= grid_size || goalY < 0 || goalY >= grid_size){
         return;
     }
 
-    qDebug() << "1Índices de cuadrícula objetivo:" << goalX << goalY;
-
-    std::cout << "before dijkstra" << std::endl;
-
     path = dijkstra({50, 50}, {goalX, goalY});
-    std::cout << "after dijkstra" << std::endl;
 
 	if(path.empty()) {
 		draw_path(&viewer->scene, true);
@@ -422,4 +377,3 @@ void SpecificWorker::viewerSlot_compute(QPointF p)
 		draw_path(&viewer->scene, false);
 	}
 }
-

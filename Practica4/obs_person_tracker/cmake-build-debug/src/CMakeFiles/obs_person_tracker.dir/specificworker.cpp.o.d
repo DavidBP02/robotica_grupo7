@@ -1,9 +1,9 @@
 src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificworker.cpp \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificworker.cpp \
  /usr/include/stdc-predef.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/specificworker.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/./genericworker.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/./config.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/specificworker.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/./genericworker.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/./config.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,7 +20,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /home/robocomp/robocomp/classes/qlog/qlog.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/./config.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/./config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -881,7 +881,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiversion.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
@@ -913,7 +913,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/CommonBehavior.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/12/cassert /usr/include/Ice/ProxyHandle.h \
@@ -969,12 +969,12 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Grid2D.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/Camera360RGB.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/GenericBase.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/Grid2D.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/Lidar3D.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/OmniRobot.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/cmake-build-debug/src/VisualElementsPub.h \
  /home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
@@ -997,7 +997,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/Lidar3D.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/Lidar3D.h \
  /usr/include/c++/12/expected \
  /home/robocomp/robocomp/classes/doublebuffer_sync/doublebuffer_sync.h \
  /usr/include/c++/12/ranges /usr/include/c++/12/span \
@@ -1194,7 +1194,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtPrintSupport/qtprintsupportversion.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QElapsedTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimeZone \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/room_detector.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/room_detector.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
@@ -1408,10 +1408,10 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/imgproc.hpp \
  /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/room.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/room.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPolygonF \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/dbscan.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/dbscan.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/calib3d.hpp \
  /usr/include/opencv4/opencv2/features2d.hpp \
@@ -1489,7 +1489,7 @@ src/CMakeFiles/obs_person_tracker.dir/specificworker.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visibility_graph.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.h \
  /usr/include/CGAL/Simple_cartesian.h \
  /usr/include/CGAL/Cartesian/Cartesian_base.h /usr/include/CGAL/basic.h \
  /usr/include/CGAL/config.h /usr/include/boost/config.hpp \

@@ -1,7 +1,7 @@
 src/CMakeFiles/obs_person_tracker.dir/visibility_graph.cpp.o: \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visibility_graph.cpp \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.cpp \
  /usr/include/stdc-predef.h \
- /home/robocomp/robocomp/components/Grupo8_Robotica/practica4/obs_person_tracker/src/visibility_graph.h \
+ /home/robocomp/robocomp/components/robotica_grupo7/Practica4/obs_person_tracker/src/visibility_graph.h \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

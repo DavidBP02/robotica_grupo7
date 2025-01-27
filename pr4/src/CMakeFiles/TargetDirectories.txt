@@ -1,9 +1,0 @@
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/ICES__home_usuario_robocomp_components_robotica_grupo7_pr4_src.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/obs_person_tracker.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/edit_cache.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/rebuild_cache.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/list_install_components.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/install.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/install/local.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/install/strip.dir
-/home/usuario/robocomp/components/robotica_grupo7/pr4/src/CMakeFiles/obs_person_tracker_autogen.dir
